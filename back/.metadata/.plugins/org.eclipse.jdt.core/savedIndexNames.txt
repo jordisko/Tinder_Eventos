@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\taller1\Desktop\EJERCICIOS SUBIDOS A GIT\BootCampJava\Tinder_Eventos\back\.metadata\.plugins\org.eclipse.jdt.core
+2337261459.index
+1865797976.index
+2701914834.index
