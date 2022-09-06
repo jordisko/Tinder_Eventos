@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+  <div class="formulario">
+    <label for="usuario">Usuario</label>
+    <input id="usuario" name="usuario">
+    <br/>
+    <br/>
+
+    <label for="password">Contraseña</label>
+    <input id="password" name="password" type="password" autocomplete="current-password" required>
+    <br/>
+    <br/>
+    <div>
+      <input type="checkbox" id="check" className="check" onClick=""></input>
+      <label>Acepto los términos y condiciones</label>
+       <br/>
+    <br/>
+    </div>
+    <br/>
+    <br/>
+    <button onClick={resendEmailVerification} type="button"  className="btn btn-primary btn-lg" id="buttinsend">Volver a enviar</button>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+
+div.formulario{
+    margin-top: 20px;
+    width: autopx;
+    height: max-content;
+
+    text-align: center;
+}
