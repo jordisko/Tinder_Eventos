@@ -1,0 +1,99 @@
+body{
+    
+    margin: 0;
+}
+header{
+    background-color: greenyellow;
+    width: 100%;
+    height: 50px;
+}
+#logo{
+    background-color: blueviolet;
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    float: left;
+
+}
+nav{
+    background-color: brown;
+    height: 100%;
+    width: 20%;
+   float: right;
+}
+main{
+    background-color: aqua;
+    width: 100%;
+    height: 10000px;
+    margin: 0;
+}
+section{
+    background-color: blue;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+#texto1{
+    position: relative;
+    background-color: greenyellow;
+    width: 70%;
+    height: 10vh;
+    top: 30%;
+    left: 15%;
+    text-align: center;
+    font-size: 30px;
+}
+
+#crear{
+    position: relative;
+    width: 80%;
+    height: 30px;
+    left: 10%;
+    top: 60%    ;
+    text-decoration: none;
+    border:0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+#iniciar{
+    position: relative;
+    width: 80%;
+    height: 30px;
+    left: 10%;
+    top: 45%;
+    background-color: rgba(240, 248, 255, 0);
+    border-color: white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+#opiniones{
+    position: absolute;
+    background-color: green;
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    
+}
+#opinion{
+    display: list-item;
+    position: relative;
+    background-color: green;
+    width: 90%;
+    height: 300px;
+    margin-top: 10%;
+    float: left;
+    list-style: none;
+    border: 2px solid;
+    border-color: rgb(1, 75, 1);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
