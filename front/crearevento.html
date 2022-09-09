@@ -5,25 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="crearevento.css">
 </head>
 <body>
+ <div class="bodyevent">
     <br/>
     <label for="nombre_evento">Nombre evento:</label>
     <input aria-describedby="nombre_evento" maxlength="40" type="nombre_evento" id="nombre_evento" class="form-control">
     <br/>
     <label for="tentacles">Numero maximo de personas</label>
-    <input type="number" id="maximopersona" name="perosnas" min="2" max="100">
+    <input type="number" id="maximopersona" name="maximopersona" min="2" max="100">
     <br>
     <meta name="description" content="Escribe la descripción uno.">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#campofecha" ).datepicker({
+        format:"yyy/mm/dd",
+        startDate: '-3d',
+        language:"es",
+        numberOfMonths: 1,
+        showButtonPanel: true
+      });
+    } );
+    </script>
+    <label for="fecha">Fecha evento:</label>
+    <input type="text" id="campofecha" onclick="fecha()">
+    <br>
+
+    <label for="hora">Hora evento:</label>
+    <input aria-describedby="hora" type="hora" id="hora" class="form-control" placeholder="16:00">
+    <br/>
+    <label for="lugar">Lugar evento:</label>
+    <input aria-describedby="lugar"  type="lugar" id="lugar" class="form-control">
+    <br/>
+    <label for="lugar">Codigo postal:</label>
+    <input aria-describedby="postal"  style="width:46px" type="postal" id="postal" class="form-control">
+    <label for="numero">Numero:</label> 
+    <input aria-describedby="numero"  style="width:46px" type="numero" id="numero" class="form-control">
     
-localitzacion
-fecha
+    
+    <br/>
+  <label for="tipo">Tipo de evento:</label>
+  <input type="tipo" id="tipoevento" name="tipoevento">
 
+    <br>
+    
+    <label for="descripción">Descripción evento:</label></p>
+  <textarea id="des" name="des" rows="4" cols="35"> </textarea>
 
+  
 
     <br>
     <button id="eventocrear">Crear evento</button>
-    <button ><a href="./evento.html">Cancelar</a></button>
+    <button id="cancelar" >Cancelar</a></button>
+ </div>
 
 </body>
 </html>
