@@ -81,7 +81,9 @@ section{
     height: 600px;
     margin: 0;
     
+
 }
+
 #opinion{
     display: list-item;
     position: relative;
@@ -107,6 +109,13 @@ section{
     font-size: 30px;
     border-bottom: 3px solid;
     border-color: gray;
+    animation-delay: 2s;
+    animation-duration: 6s;
+    animation-name: difusion;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    
+    
 }
 #texto{
     background-color: coral;
@@ -114,7 +123,24 @@ section{
     width: 80%;
     height: auto;
     font-size: 20px;
+    animation-delay: 2s;
+    animation-duration: 6s;
+    animation-name: difusion;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 
+}
+@keyframes difusion {
+    from{
+        opacity: 100;
+        margin: 10% 0 0 10%;
+    }
+    
+    to{
+        opacity: 0;
+        margin: 10% 0 0 0;
+    }
+    
 }
 aside{
     background-color: white;
