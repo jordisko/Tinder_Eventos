@@ -1,3 +1,3 @@
 function crear(){
-    console.log("dca")
+    document.location.href = "crearevento.html"
 }
