@@ -9,7 +9,6 @@
         list-style-type: none;
         margin: 0;
         padding: 0%;
-        overflow: hidden;
         background-color: bisque;
         position: fixed;
         bottom: 0;
@@ -36,3 +35,9 @@
         margin-top: 5%;
         text-align: center;
       }
+     button{
+      margin-left: 70%;
+      background-color: white;
+      border: 0;
+      margin-top: 30%;
+     }
