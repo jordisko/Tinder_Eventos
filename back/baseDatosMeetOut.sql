@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS `baseDatosMeetOut`.`Usuarios` (
   `idUsuario` INT NOT NULL AUTO_INCREMENT,
   `nombreUsuario` VARCHAR(12) NOT NULL,
   `correoElectronico` VARCHAR(45) NOT NULL,
-  `contraseñaUsuario` VARCHAR(45) NOT NULL,
+  `contraseniaUsuario` VARCHAR(45) NOT NULL,
   `fotoUsuario` VARCHAR(155) NULL,
   `descripcionUsuario` VARCHAR(155) NULL DEFAULT '\"Aún no he puesto mi descripción\'',
   `nombrePersona` VARCHAR(45) NULL,
