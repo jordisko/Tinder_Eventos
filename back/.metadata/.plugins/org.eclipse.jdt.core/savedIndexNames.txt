@@ -24,7 +24,6 @@ INDEX VERSION 1.131+C:\Users\joank\Desktop\Tinder_Eventos\back\.metadata\.plugin
 1484817645.index
 2864821851.index
 2878289897.index
-2560080725.index
 1115042184.index
 3919647242.index
 2755084698.index
