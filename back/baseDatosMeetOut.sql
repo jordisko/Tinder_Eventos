@@ -31,20 +31,21 @@ CREATE TABLE IF NOT EXISTS `baseDatosMeetOut`.`Eventos` (
   PRIMARY KEY (`idEvento`));
 
 
-DROP TABLE IF EXISTS `baseDatosMeetOut`.`Usuarios_has_Eventos` ;
+DROP TABLE IF EXISTS `baseDatosMeetOut`.`Match` ;
 
-CREATE TABLE IF NOT EXISTS `baseDatosMeetOut`.`Usuarios_has_Eventos` (
+CREATE TABLE IF NOT EXISTS `baseDatosMeetOut`.`Match` (
+  `idMatch` INT NOT NULL AUTO_INCREMENT,
   `Usuarios_idUsuario` INT NOT NULL,
   `Eventos_idEvento` INT NOT NULL,
   `estadoMatch` VARCHAR(12) NOT NULL DEFAULT 'pendiente',
   `estadoEvento` VARCHAR(12) NULL,
-  PRIMARY KEY (`Usuarios_idUsuario`, `Eventos_idEvento`),
-  CONSTRAINT `fk_Usuarios_has_Eventos_Usuarios`
+  PRIMARY KEY (`Usuarios_idUsuario`, `Eventos_idEvento`,`idMatch`),
+  CONSTRAINT `fk_Match_Usuarios`
     FOREIGN KEY (`Usuarios_idUsuario`)
     REFERENCES `baseDatosMeetOut`.`Usuarios` (`idUsuario`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Usuarios_has_Eventos_Eventos1`
+  CONSTRAINT `fk_Match_Eventos1`
     FOREIGN KEY (`Eventos_idEvento`)
     REFERENCES `baseDatosMeetOut`.`Eventos` (`idEvento`)
     ON DELETE NO ACTION
