@@ -35,4 +35,4 @@ build/
 .metadata/
 back/.metadata/
 /.metadata/
-/back/.metadata/
+back/api_tinder_eventos/
