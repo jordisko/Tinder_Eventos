@@ -1,0 +1,17 @@
+
+div.formulario{
+    margin-top: 220px;
+    width: autopx;
+    height: max-content;
+
+    text-align: center;
+}
+
+label{
+    text-align: center;
+    margin-top: 50px;
+    color: 8EDF34;
+    font-weight: normal;
+    font-size: 19px;
+
+}
