@@ -3063,3 +3063,15 @@ java.io.FileNotFoundException: /org/eclipse/persistence/jaxb/eclipselink_oxm_2_5
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
 >>>>>>> main
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-12 10:25:53.869
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-12 10:25:53.869
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@45cf63f9[org.springframework.tooling.boot.ls:1.38.0.202208110704(id=920)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-12 10:25:53.870
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-12 10:25:56.480
+!MESSAGE Boot LS startup time from start to initialized: 2608ms
