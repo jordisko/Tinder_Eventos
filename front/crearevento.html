@@ -19,6 +19,7 @@
     <meta name="description" content="Escribe la descripción uno.">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./crearevento.js"></script>
     <script>
     $( function() {
       $( "#campofecha" ).datepicker({
@@ -58,8 +59,8 @@
   
 
     <br>
-    <button id="eventocrear">Crear evento</button>
-    <button id="cancelar" >Cancelar</a></button>
+    <button id="eventocrear" onclick="crear()">Crear evento</button>
+    <button id="cancelar" onclick="cancelar()" >Cancelar</a></button>
  </div>
 
 </body>

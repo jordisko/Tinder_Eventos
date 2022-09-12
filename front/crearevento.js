@@ -1,9 +1,7 @@
-function fecha() {
-    $( "#campofecha" ).datepicker({
-      format:"yyy/mm/dd",
-      startDate: '-3d',
-      language:"es",
-      numberOfMonths: 1,
-      showButtonPanel: true
-    });
-  }
+function cancelar(){
+  document.location.href = "evento.html"
+}
+
+function crear(){
+  document.location.href = "evento.html"
+}
