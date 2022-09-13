@@ -1,4 +1,4 @@
-
+back/.metadata/
 back/.metadata/version.ini
 back/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log
 back/.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser
@@ -18,7 +18,5 @@ back/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.ind
 back/.metadata/.plugins/org.eclipse.core.resources/.projects/.org.eclipse.egit.core.cmp/.location
 back/.metadata/.log
 back/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
-back/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
-back/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps
-back/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log
-back/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+back/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.core.prefs
+
