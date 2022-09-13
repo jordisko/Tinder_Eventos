@@ -20,31 +20,31 @@ public class Usuario {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
-	@Column(name = "idUsuario")
+	@Column(name = "idusuario")
 	Long idUsuario;
 	
-	@Column(name = "nombreUsuario")
-	Long nombreUsuario;
+	@Column(name = "nombreusuario")
+	String nombreUsuario;
 	
-	@Column(name = "correoElectronico")
-	Long correoElectronico;
+	@Column(name = "correoelectronico")
+	String correoElectronico;
 	
-	@Column(name = "contraseniaUsuario")
-	Long contraseniaUsuario;
+	@Column(name = "contraseniausuario")
+	String contraseniaUsuario;
 	
-	@Column(name = "fotoUsuario")
-	Long fotoUsuario;
+	@Column(name = "fotousuario")
+	String fotoUsuario;
 	
-	@Column(name = "descripcionUsuario")
-	Long descripcionUsuario;
+	@Column(name = "descripcionusuario")
+	String descripcionUsuario;
 	
-	@Column(name = "nombrePersona")
-	Long nombrePersona;
+	@Column(name = "nombrepersona")
+	String nombrePersona;
 	
-	@Column(name = "apellidoPersona")
-	Long apellidoPersona;
+	@Column(name = "apellidopersona")
+	String apellidoPersona;
 	
-	@Column(name = "codigoPostal")
-	Long codigoPostal;
+	@Column(name = "codigopostal")
+	String codigoPostal;
 	
 }

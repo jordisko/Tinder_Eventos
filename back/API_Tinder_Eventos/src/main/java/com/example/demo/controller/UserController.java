@@ -13,7 +13,7 @@ import lombok.extern.java.Log;
 
 @Log
 @RestController
-@RequestMapping(value="/1.0.0")
+@RequestMapping
 public class UserController {
 	@Autowired(required= false)
 	UsuarioService usuarioService;

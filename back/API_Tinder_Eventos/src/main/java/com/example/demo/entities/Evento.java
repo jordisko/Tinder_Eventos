@@ -16,24 +16,24 @@ public class Evento {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 
-	@Column(name = "idEvento")
+	@Column(name = "idevento")
 	Long idEvento;
 	
-	@Column(name = "descripcionEvento")
+	@Column(name = "descripcionevento")
 	Long descripcionEvento;
 	
-	@Column(name = "codigoPostalLocalizacionEvento")
+	@Column(name = "codigopostallocalizacionevento")
 	Long codigoPostalLocalizacionEvento;
 	
-	@Column(name = "personasMaxEvento")
+	@Column(name = "personasmaxevento")
 	Long personasMaxEvento;
 	
-	@Column(name = "fechaEvento")
+	@Column(name = "fechaevento")
 	Long fechaEvento;
 	
-	@Column(name = "direccionLocalizacionEvento")
+	@Column(name = "direccionlocalizacionevento")
 	Long direccionLocalizacionEvento;
 	
-	@Column(name = "numeroLocalizacionEvento")
+	@Column(name = "numerolocalizacionevento")
 	Long numeroLocalizacionEvento;
 }
