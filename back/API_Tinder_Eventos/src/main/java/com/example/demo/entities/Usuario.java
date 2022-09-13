@@ -21,10 +21,10 @@ public class Usuario {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
 	@Column(name = "idUsuario")
-	String idUsuario;
+	Long idUsuario;
 	
 	@Column(name = "nombreUsuario")
-	String nombreUsuario;
+	Long nombreUsuario;
 	
 	@Column(name = "correoElectronico")
 	Long correoElectronico;
