@@ -1,9 +1,11 @@
+@media screen and (max-width: 479px) {
+    
 body{
     
     margin: 0;
 }
 header{
-    
+
     position: fixed;
     width: 100%;
     height: 70px;
@@ -21,7 +23,7 @@ header{
 
 }
 nav{
-   
+    
     height: 70%;
     width: 20%;
     float: right;
@@ -169,12 +171,13 @@ aside{
 #menu{
     background-color: #FFF5E4;
     z-index: -1;
-    width: 100vh;
+    width: 100%;
     height: 100vh;
     position: fixed;
     margin: 0;
+    padding: 0;
     animation-name: ;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
 }
 @keyframes menuOn{
     from{
@@ -197,23 +200,27 @@ aside{
     }
 }
 ul{
+    position:relative;
+    
     height: 50%;
-    width: 33%;
-    margin: 20% 0 0 -1%;
+    width: 80%;
+    padding: 0;
+    margin: 25% 10% 0 10%;
 }
 li{
     list-style: none;
     background-color: rgba(128, 128, 128, 0.32);
-    height: 8%;
-    margin: 15% 0 0 -16%;
-    padding: 5% 0 0 5%;
+    height: 10%;
+    margin: 15% 0 0 0;
+    padding-top: 4%;
+    padding-left: 4%;
     text-align: left;
     font-size: 20px;
 }
 #iniciar2{
     color: #FFF5E4;
-    margin: 0 0 0 -2%;
-    width: 40%;
+    margin: 0 10% 0 10%;
+    width: 80%;
     height: 50px;
     font-size: 20px;
     background-color: #EE6983;
@@ -223,4 +230,246 @@ li{
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+    position: absolute;
+}
+}
+
+@media screen and (max-width: 991px) {
+    body{
+    
+        margin: 0;
+    }
+    header{
+    
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        z-index: 11;
+    }
+    #logo{
+       
+        color: white;
+        margin: 4% 0 0 5%;
+        height: auto;
+        width: 40%;
+        text-align: center;
+        float: left;
+        font-size: 30px;
+    
+    }
+    nav{
+        
+        height: 70%;
+        width: 20%;
+        float: right;
+        margin-top: 4%;
+    }
+    
+    .stick{
+        background-color: white;
+        width: 45%;
+        height: 8%;
+        margin: 10% 22.5% 0 22.5%;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    main{
+    
+        width: 100%;
+        height: 1263px;
+        margin: 0;
+    }
+    section{
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+    }
+    #texto1{
+        color: #FFC4C4;
+        position: relative;
+        width: 70%;
+        height: 10vh;
+        top: 30%;
+        left: 15%;
+        text-align: center;
+        font-size: 35px;
+    }
+    
+    #crear{
+        position: relative;
+        width: 80%;
+        height: 30px;
+        left: 10%;
+        top: 60%    ;
+        text-decoration: none;
+        border:0;
+        border-radius: 20px;
+        font-size: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    
+    #iniciar{
+        color: white;
+        position: relative;
+        width: 80%;
+        height: 30px;
+        left: 10%;
+        font-size: 20px;
+        top: 45%;
+        background-color: rgba(240, 248, 255, 0);
+        border-color: white;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    #opiniones{
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        height: 600px;
+        margin: 0;
+        
+    
+    }
+    
+    #opinion{
+        display: list-item;
+        position: relative;
+    
+        width: 90%;
+        height: 500px;
+        margin-top: 10%;
+        margin-left: 5%;
+        float: left;
+        list-style: none;
+        border: 2px solid;
+        border-color: rgba(128, 128, 128, 0.522);
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+    #titulo{
+        margin: 10% 0 0 10%;
+        width: 80%;
+        height: auto;
+        font-size: 30px;
+        border-bottom: 3px solid;
+        border-color: #850E35;
+        animation-duration: 8s;
+        animation-name: difusion;
+        animation-iteration-count: infinite;
+        
+        
+        
+    }
+    #texto{
+        
+        margin: 10% 0 0 10%;
+        width: 80%;
+        height: auto;
+        font-size: 20px;
+       
+        animation-duration: 8s;
+        animation-name: difusion;
+        animation-iteration-count: infinite;
+        
+    
+    }
+    @keyframes difusion {
+        from{
+            opacity: 100;
+            margin: 10% 0 0 15%;
+        }
+        
+        to{
+            opacity: 0;
+            margin: 10% 0 0 5%;
+        }
+        
+    }
+    aside{
+        background-color: white;
+        width: 100%;
+        height: 100px;
+    }
+    #menu{
+        background-color: #FFF5E4;
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        margin: 0;
+        padding: 0;
+        animation-name: ;
+        animation-duration: 1s;
+    }
+    @keyframes menuOn{
+        from{
+            left: 400px;
+            
+        }
+        to{
+            left: 0px;
+            
+        }
+    }
+    @keyframes menuOff{
+        from{
+            left: -1px;
+            
+        }
+        to{
+            left: 500px;
+           
+        }
+    }
+    ul{
+        position:relative;
+        
+        height: 50%;
+        width: 80%;
+        padding: 0;
+        margin: 25% 10% 0 10%;
+    }
+    li{
+        list-style: none;
+        background-color: rgba(128, 128, 128, 0.32);
+        height: 10%;
+        margin: 15% 0 0 0;
+        padding-top: 4%;
+        padding-left: 4%;
+        text-align: left;
+        font-size: 20px;
+    }
+    #iniciar2{
+        color: #FFF5E4;
+        margin: 0 10% 0 10%;
+        width: 80%;
+        height: 50px;
+        font-size: 20px;
+        background-color: #EE6983;
+        border-color: white;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        position: absolute;
+    }
+}
+@media screen and (min-width: 991px) {
+    body{
+        background-color: pink;
+    }
 }
