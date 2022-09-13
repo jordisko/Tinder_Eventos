@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `baseDatosMeetOut`.`Match` (
   `Eventos_idEvento` INT NOT NULL,
   `estadoMatch` VARCHAR(12) NOT NULL DEFAULT 'pendiente',
   `estadoEvento` VARCHAR(12) NULL,
-  PRIMARY KEY (`Usuarios_idUsuario`, `Eventos_idEvento`,`idMatch`),
+  PRIMARY KEY (`idMatch`),
   CONSTRAINT `fk_Match_Usuarios`
     FOREIGN KEY (`Usuarios_idUsuario`)
     REFERENCES `baseDatosMeetOut`.`Usuarios` (`idUsuario`)
@@ -50,6 +50,12 @@ CREATE TABLE IF NOT EXISTS `baseDatosMeetOut`.`Match` (
     REFERENCES `baseDatosMeetOut`.`Eventos` (`idEvento`)
     ON DELETE NO ACTION
     ON UPDATE cascade);
+
+INSERT iNTO basedatosmeetout.usuarios(nombreUsuario, correoElectronico, contraseniaUsuario, fotoUsuario, descripcionUsuario, nombrePersona, apellidoPersona, codigoPostal)
+VALUES
+('jordisko','jfosdk@gmail.com','122312','djlfajosjpg','hola muy buenas', 'jordi', 'campos', '08031');
+
+SELECT * from basedatosmeetout.usuarios;
     
 
 
