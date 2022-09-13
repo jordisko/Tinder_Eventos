@@ -1,6 +1,5 @@
 div.formulario{
-    margin-top: 70px;
-    width: autopx;
+    width: auto;
     height: max-content;
 
     text-align: center;
@@ -8,29 +7,33 @@ div.formulario{
 
 label{
     text-align: center;
-    margin-top: 50px;
+
     color: 8EDF34;
     font-weight: normal;
     font-size: 19px;
 
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0%;
-    overflow: hidden;
-    background-color: bisque;
-    position: fixed;
-    bottom: 0;
-    
-  }
+
   .menu {
  
   text-align: center;
     margin-left: 5px;
     
     
+  }
+  
+ 
+  
+  .inicio{
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
   }
   
   li {
@@ -41,15 +44,10 @@ ul {
     display: block;
     color: white;
     text-align: center;
-    padding: 10px 45px;
+    padding: 14px 16px;
     text-decoration: none;
   }
   
-  li a:hover:not(.active) {
+  li a:hover {
     background-color: #111;
-  }
-  
-  .inicio{
-    text-align: center;
-    margin-top: 40%;
   }

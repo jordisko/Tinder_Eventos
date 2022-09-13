@@ -1,10 +1,4 @@
-div.formulario{
-    margin-top: 70px;
-    width: autopx;
-    height: max-content;
 
-    text-align: center;
-}
 
 label{
     text-align: center;
@@ -15,40 +9,8 @@ label{
 
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0%;
-    overflow: hidden;
-    background-color: bisque;
-    position: fixed;
-    bottom: 0;
-    
-  }
-  .menu {
+
  
-  text-align: center;
-    margin-left: 5px;
-    
-    
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 10px 45px;
-    text-decoration: none;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: #111;
-  }
-  
   
 button{
     margin-top: 30px;
@@ -58,4 +20,50 @@ button{
 }
 .centrar{
     text-align: center;
+}
+image {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 105%;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
+  z-index: -2;
+}
+.formulario{
+  text-align: center;
+  border-radius: 12px;
+  backdrop-filter: blur(0px) saturate(124%);
+  -webkit-backdrop-filter: blur(0px) saturate(124%);
+
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+div{
+    width: autopx;
+  height: max-content;
+
+  text-align: center;
 }
