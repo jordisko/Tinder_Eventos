@@ -24,6 +24,7 @@ var menu = document.getElementById("menu");
 
 var logo = document.getElementById("logo");
 var stick = document.getElementsByClassName("stick");
+
 //------------------------------------------------------------- Funciones/estados--------------------------
 
 
@@ -36,23 +37,29 @@ var stick = document.getElementsByClassName("stick");
         nPosition ++;
         
         titulo.innerHTML = nombres[nPosition];
-    },7950)
+    },7980)
 
 
     // estado para cambiar el menu
 
 function clickMenu(){
     if (estadoMenu == false) {
+        menu.style.zIndex = -1;
         estadoMenu = true;
-        menu.style.zIndex = -10;
         logo.style.color = "white";
-        
+        for (let index = 0; index < stick.length; index++) {
+            stick[index].style.backgroundColor = "white";
+        }
+        menu.style.animationName = "menuOff";      
     }
     else{
         estadoMenu = false;
         menu.style.zIndex = 10;
-        logo.style.color = "black";
-        stick.style
+        logo.style.color = "#850E35";
+        for (let index = 0; index < stick.length; index++) {
+            stick[index].style.backgroundColor = "black";   
+        }
+        menu.style.animationName = "menuOn";
     }
     
  }

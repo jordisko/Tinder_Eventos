@@ -3,39 +3,57 @@ body{
     margin: 0;
 }
 header{
-    background-color: greenyellow;
+    
+    position: fixed;
     width: 100%;
-    height: 50px;
+    height: 70px;
+    z-index: 11;
 }
 #logo{
-    background-color: blueviolet;
-    height: 100%;
-    width: 20%;
+   
+    color: white;
+    margin: 4% 0 0 5%;
+    height: auto;
+    width: 40%;
     text-align: center;
     float: left;
+    font-size: 30px;
 
 }
 nav{
-    background-color: brown;
-    height: 100%;
+   
+    height: 70%;
     width: 20%;
-   float: right;
+    float: right;
+    margin-top: 4%;
+}
+
+.stick{
+    background-color: white;
+    width: 45%;
+    height: 8%;
+    margin: 10% 22.5% 0 22.5%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 main{
-    background-color: aqua;
+
     width: 100%;
     height: 1263px;
     margin: 0;
 }
 section{
-    background-color: blue;
+    background-color: black;
     width: 100%;
     height: 100vh;
     margin: 0;
 }
 #texto1{
+    color: #FFC4C4;
     position: relative;
-    background-color: greenyellow;
     width: 70%;
     height: 10vh;
     top: 30%;
@@ -59,7 +77,9 @@ section{
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
+
 #iniciar{
+    color: white;
     position: relative;
     width: 80%;
     height: 30px;
@@ -76,7 +96,7 @@ section{
 }
 #opiniones{
     position: absolute;
-    background-color: green;
+    background-color: white;
     width: 100%;
     height: 600px;
     margin: 0;
@@ -87,7 +107,7 @@ section{
 #opinion{
     display: list-item;
     position: relative;
-    background-color: green;
+
     width: 90%;
     height: 500px;
     margin-top: 10%;
@@ -95,7 +115,7 @@ section{
     float: left;
     list-style: none;
     border: 2px solid;
-    border-color: rgb(1, 75, 1);
+    border-color: rgba(128, 128, 128, 0.522);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -108,37 +128,36 @@ section{
     height: auto;
     font-size: 30px;
     border-bottom: 3px solid;
-    border-color: gray;
-    animation-delay: 2s;
-    animation-duration: 6s;
+    border-color: #850E35;
+    animation-duration: 8s;
     animation-name: difusion;
     animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+    
     
     
 }
 #texto{
-    background-color: coral;
+    
     margin: 10% 0 0 10%;
     width: 80%;
     height: auto;
     font-size: 20px;
-    animation-delay: 2s;
-    animation-duration: 6s;
+   
+    animation-duration: 8s;
     animation-name: difusion;
     animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+    
 
 }
 @keyframes difusion {
     from{
         opacity: 100;
-        margin: 10% 0 0 10%;
+        margin: 10% 0 0 15%;
     }
     
     to{
         opacity: 0;
-        margin: 10% 0 0 0;
+        margin: 10% 0 0 5%;
     }
     
 }
@@ -146,4 +165,62 @@ aside{
     background-color: white;
     width: 100%;
     height: 100px;
+}
+#menu{
+    background-color: #FFF5E4;
+    z-index: -1;
+    width: 100vh;
+    height: 100vh;
+    position: fixed;
+    margin: 0;
+    animation-name: ;
+    animation-duration: 1.5s;
+}
+@keyframes menuOn{
+    from{
+        left: 400px;
+        
+    }
+    to{
+        left: 0px;
+        
+    }
+}
+@keyframes menuOff{
+    from{
+        left: -1px;
+        
+    }
+    to{
+        left: 500px;
+       
+    }
+}
+ul{
+    height: 50%;
+    width: 33%;
+    margin: 20% 0 0 -1%;
+}
+li{
+    list-style: none;
+    background-color: rgba(128, 128, 128, 0.32);
+    height: 8%;
+    margin: 15% 0 0 -16%;
+    padding: 5% 0 0 5%;
+    text-align: left;
+    font-size: 20px;
+}
+#iniciar2{
+    color: #FFF5E4;
+    margin: 0 0 0 -2%;
+    width: 40%;
+    height: 50px;
+    font-size: 20px;
+    background-color: #EE6983;
+    border-color: white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
