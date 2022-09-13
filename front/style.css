@@ -42,7 +42,7 @@ nav{
     -o-border-radius: 20px;
 }
 main{
-
+    clear: both;
     width: 100%;
     height: 1263px;
     margin: 0;
@@ -163,11 +163,7 @@ section{
     }
     
 }
-aside{
-    background-color: white;
-    width: 100%;
-    height: 100px;
-}
+
 #menu{
     background-color: #FFF5E4;
     z-index: -1;
@@ -199,7 +195,7 @@ aside{
        
     }
 }
-ul{
+#ulMenu{
     position:relative;
     
     height: 50%;
@@ -207,7 +203,7 @@ ul{
     padding: 0;
     margin: 25% 10% 0 10%;
 }
-li{
+.liMenu{
     list-style: none;
     background-color: rgba(128, 128, 128, 0.32);
     height: 10%;
@@ -232,42 +228,89 @@ li{
     -o-border-radius: 20px;
     position: absolute;
 }
+
+aside{
+    border-top: 3px solid;
+    border-color: rgba(0, 0, 0, 0.377);
+    background-color: white;
+    height: 140px;
+    width: 100%;
+    clear: both;
+    margin: 0;
+   
+    
+}
+#logo2{
+    color: #850E35;
+    
+    margin: 10% 0 0 10%;
+    padding: 0;
+    float: left;
+    font-size: 30px;
+}
+#redes{
+    
+    margin: 0;
+    padding: 0;
+    float: right;
+    position: relative;
+    right: 15%;
+    top: 15%;
+
+}
+#ulAside{
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    position: relative;
+    left: 45%;
+    top: -15%;
+    list-style: none;
 }
 
-@media screen and (max-width: 991px) {
+.icono{
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-left: 5%;
+}
+}
+@media screen and (min-width: 480px) {
     body{
-    
         margin: 0;
     }
     header{
-    
         position: fixed;
         width: 100%;
-        height: 70px;
+        height: 10%;
         z-index: 11;
+        padding: 0;
     }
     #logo{
        
         color: white;
         margin: 4% 0 0 5%;
         height: auto;
-        width: 40%;
+        width: auto;
         text-align: center;
         float: left;
-        font-size: 30px;
+        font-size: 50px;
     
     }
     nav{
         
         height: 70%;
-        width: 20%;
+        width: 15%;
         float: right;
         margin-top: 4%;
+        margin-right: 3%;
     }
     
     .stick{
         background-color: white;
-        width: 45%;
+        width: 40%;
         height: 8%;
         margin: 10% 22.5% 0 22.5%;
         border-radius: 20px;
@@ -293,7 +336,7 @@ li{
         position: relative;
         width: 70%;
         height: 10vh;
-        top: 30%;
+        top: 50%;
         left: 15%;
         text-align: center;
         font-size: 35px;
@@ -302,9 +345,9 @@ li{
     #crear{
         position: relative;
         width: 80%;
-        height: 30px;
+        height: 50px;
         left: 10%;
-        top: 60%    ;
+        top: 70%    ;
         text-decoration: none;
         border:0;
         border-radius: 20px;
@@ -319,10 +362,10 @@ li{
         color: white;
         position: relative;
         width: 80%;
-        height: 30px;
+        height: 50px;
         left: 10%;
         font-size: 20px;
-        top: 45%;
+        top: 50%;
         background-color: rgba(240, 248, 255, 0);
         border-color: white;
         border-radius: 20px;
@@ -396,7 +439,7 @@ li{
             opacity: 0;
             margin: 10% 0 0 5%;
         }
-        
+
     }
     aside{
         background-color: white;
@@ -434,7 +477,7 @@ li{
            
         }
     }
-    ul{
+    #ulMenu{
         position:relative;
         
         height: 50%;
@@ -442,7 +485,7 @@ li{
         padding: 0;
         margin: 25% 10% 0 10%;
     }
-    li{
+    .liMenu{
         list-style: none;
         background-color: rgba(128, 128, 128, 0.32);
         height: 10%;
@@ -467,9 +510,52 @@ li{
         -o-border-radius: 20px;
         position: absolute;
     }
-}
-@media screen and (min-width: 991px) {
-    body{
-        background-color: pink;
+    
+    aside{
+        border-top: 3px solid;
+        border-color: rgba(0, 0, 0, 0.377);
+        background-color: white;
+        height: 140px;
+        width: 100%;
+        top: 220px;
+        margin: 0;
+        position:  relative;
+        clear: both;
+    }
+    #logo2{
+        color: #850E35;
+        
+        margin: 10% 0 0 10%;
+        padding: 0;
+        float: left;
+        font-size: 30px;
+    }
+    #redes{
+        
+        margin: 0;
+        padding: 0;
+        float: right;
+        position: relative;
+        right: 15%;
+        top: 15%;
+    
+    }
+    #ulAside{
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        position: relative;
+        left: 45%;
+        top: -15%;
+        list-style: none;
+    }
+    
+    .icono{
+        background-color: green;
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin-left: 5%;
     }
 }
