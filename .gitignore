@@ -1,3 +1,4 @@
+back/.metadata
 back/.metadata/
 back/.metadata/version.ini
 back/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log
@@ -20,3 +21,9 @@ back/.metadata/.log
 back/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
 back/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.core.prefs
 
+back/.metadata/.log
+back/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index
+back/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
+back/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat
+back/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml
+back/.metadata/version.ini
