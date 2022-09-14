@@ -19,7 +19,7 @@ public class Evento {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 
 	@Column(name = "idevento")
-	int idEvento;
+	Long idEvento;
 	
 	@Column(name = "descripcionevento")
 	String descripcionEvento;
