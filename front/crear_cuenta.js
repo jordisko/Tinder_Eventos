@@ -13,7 +13,7 @@
 //   console.log("todo correcto")
 // }
 function cuentacrear(){
-  document.location.href = "inicio.html"
+  document.location.href = "pagina_principal.html"
 
   }
 
