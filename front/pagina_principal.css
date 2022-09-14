@@ -15,14 +15,7 @@ label{
 }
 
 
-  .menu {
- 
-  text-align: center;
-    margin-left: 5px;
-    
-    
-  }
-  
+
  
   
   .inicio{
@@ -30,10 +23,12 @@ label{
   }
   ul {
     list-style-type: none;
-    margin: 0;
+    margin: -13px;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: green;
+    z-index: -10;
+  
   }
   
   li {
@@ -44,10 +39,11 @@ label{
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 22px;
     text-decoration: none;
   }
   
   li a:hover {
     background-color: #111;
   }
+ 

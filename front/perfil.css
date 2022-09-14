@@ -40,10 +40,12 @@ image {
 }
 ul {
   list-style-type: none;
-  margin: 0;
+  margin: -13px;
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  z-index: -10;
+
 }
 
 li {

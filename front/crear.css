@@ -2,7 +2,6 @@
 
 label{
     text-align: center;
-    margin-top: 50px;
     color: 8EDF34;
     font-weight: normal;
     font-size: 19px;
@@ -15,7 +14,7 @@ label{
     border: 2px solid black;
   }
 
-  video {
+  img {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -25,12 +24,23 @@ label{
     z-index: -2;
   }
 .formulario{
-   margin-top: 10%;
+   margin-top: 12%;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.32);
     border-radius: 12px;
-    backdrop-filter: blur(0px) saturate(124%);
-    -webkit-backdrop-filter: blur(0px) saturate(124%);
+    backdrop-filter: blur(0px) saturate(110%);
+    -webkit-backdrop-filter: blur(0px) saturate(150%);
+position: absolute;
+width: 680px;
+left: 25%;
+}
 
-
+.datos{
+position: relative;
+right:15% ;
+}
+.datos2{
+position: absolute;
+left: 49%;
+top: 12%;
 }
