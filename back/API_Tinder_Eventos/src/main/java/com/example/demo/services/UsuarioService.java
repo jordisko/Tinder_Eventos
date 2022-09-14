@@ -1,4 +1,4 @@
-package com.jpa.services;
+package com.example.demo.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.jpa.entities.Usuario;
-import com.jpa.repository.UsuarioRepository;
+import com.example.demo.entities.Usuario;
+import com.example.demo.repository.UsuarioRepository;
 
 @Service
 public class UsuarioService {

@@ -1,4 +1,4 @@
-package com.jpa.entities;
+package com.example.demo.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -16,19 +16,19 @@ public class Match {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
-	@Column(name = "IdMatch")
+	@Column(name = "Idmatch")
 	Long idMatch;
 	
-	@Column(name = "Usuarios_idUsuario")
+	@Column(name = "Usuarios_idusuario")
 	Long usuarios_idUsuario;
 	
-	@Column(name = "Eventos_idEvento")
+	@Column(name = "Eventos_idevento")
 	Long eventos_idEvento;
 	
-	@Column(name = "estadoMatch")
+	@Column(name = "estadomatch")
 	Long estadoMatch;
 	
-	@Column(name = "estadoEvento")
+	@Column(name = "estadoevento")
 	Long estadoEvento;
 
 }

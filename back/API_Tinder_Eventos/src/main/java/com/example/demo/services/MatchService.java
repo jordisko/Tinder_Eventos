@@ -1,4 +1,4 @@
-package com.jpa.services;
+package com.example.demo.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.jpa.entities.Match;
-import com.jpa.repository.MatchRepository;
+import com.example.demo.entities.Match;
+import com.example.demo.repository.MatchRepository;
 
 @Service
 public class MatchService {

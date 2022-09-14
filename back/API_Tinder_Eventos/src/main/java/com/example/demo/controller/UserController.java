@@ -1,19 +1,20 @@
-package com.jpa.entities.controller;
+package com.example.demo.controller;
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.jpa.entities.Usuario;
-import com.jpa.services.UsuarioService;
+import com.example.demo.entities.Usuario;
+import com.example.demo.services.UsuarioService;
 
 import lombok.extern.java.Log;
 
 @Log
 @RestController
 @RequestMapping
-public class LoginController {
+public class UserController {
 	@Autowired(required= false)
 	UsuarioService usuarioService;
 	
