@@ -13,12 +13,11 @@ import lombok.extern.java.Log;
 
 @Log
 @RestController
-@RequestMapping
-public class UserController {
+public class UsuarioController {
 	@Autowired(required= false)
 	UsuarioService usuarioService;
 	
-	@RequestMapping(value = "/usuarios")
+	@RequestMapping(path = "/usuarios")
 	public List<Usuario> getUsuarios() {
 		log.info("Request a http://localhost:PORT/api/usuarios(GET)");
 		return usuarioService.findAllUsuarios();
