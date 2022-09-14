@@ -1,11 +1,10 @@
 @media screen and (max-width: 479px) {
     
 body{
-    
     margin: 0;
+    
 }
 header{
-
     position: fixed;
     width: 100%;
     height: 70px;
@@ -44,8 +43,9 @@ nav{
 main{
     clear: both;
     width: 100%;
-    height: 1263px;
+    height: 40%;
     margin: 0;
+    
 }
 section{
     background-color: black;
@@ -233,11 +233,12 @@ aside{
     border-top: 3px solid;
     border-color: rgba(0, 0, 0, 0.377);
     background-color: white;
-    height: 140px;
+    height: 150px;
     width: 100%;
     clear: both;
     margin: 0;
-   
+    position: relative;
+    top: 600px;
     
 }
 #logo2{
@@ -280,13 +281,14 @@ aside{
 @media screen and (min-width: 480px) {
     body{
         margin: 0;
+        
     }
     header{
         position: fixed;
         width: 100%;
-        height: 10%;
+        height: 120px;
         z-index: 11;
-        padding: 0;
+        
     }
     #logo{
        
@@ -302,7 +304,7 @@ aside{
     nav{
         
         height: 70%;
-        width: 15%;
+        width: 10%;
         float: right;
         margin-top: 4%;
         margin-right: 3%;
@@ -310,7 +312,7 @@ aside{
     
     .stick{
         background-color: white;
-        width: 40%;
+        width: 45%;
         height: 8%;
         margin: 10% 22.5% 0 22.5%;
         border-radius: 20px;
@@ -320,10 +322,11 @@ aside{
         -o-border-radius: 20px;
     }
     main{
-    
+        clear: both;
         width: 100%;
-        height: 1263px;
+        height: auto;
         margin: 0;
+        
     }
     section{
         background-color: black;
@@ -336,10 +339,10 @@ aside{
         position: relative;
         width: 70%;
         height: 10vh;
-        top: 50%;
+        top: 30%;
         left: 15%;
         text-align: center;
-        font-size: 35px;
+        font-size: 50px;
     }
     
     #crear{
@@ -347,15 +350,16 @@ aside{
         width: 80%;
         height: 50px;
         left: 10%;
-        top: 70%    ;
+        top: 55%    ;
         text-decoration: none;
         border:0;
         border-radius: 20px;
-        font-size: 20px;
+        font-size: 30px;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
         -ms-border-radius: 20px;
         -o-border-radius: 20px;
+        margin-top: 5%;
     }
     
     #iniciar{
@@ -364,8 +368,8 @@ aside{
         width: 80%;
         height: 50px;
         left: 10%;
-        font-size: 20px;
-        top: 50%;
+        font-size: 30px;
+        top: 35%;
         background-color: rgba(240, 248, 255, 0);
         border-color: white;
         border-radius: 20px;
@@ -373,12 +377,13 @@ aside{
         -moz-border-radius: 20px;
         -ms-border-radius: 20px;
         -o-border-radius: 20px;
+        margin-top:1%;
     }
     #opiniones{
         position: absolute;
         background-color: white;
         width: 100%;
-        height: 600px;
+        height: 800px;
         margin: 0;
         
     
@@ -406,7 +411,7 @@ aside{
         margin: 10% 0 0 10%;
         width: 80%;
         height: auto;
-        font-size: 30px;
+        font-size: 50px;
         border-bottom: 3px solid;
         border-color: #850E35;
         animation-duration: 8s;
@@ -421,8 +426,7 @@ aside{
         margin: 10% 0 0 10%;
         width: 80%;
         height: auto;
-        font-size: 20px;
-       
+        font-size: 30px;
         animation-duration: 8s;
         animation-name: difusion;
         animation-iteration-count: infinite;
@@ -439,13 +443,9 @@ aside{
             opacity: 0;
             margin: 10% 0 0 5%;
         }
-
+        
     }
-    aside{
-        background-color: white;
-        width: 100%;
-        height: 100px;
-    }
+    
     #menu{
         background-color: #FFF5E4;
         z-index: -1;
@@ -479,7 +479,6 @@ aside{
     }
     #ulMenu{
         position:relative;
-        
         height: 50%;
         width: 80%;
         padding: 0;
@@ -489,46 +488,43 @@ aside{
         list-style: none;
         background-color: rgba(128, 128, 128, 0.32);
         height: 10%;
-        margin: 15% 0 0 0;
+        margin: 5% 0 0 0;
         padding-top: 4%;
         padding-left: 4%;
         text-align: left;
-        font-size: 20px;
+        font-size: 30px;
     }
     #iniciar2{
         color: #FFF5E4;
         margin: 0 10% 0 10%;
         width: 80%;
-        height: 50px;
-        font-size: 20px;
+        height: 70px;
+        font-size: 40px;
         background-color: #EE6983;
         border-color: white;
         border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
+        
         position: absolute;
-    }
+}
     
     aside{
         border-top: 3px solid;
         border-color: rgba(0, 0, 0, 0.377);
         background-color: white;
-        height: 140px;
+        height: 150px;
         width: 100%;
-        top: 220px;
-        margin: 0;
-        position:  relative;
         clear: both;
+        margin: 0;
+        position: relative;
+        top: 700px;
+        
     }
     #logo2{
         color: #850E35;
-        
-        margin: 10% 0 0 10%;
+        margin: 5% 0 0 10%;
         padding: 0;
         float: left;
-        font-size: 30px;
+        font-size: 50px;
     }
     #redes{
         
@@ -536,23 +532,315 @@ aside{
         padding: 0;
         float: right;
         position: relative;
-        right: 15%;
-        top: 15%;
+        right: 5%;
+        top: 50%;
+        font-size: 20px;
     
-    }
+    }   
     #ulAside{
         width: 50%;
         margin: 0;
         padding: 0;
         clear: both;
-        position: relative;
+        position: absolute;
+        top: 40%;
         left: 45%;
-        top: -15%;
         list-style: none;
     }
     
     .icono{
         background-color: green;
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin-left: 5%;
+    }
+}
+@media screen and (min-width: 991px) {
+    body{
+        margin: 0;
+        
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        height: 120px;
+        z-index: 11;
+        
+    }
+    #logo{
+       
+        color: white;
+        margin: 4% 0 0 5%;
+        height: auto;
+        width: auto;
+        text-align: center;
+        float: left;
+        font-size: 50px;
+    
+    }
+    nav{
+        
+        height: 70%;
+        width: 10%;
+        float: right;
+        margin-top: 4%;
+        margin-right: 3%;
+    }
+    
+    .stick{
+        background-color: white;
+        width: 45%;
+        height: 8%;
+        margin: 10% 22.5% 0 22.5%;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    main{
+        clear: both;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        
+    }
+    section{
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+    }
+    #texto1{
+        color: #FFC4C4;
+        position: relative;
+        width: 70%;
+        height: 10vh;
+        top: 30%;
+        left: 15%;
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    #crear{
+        position: relative;
+        width: 80%;
+        height: 50px;
+        left: 10%;
+        top: 55%    ;
+        text-decoration: none;
+        border:0;
+        border-radius: 20px;
+        font-size: 30px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        margin-top: 5%;
+    }
+    
+    #iniciar{
+        color: white;
+        position: relative;
+        width: 80%;
+        height: 50px;
+        left: 10%;
+        font-size: 30px;
+        top: 35%;
+        background-color: rgba(240, 248, 255, 0);
+        border-color: white;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        margin-top:1%;
+    }
+    #iniciar:hover{
+        animation-name: boton;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes boton{
+        to{
+            background-color: pink;
+        }
+        from{
+            background-color: green;
+        }
+    }
+    #opiniones{
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        height: 800px;
+        margin: 0;
+        
+    
+    }
+    
+    #opinion{
+        display: list-item;
+        position: relative;
+    
+        width: 90%;
+        height: 500px;
+        margin-top: 10%;
+        margin-left: 5%;
+        float: left;
+        list-style: none;
+        border: 2px solid;
+        border-color: rgba(128, 128, 128, 0.522);
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+    #titulo{
+       
+       
+        width: 80%;
+        height: auto;
+        font-size: 50px;
+        border-bottom: 3px solid;
+        border-color: #850E35;
+        animation-duration: 8s;
+        animation-name: difusion;
+        animation-iteration-count: infinite;
+        
+        
+        
+    }
+    #texto{
+        
+        width: 80%;
+        height: auto;
+        font-size: 30px;
+        animation-duration: 8s;
+        animation-name: difusion;
+        animation-iteration-count: infinite;
+        
+    
+    }
+    @keyframes difusion {
+        from{
+            opacity: 100;
+            margin: 5% 0 0 15%;
+        }
+        
+        to{
+            opacity: 0;
+            margin: 5% 0 0 5%;
+        }
+        
+    }
+    
+    #menu{
+        background-color: #FFF5E4;
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        margin: 0;
+        padding: 0;
+        animation-name: ;
+        animation-duration: 1s;
+    }
+    @keyframes menuOn{
+        from{
+            left: 400px;
+            
+        }
+        to{
+            left: 0px;
+            
+        }
+    }
+    @keyframes menuOff{
+        from{
+            left: -1px;
+            
+        }
+        to{
+            left: 500px;
+           
+        }
+    }
+    #ulMenu{
+        position:relative;
+        height: 50%;
+        width: 80%;
+        padding: 0;
+        margin: 15% 10% 0 10%;
+    }
+    .liMenu{
+        list-style: none;
+        background-color: rgba(128, 128, 128, 0.32);
+        height: 10%;
+        margin: 5% 0 0 0;
+        padding-top: 2%;
+        padding-left: 4%;
+        text-align: left;
+        font-size: 30px;
+    }
+    #iniciar2{
+        color: #FFF5E4;
+        margin: 0 10% 0 10%;
+        width: 80%;
+        height: 70px;
+        font-size: 40px;
+        background-color: #EE6983;
+        border-color: white;
+        border-radius: 20px;
+        top : 85%;
+        position: absolute;
+}
+    
+    aside{
+        border-top: 3px solid;
+        border-color: rgba(0, 0, 0, 0.377);
+        background-color: white;
+        height: 150px;
+        width: 100%;
+        clear: both;
+        margin: 0;
+        position: relative;
+        top: 700px;
+        
+    }
+    #logo2{
+        color: #850E35;
+        margin: 3% 0 0 10%;
+        padding: 0;
+        float: left;
+        font-size: 50px;
+    }
+    #redes{
+        
+        margin: 0;
+        padding: 0;
+        float: right;
+        position: relative;
+        right: 5%;
+        top: 40%;
+        font-size: 20px;
+    
+    }   
+    #ulAside{
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        position: absolute;
+        top: 30%;
+        left: 45%;
+        list-style: none;
+    }
+    
+    .icono{
+        background-color: blue;
         width: 50px;
         height: 50px;
         float: left;
