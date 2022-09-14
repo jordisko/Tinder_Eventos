@@ -1,0 +1,49 @@
+div.formulario{
+    width: auto;
+    height: max-content;
+
+    text-align: center;
+}
+
+label{
+    text-align: center;
+
+    color: 8EDF34;
+    font-weight: normal;
+    font-size: 19px;
+
+}
+
+
+
+ 
+  
+  .inicio{
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+    margin: -13px;
+    padding: 0;
+    overflow: hidden;
+    background-color: green;
+    z-index: -10;
+  
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 22px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+ 
