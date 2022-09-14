@@ -18,9 +18,7 @@ button{
     margin-left: 10px;
 
 }
-.centrar{
-    text-align: center;
-}
+
 image {
   position: fixed;
   right: 0;
@@ -32,11 +30,14 @@ image {
 }
 .formulario{
   text-align: center;
-  border-radius: 12px;
-  backdrop-filter: blur(0px) saturate(124%);
-  -webkit-backdrop-filter: blur(0px) saturate(124%);
-
-
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 12px;
+    backdrop-filter: blur(0px) saturate(110%);
+    -webkit-backdrop-filter: blur(0px) saturate(150%);
+    position: absolute;
+    left: 25%;
+    top: 15%;
+    width: 680px;
 }
 ul {
   list-style-type: none;
@@ -63,9 +64,13 @@ li a {
 li a:hover {
   background-color: #111;
 }
-div{
-    width: autopx;
-  height: max-content;
 
-  text-align: center;
+.fondo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 105%;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
+  z-index: -2;
 }

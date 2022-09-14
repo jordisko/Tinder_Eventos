@@ -1,7 +1,7 @@
 .bodyevent{
     margin-top: 90px;
     position: absolute;
-    width: 350px;
+    width: 680px;
     
     height: max-content;
 
@@ -12,7 +12,7 @@
     -webkit-backdrop-filter: blur(0px) saturate(150%);
     left: auto;
     right: auto;
-    left: 37%;
+    left: 25%;
 
 }
 img {
