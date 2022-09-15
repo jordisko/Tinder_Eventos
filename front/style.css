@@ -278,7 +278,9 @@ aside{
     margin-left: 5%;
 }
 }
-@media screen and (min-width: 480px) {
+
+/*-------------------------------Resolution tablet--------------------------*/
+@media screen and (min-width: 480px) and(xºmax-width: 990) {
     body{
         margin: 0;
         
@@ -556,6 +558,8 @@ aside{
         margin-left: 5%;
     }
 }
+
+/*---------------------------------Resolution Computer----------------*/
 @media screen and (min-width: 991px) {
     body{
         margin: 0;
@@ -579,26 +583,7 @@ aside{
         font-size: 50px;
     
     }
-    nav{
-        
-        height: 70%;
-        width: 10%;
-        float: right;
-        margin-top: 4%;
-        margin-right: 3%;
-    }
     
-    .stick{
-        background-color: white;
-        width: 45%;
-        height: 8%;
-        margin: 10% 22.5% 0 22.5%;
-        border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
-    }
     main{
         clear: both;
         width: 100%;
@@ -657,19 +642,8 @@ aside{
         -o-border-radius: 20px;
         margin-top:1%;
     }
-    #iniciar:hover{
-        animation-name: boton;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-    }
-    @keyframes boton{
-        to{
-            background-color: pink;
-        }
-        from{
-            background-color: green;
-        }
-    }
+    
+   
     #opiniones{
         position: absolute;
         background-color: white;
@@ -700,7 +674,6 @@ aside{
     }
     #titulo{
        
-       
         width: 80%;
         height: auto;
         font-size: 50px;
@@ -709,8 +682,6 @@ aside{
         animation-duration: 8s;
         animation-name: difusion;
         animation-iteration-count: infinite;
-        
-        
         
     }
     #texto{
@@ -721,10 +692,10 @@ aside{
         animation-duration: 8s;
         animation-name: difusion;
         animation-iteration-count: infinite;
-        
     
     }
     @keyframes difusion {
+2220   
         from{
             opacity: 100;
             margin: 5% 0 0 15%;
