@@ -12,18 +12,18 @@
 // if(todocorrecto==true){
 //   console.log("todo correcto")
 // }
-function cuentacrear(){
-  document.location.href = "pagina_principal.html"
+// function cuentacrear(){
+//   document.location.href = "pagina_principal.html"
 
-  }
+//   }
 
 //   var nombre =document.getElementById('usuario')
 // eror.style.color ='red'
-// // function cuentacrear(){
-// //   var mensaje = []
-// //   if (nombre.value === null || nombre.value === '') {
-// //     mensaje.push('error')
-// //   } else {
-// //     document.location.href = "inicio.html"
-// //   }
-// //   }
+// function cuentacrear(){
+//   var mensaje = []
+//   if (nombre.value === null || nombre.value === '') {
+//     mensaje.push('error')
+//   } else {
+//     document.location.href = "inicio.html"
+//   }
+//   } 
