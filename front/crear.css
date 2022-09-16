@@ -24,7 +24,7 @@ label{
     z-index: -2;
   }
 .formulario{
-   margin-top: 12%;
+   margin-top: 4%;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 12px;
@@ -42,5 +42,14 @@ right:15% ;
 .datos2{
 position: absolute;
 left: 49%;
-top: 12%;
+top: 7.7%;
+}
+.imagen{
+  position: relative;
+left:10% ;
+
+}
+.imgsubir{
+  width: 1%;
+  height: 5%;
 }
