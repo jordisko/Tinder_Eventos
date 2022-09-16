@@ -6,7 +6,7 @@
     height: max-content;
 
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.32);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 12px;
     backdrop-filter: blur(0px) saturate(110%);
     -webkit-backdrop-filter: blur(0px) saturate(150%);
@@ -24,3 +24,34 @@ img {
     transform: translateX(calc((100% - 100vw) / 2));
     z-index: -2;
   }
+  .evento{
+    position: relative;
+    right:15% ;
+    }
+    .evento2{
+    position: absolute;
+    left: 53%;
+    top:6.6%;
+    }
+    .evento3{
+        position: absolute;
+        left: 53%;
+        top:14.5%;  
+    }
+    
+
+    .evento4{
+        position: absolute;
+        left: 53%;
+        top:21.9%;  
+    }
+    .evento5{
+        position: absolute;
+        left: 53%;
+        top:29.9%;  
+    }
+    .evento6{
+        position: absolute;
+        left: 53%;
+        top:37.9%;  
+    }

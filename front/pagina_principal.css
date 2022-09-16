@@ -23,7 +23,7 @@ label{
   
   .inicio{
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.32);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 12px;
     backdrop-filter: blur(0px) saturate(110%);
     -webkit-backdrop-filter: blur(0px) saturate(150%);
@@ -50,7 +50,7 @@ label{
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 22px;
+    padding: 14px 16px;
     text-decoration: none;
   }
   
