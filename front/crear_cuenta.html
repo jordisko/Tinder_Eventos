@@ -15,7 +15,6 @@
         <img src="https://images.pexels.com/photos/382297/pexels-photo-382297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
         <div>
     <div class="formulario">
-        <form id="from" action="/front/pagina_principal.html"  method="post">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" ></script>
         <script src="./crear_cuenta.js"></script>
       
@@ -72,11 +71,24 @@
                 <br/>
 
             </div>
+            <br>
+            
+            <label for="descripcion">Descripción:</label></p>
+            <textarea id="descripcion" name="descripcion"  rows="4" cols="40"> </textarea>
+            <br>
+            <br>
+       <div class="imagen">
+       <label for="Subir_imagen">Subir Imagen:</label>
+
+       <img id="img1" class="imgsubir">
+       <input id="inputFile1" type="file">
        <br>
+       <br>
+    </div>
         <button onclick="cuentacrear()" id="cuentacrear" form="from" >Crear cuenta</button>
 <br>
 <br>        
-    </form>
+    
 
         <div>
 </body>
