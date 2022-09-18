@@ -1,3 +1,17 @@
+@font-face {
+    
+    font-family:texto;
+    src: url(fuentes/Texto.ttf);
+    
+}
+@font-face {
+    font-family:logo;
+    src: url(fuentes/Logo.ttf);
+}
+@font-face {
+    font-family:texto2;
+    src: url(fuentes/texto2.ttf);
+}
 @media screen and (max-width: 479px) {
     
 body{
@@ -12,14 +26,14 @@ header{
 }
 #logo{
    
-    color: white;
+    color: rgba(255, 255, 255, 0.911);
     margin: 4% 0 0 5%;
     height: auto;
     width: 40%;
     text-align: center;
     float: left;
-    font-size: 30px;
-
+    font-size: 40px;
+    font-family: logo;
 }
 nav{
     
@@ -58,10 +72,11 @@ section{
     position: relative;
     width: 70%;
     height: 10vh;
-    top: 30%;
+    top: 40%;
     left: 15%;
     text-align: center;
     font-size: 35px;
+    font-family: texto;
 }
 
 #crear{
@@ -69,11 +84,11 @@ section{
     width: 80%;
     height: 30px;
     left: 10%;
-    top: 60%    ;
-    text-decoration: none;
+    top: 60% ;
     border:0;
     border-radius: 20px;
     font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
@@ -81,12 +96,13 @@ section{
 }
 
 #iniciar{
-    color: white;
+    color: rgb(255, 255, 255);
     position: relative;
     width: 80%;
     height: 30px;
     left: 10%;
     font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     top: 45%;
     background-color: rgba(240, 248, 255, 0);
     border-color: white;
@@ -144,7 +160,7 @@ section{
     width: 80%;
     height: auto;
     font-size: 20px;
-   
+    font-family: 'Times New Roman', Times, serif;
     animation-duration: 8s;
     animation-name: difusion;
     animation-iteration-count: infinite;
@@ -238,7 +254,7 @@ aside{
     clear: both;
     margin: 0;
     position: relative;
-    top: 600px;
+    top: 500px;
     
 }
 #logo2{
@@ -277,10 +293,14 @@ aside{
     float: left;
     margin-left: 5%;
 }
+#iniciar3{
+    display: none;
+}
 }
 
 /*-------------------------------Resolution tablet--------------------------*/
-@media screen and (min-width: 480px) and(xºmax-width: 990) {
+
+@media screen and (min-width: 480px) and (max-width: 990px) {
     body{
         margin: 0;
         
@@ -350,13 +370,14 @@ aside{
     #crear{
         position: relative;
         width: 80%;
-        height: 50px;
+        height: 7vh;
         left: 10%;
-        top: 55%    ;
+        top: 60vh;
         text-decoration: none;
         border:0;
+        font-family: ;
         border-radius: 20px;
-        font-size: 30px;
+        font-size: 3vh;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
         -ms-border-radius: 20px;
@@ -368,10 +389,10 @@ aside{
         color: white;
         position: relative;
         width: 80%;
-        height: 50px;
+        height: 10%;
         left: 10%;
-        font-size: 30px;
-        top: 35%;
+        font-size: 3vh;
+        top: 35vh;
         background-color: rgba(240, 248, 255, 0);
         border-color: white;
         border-radius: 20px;
@@ -557,10 +578,16 @@ aside{
         float: left;
         margin-left: 5%;
     }
+#inicio3{
+    display: none;
+}
 }
 
 /*---------------------------------Resolution Computer----------------*/
 @media screen and (min-width: 991px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
     body{
         margin: 0;
         
@@ -575,7 +602,7 @@ aside{
     #logo{
        
         color: white;
-        margin: 4% 0 0 5%;
+        margin: 3% 0 0 5%;
         height: auto;
         width: auto;
         text-align: center;
@@ -602,7 +629,7 @@ aside{
         position: relative;
         width: 70%;
         height: 10vh;
-        top: 30%;
+        top: 35%;
         left: 15%;
         text-align: center;
         font-size: 50px;
@@ -610,10 +637,10 @@ aside{
     
     #crear{
         position: relative;
-        width: 80%;
+        width: 40%;
         height: 50px;
-        left: 10%;
-        top: 55%    ;
+        left: 30%;
+        top: 45% ;
         text-decoration: none;
         border:0;
         border-radius: 20px;
@@ -626,21 +653,7 @@ aside{
     }
     
     #iniciar{
-        color: white;
-        position: relative;
-        width: 80%;
-        height: 50px;
-        left: 10%;
-        font-size: 30px;
-        top: 35%;
-        background-color: rgba(240, 248, 255, 0);
-        border-color: white;
-        border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
-        margin-top:1%;
+        display: none;
     }
     
    
@@ -695,7 +708,7 @@ aside{
     
     }
     @keyframes difusion {
-2220   
+  
         from{
             opacity: 100;
             margin: 5% 0 0 15%;
@@ -709,65 +722,8 @@ aside{
     }
     
     #menu{
-        background-color: #FFF5E4;
-        z-index: -1;
-        width: 100%;
-        height: 100vh;
-        position: fixed;
-        margin: 0;
-        padding: 0;
-        animation-name: ;
-        animation-duration: 1s;
+        display: none;
     }
-    @keyframes menuOn{
-        from{
-            left: 400px;
-            
-        }
-        to{
-            left: 0px;
-            
-        }
-    }
-    @keyframes menuOff{
-        from{
-            left: -1px;
-            
-        }
-        to{
-            left: 500px;
-           
-        }
-    }
-    #ulMenu{
-        position:relative;
-        height: 50%;
-        width: 80%;
-        padding: 0;
-        margin: 15% 10% 0 10%;
-    }
-    .liMenu{
-        list-style: none;
-        background-color: rgba(128, 128, 128, 0.32);
-        height: 10%;
-        margin: 5% 0 0 0;
-        padding-top: 2%;
-        padding-left: 4%;
-        text-align: left;
-        font-size: 30px;
-    }
-    #iniciar2{
-        color: #FFF5E4;
-        margin: 0 10% 0 10%;
-        width: 80%;
-        height: 70px;
-        font-size: 40px;
-        background-color: #EE6983;
-        border-color: white;
-        border-radius: 20px;
-        top : 85%;
-        position: absolute;
-}
     
     aside{
         border-top: 3px solid;
