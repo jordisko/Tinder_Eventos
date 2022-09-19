@@ -22,19 +22,19 @@
             <br/>
             <br/>
             <div class="datos">
-                <label for="usuario">Nombre:</label>
+                <label for="nombre">Nombre:</label>
                 <br/>
                 <br/>
-                <label for="password">Apellido:</label>
+                <label for="apellido">Apellido:</label>
                 <br/>
                 <br/>
-                <label for="password">Nombre usuario:</label>
+                <label for="nombreusuario">Nombre usuario:</label>
                 <br/>
                 <br/>
-                <label for="password">Contraseña:</label>
+                <label for="contraseña">Contraseña:</label>
                 <br/>
                 <br/>
-                <label for="password">Repitir Contraseña:</label>
+                <label for="contraseña2">Repitir Contraseña:</label>
                 <br/>
                 <br/>
                 <label for="gmail">Gmail:</label>
@@ -47,17 +47,20 @@
 
             </div>
             <div class="datos2">
-                <input id="usuario" name="usuario" required >
+                <input id="nombre" name="usuario" required >
                 <br/>
                 <br/>
             
                 <input id="apellido" name="apellido"  required>
                 <br/>
                 <br/>
-                <input id="nombre" name="nombre"  required>
+                <input id="nombreusuario" name="nombre"  required>
                 <br/>
                 <br/>
                 <input id="password" name="password" type="password" autocomplete="current-password" required>
+                <br/>
+                <br/>
+                <input id="email" name="gmail" required >
                 <br/>
                 <br/>
                 <input id="password2" name="password" type="password" autocomplete="current-password" required>
@@ -73,7 +76,7 @@
             </div>
             <br>
             
-            <label for="descripcion">Descripción:</label></p>
+            <label for="descripcion">Descripción:</label>
             <textarea id="descripcion" name="descripcion"  rows="4" cols="40"> </textarea>
             <br>
             <br>
@@ -88,13 +91,12 @@
        <br>
        <br>
     </div>
-        <button onclick="cuentacrear()" id="cuentacrear" form="from" >Crear cuenta</button>
+        <button id="cuentacrear">Crear cuenta</button>
+    
 <br>
 <br>        
     
 
-        <div>
-          
 </body>
 
 </html>
