@@ -56,3 +56,29 @@ left:10% ;
 border: 0px;
   right: 50%;
 }
+
+
+@media (max-width:492px){
+  .formulario{
+    margin-top: 5%;
+     text-align: center;
+     background-color: rgba(255, 255, 255, 0.8);
+     border-radius: 12px;
+     backdrop-filter: blur(0px) saturate(110%);
+     -webkit-backdrop-filter: blur(0px) saturate(150%);
+ position: absolute;
+ width: 350px;
+ left: 4%;
+ }
+
+ .datos{
+  position: relative;
+  right:26% ;
+  }
+  .datos2{
+  position: absolute;
+  left: 47%;
+  top: 6.1%;
+  }
+
+}

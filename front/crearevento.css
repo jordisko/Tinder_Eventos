@@ -75,6 +75,9 @@ img {
             left: 5%;
         
         }
+        label{
+            width: 5px;
+        }
 
 
         .evento{
@@ -83,7 +86,7 @@ img {
             }
             .evento2{
             position: absolute;
-            left: 53%;
+            left: 48%;
             top:6.6%;
             }
             .evento3{
