@@ -6,14 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meetout</title>
     <link rel="stylesheet" href="style.css" />
-    
-    
   </head>
   <body>
-    
-   
-
-
     <header>
       <div id="logo"><b>Meetout</b></div>
       <nav onclick="clickMenu()">
@@ -21,9 +15,10 @@
         <div class="stick"></div>
         <div class="stick"></div>
       </nav>
-      <button id="iniciar3"><b>Iniciar sesion</b></button>
+      <button id="iniciar3">
+        <a href="./Inicio_de_session.html"><b>Iniciar sesion</b></a>
+      </button>
     </header>
-
     <main>
       <menu id="menu">
         <ul id="ulMenu">
@@ -31,12 +26,12 @@
           <li class="liMenu">Ayuda</li>
           <li class="liMenu">Descargar(Proximamente)</li>
         </ul>
-        <button id="iniciar2"><b>Iniciar sesion</b></button>
+        <button id="iniciar2"><a href="./Inicio_de_session.html"><b>Iniciar sesion</b></a></button>
       </menu>
-      <section>
+      <section> 
         <div id="texto1">Conoce gente nueva</div>
-        <button id="crear"><b>Crear cuenta</b></button>
-        <button id="iniciar"><b>Iniciar sesion</b></button>
+        <button id="crear"><a href="./crear_cuenta.html"><b>Crear cuenta</b></a></button>
+        <buttonykk id="iniciar"><a href="./Inicio_de_session.html"><b>Iniciar sesion</b></a></buttonykk>
       </section>
 
       <div id="opiniones">
@@ -50,7 +45,7 @@
           </div>
         </div>
       </div>
-      
+
       <div>
         <ul id="seccion">
           <li class="secciones">Información</li>
@@ -58,21 +53,18 @@
           <li class="secciones">Descargar(Proximamente)</li>
         </ul>
       </div>
-
     </main>
-    
+
     <aside>
-        <div id="logo2"><b>Meetout</b></div>
-        <div id="redes">REDES SOCIALES</div>
-        <ul  id="ulAside">
-            <li class="icono">1</li>
-            <li class="icono">2</li>
-            <li class="icono">3</li>
-        </ul>
+      <div id="logo2"><b>Meetout</b></div>
+      <div id="redes">REDES SOCIALES</div>
+      <ul id="ulAside">
+        <li class="icono"><img src="fotos/logo_ins.png" /></li>
+        <li class="icono"><img src="fotos/logo_twitter.png" /></li>
+        <li class="icono"><img src="fotos/logo_facebook.png" /></li>
+      </ul>
     </aside>
 
-        
     <script src="./main.js"></script>
-
   </body>
 </html>
