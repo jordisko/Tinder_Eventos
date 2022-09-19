@@ -75,8 +75,8 @@ img {
             left: 5%;
         
         }
-        label{
-            width: 5px;
+        input{
+            width: 120px;
         }
 
 
@@ -86,33 +86,34 @@ img {
             }
             .evento2{
             position: absolute;
-            left: 48%;
+            left: 60%;
             top:6.6%;
             }
             .evento3{
                 position: absolute;
-                left: 53%;
+                left: 60%;
                 top:14.5%;  
             }
             
         
             .evento4{
                 position: absolute;
-                left: 53%;
+                left: 60%;
                 top:21.9%;  
             }
             .evento5{
                 position: absolute;
-                left: 53%;
+                left: 60%;
                 top:29.9%;  
             }
             .evento6{
                 position: absolute;
-                left: 53%;
+                left: 60%;
                 top:37.9%;  
             }
 
         
        
       }
+      
       
