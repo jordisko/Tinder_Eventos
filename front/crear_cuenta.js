@@ -1,7 +1,7 @@
 
 function crearCuenta(){
-  const url = 'http://localhost:8080/usuarios';
-const nombre = document.getElementById("usuario").value;
+  const url = 'http://localhost:8080/crearusuarios';
+const nombre = document.getElementById("nombre").value;
 const apellido = document.getElementById("apellido").value;
 const nombreusuario = document.getElementById("nombreusuario").value;
 const password = document.getElementById("password").value;
@@ -9,7 +9,7 @@ const email = document.getElementById("email").value;
 const password2 = document.getElementById("password2").value;
 const fotousuario = document.getElementById("img1").value;
 const descripcion = document.getElementById("descripcion").value;
-const codigoPostal = document.getElementById("codigo").value;
+const codigoPostal = document.getElementById("codigopostal").value;
 const data = {nombreUsuario: nombreusuario,
               correoElectronico: email,
               contraseniaUsuario:password,
@@ -29,11 +29,6 @@ const data = {nombreUsuario: nombreusuario,
 .then(response => console.log('Success:', response))
 console.log(JSON.stringify(data));
 }
-const buttonsend2= document.getElementById('cuentacrear')
-buttonsend2.onclick = function(){
-  crearCuenta()}
-
-
 function mostrar(){
   var archivo = document.getElementById("file").files[0];
   var reader = new FileReader();
