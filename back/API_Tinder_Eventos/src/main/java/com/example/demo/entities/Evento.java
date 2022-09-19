@@ -1,5 +1,7 @@
 package com.example.demo.entities;
 
+import java.sql.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -20,20 +22,20 @@ public class Evento {
 	Long idEvento;
 	
 	@Column(name = "descripcionevento")
-	Long descripcionEvento;
+	String descripcionEvento;
 	
 	@Column(name = "codigopostallocalizacionevento")
-	Long codigoPostalLocalizacionEvento;
+	int codigoPostalLocalizacionEvento;
 	
 	@Column(name = "personasmaxevento")
-	Long personasMaxEvento;
+	int personasMaxEvento;
 	
 	@Column(name = "fechaevento")
-	Long fechaEvento;
+	Date fechaEvento;
 	
 	@Column(name = "direccionlocalizacionevento")
-	Long direccionLocalizacionEvento;
+	String direccionLocalizacionEvento;
 	
 	@Column(name = "numerolocalizacionevento")
-	Long numeroLocalizacionEvento;
+	int numeroLocalizacionEvento;
 }
