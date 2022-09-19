@@ -1,3 +1,4 @@
+/*----------------------------Fuentes---------------------------------*/
 @font-face {
     
     font-family:texto;
@@ -12,6 +13,8 @@
     font-family:texto2;
     src: url(fuentes/texto2.ttf);
 }
+
+/*---------------------------------------resolucion movil---------*/
 @media screen and (max-width: 479px) {
     
 body{
@@ -259,14 +262,14 @@ aside{
 }
 #logo2{
     color: #850E35;
-    
+    font-family: logo;
     margin: 10% 0 0 10%;
     padding: 0;
     float: left;
     font-size: 30px;
 }
 #redes{
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
     float: right;
@@ -321,12 +324,12 @@ aside{
         text-align: center;
         float: left;
         font-size: 50px;
-    
+        font-family: logo;
     }
     nav{
-        
+       
         height: 70%;
-        width: 10%;
+        width: 15%;
         float: right;
         margin-top: 4%;
         margin-right: 3%;
@@ -342,6 +345,9 @@ aside{
         -moz-border-radius: 20px;
         -ms-border-radius: 20px;
         -o-border-radius: 20px;
+    }
+    #iniciar3{
+        display: none;
     }
     main{
         clear: both;
@@ -365,6 +371,7 @@ aside{
         left: 15%;
         text-align: center;
         font-size: 50px;
+        font-family: texto;
     }
     
     #crear{
@@ -375,7 +382,6 @@ aside{
         top: 60vh;
         text-decoration: none;
         border:0;
-        font-family: ;
         border-radius: 20px;
         font-size: 3vh;
         -webkit-border-radius: 20px;
@@ -383,13 +389,14 @@ aside{
         -ms-border-radius: 20px;
         -o-border-radius: 20px;
         margin-top: 5%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     
     #iniciar{
         color: white;
         position: relative;
         width: 80%;
-        height: 10%;
+        height: 7vh;
         left: 10%;
         font-size: 3vh;
         top: 35vh;
@@ -401,6 +408,7 @@ aside{
         -ms-border-radius: 20px;
         -o-border-radius: 20px;
         margin-top:1%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     #opiniones{
         position: absolute;
@@ -548,6 +556,7 @@ aside{
         padding: 0;
         float: left;
         font-size: 50px;
+        font-family: logo;
     }
     #redes{
         
@@ -602,15 +611,31 @@ aside{
     #logo{
        
         color: white;
-        margin: 3% 0 0 5%;
+        margin: 1% 0 0 5%;
         height: auto;
         width: auto;
         text-align: center;
         float: left;
-        font-size: 50px;
-    
+        font-size: 10vh;
+        font-family: logo;
     }
-    
+    #iniciar3{
+        position: relative;
+        width: 20%;
+        height: 50px;
+        top: 25%;
+        left: 60%;
+        text-decoration: none;
+        background-color: rgba(240, 248, 255, 0);
+        border-color: white;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        color: white;
+        font-size: 3vh;
+    }
     main{
         clear: both;
         width: 100%;
@@ -633,6 +658,7 @@ aside{
         left: 15%;
         text-align: center;
         font-size: 50px;
+        font-family: texto;
     }
     
     #crear{
@@ -650,6 +676,7 @@ aside{
         -ms-border-radius: 20px;
         -o-border-radius: 20px;
         margin-top: 5%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     
     #iniciar{
@@ -663,7 +690,7 @@ aside{
         width: 100%;
         height: 800px;
         margin: 0;
-        
+        z-index: 15;
     
     }
     
@@ -705,6 +732,7 @@ aside{
         animation-duration: 8s;
         animation-name: difusion;
         animation-iteration-count: infinite;
+
     
     }
     @keyframes difusion {
@@ -734,7 +762,7 @@ aside{
         clear: both;
         margin: 0;
         position: relative;
-        top: 700px;
+        top: 720px;
         
     }
     #logo2{
@@ -742,27 +770,29 @@ aside{
         margin: 3% 0 0 10%;
         padding: 0;
         float: left;
-        font-size: 50px;
+        font-size: 10vh;
+        font-family: logo;
     }
     #redes{
-        
+        background-color: blue;
         margin: 0;
         padding: 0;
         float: right;
         position: relative;
-        right: 5%;
-        top: 40%;
+        right: 25%;
+        top: 20%;
         font-size: 20px;
     
     }   
     #ulAside{
-        width: 50%;
+        background-color: #850E35;
+        width: 15%;
         margin: 0;
         padding: 0;
         clear: both;
         position: absolute;
-        top: 30%;
-        left: 45%;
+        top: 40%;
+        left: 61%;
         list-style: none;
     }
     
