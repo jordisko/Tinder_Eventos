@@ -57,6 +57,10 @@ label{
   li a:hover {
     background-color: #111;
   }
+  .cerrar{
+    position: relative;
+    left: 1150px;
+  }
 
   @media (max-width:492px){
 
@@ -95,6 +99,10 @@ label{
       left: 4%;
       top: 15%;
       width: 345px;
+    }
+    .cerrar{
+      position: relative;
+      left: 160px;
     }
   }
  

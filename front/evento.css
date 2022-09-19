@@ -48,7 +48,10 @@
       transform: translateX(calc((100% - 100vw) / 2));
       z-index: -2;
     }
-
+    .cerrar{
+      position: relative;
+      left: 1150px;
+    }
     @media (max-width:492px){
       button{
         margin-left: 70%;
@@ -90,5 +93,9 @@
       
       li a:hover {
         background-color: #111;
+      }
+      .cerrar{
+        position: relative;
+        left: 160px;
       }
     }

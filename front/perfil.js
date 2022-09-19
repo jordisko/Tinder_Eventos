@@ -20,3 +20,6 @@ function guardar(){
     $("#descripcion").prop("disabled", true); 
 
 }
+function cerrar(){
+    document.location.href = "inicio_de_session.html"
+}
