@@ -57,4 +57,44 @@ label{
   li a:hover {
     background-color: #111;
   }
+
+  @media (max-width:492px){
+
+
+    ul {
+      list-style-type: none;
+      margin: -13px;
+      padding: 0;
+      overflow: hidden;
+      background-color: green;
+      width: 120%;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #111;
+    }
+    .inicio{
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 12px;
+      backdrop-filter: blur(0px) saturate(110%);
+      -webkit-backdrop-filter: blur(0px) saturate(150%);
+      position: absolute;
+      left: 4%;
+      top: 15%;
+      width: 345px;
+    }
+  }
  

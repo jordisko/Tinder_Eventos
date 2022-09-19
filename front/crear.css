@@ -14,7 +14,7 @@ label{
     border: 2px solid black;
   }
 
-  img {
+  .fondopantalla {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -42,7 +42,7 @@ right:15% ;
 .datos2{
 position: absolute;
 left: 49%;
-top: 7.7%;
+top: 6.3%;
 }
 .imagen{
   position: relative;
@@ -50,6 +50,9 @@ left:10% ;
 
 }
 .imgsubir{
-  width: 1%;
-  height: 5%;
+  width: 125px;
+  height: 125px;
+  text-align: center;
+border: 0px;
+  right: 50%;
 }

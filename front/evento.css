@@ -35,9 +35,9 @@
         width: 680px;
       }
      button{
-      margin-left: 70%;
+      margin-left: 80%;
       border: 0;
-      margin-top: 30%;
+      margin-top: 36%;
      }
      .fondo {
       position: fixed;
@@ -47,4 +47,48 @@
       min-height: 100%;
       transform: translateX(calc((100% - 100vw) / 2));
       z-index: -2;
+    }
+
+    @media (max-width:492px){
+      button{
+        margin-left: 70%;
+        border: 0;
+        margin-top: 130%;
+       }
+       .evento{
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 12px;
+        backdrop-filter: blur(0px) saturate(110%);
+        -webkit-backdrop-filter: blur(0px) saturate(150%);
+        position: absolute;
+        left: 3%;
+        top: 15%;
+        width: 350px;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: -13px;
+        padding: 0;
+        overflow: hidden;
+        background-color: green;
+        width: 120%;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover {
+        background-color: #111;
+      }
     }

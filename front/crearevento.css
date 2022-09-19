@@ -55,3 +55,61 @@ img {
         left: 53%;
         top:37.9%;  
     }
+
+    @media (max-width:492px){
+  
+        .bodyevent{
+            margin-top: 80px;
+            position: absolute;
+            width: 350px;
+            
+            height: max-content;
+        
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            backdrop-filter: blur(0px) saturate(110%);
+            -webkit-backdrop-filter: blur(0px) saturate(150%);
+            left: auto;
+            right: auto;
+            left: 5%;
+        
+        }
+
+
+        .evento{
+            position: relative;
+            right:20% ;
+            }
+            .evento2{
+            position: absolute;
+            left: 53%;
+            top:6.6%;
+            }
+            .evento3{
+                position: absolute;
+                left: 53%;
+                top:14.5%;  
+            }
+            
+        
+            .evento4{
+                position: absolute;
+                left: 53%;
+                top:21.9%;  
+            }
+            .evento5{
+                position: absolute;
+                left: 53%;
+                top:29.9%;  
+            }
+            .evento6{
+                position: absolute;
+                left: 53%;
+                top:37.9%;  
+            }
+
+        
+       
+      }
+      

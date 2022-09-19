@@ -16,16 +16,7 @@ function cuentacrear(){
   document.location.href = "pagina_principal.html"
 
   }
-  function mostrar(){
-    var archivo = document.getElementById("file").files[0];
-    var reader = new FileReader();
-    if (file) {
-      reader.readAsDataURL(archivo );
-      reader.onloadend = function () {
-        document.getElementById("img").src = reader.result;
-      }
-    }
-  }
+
   function init() {
     var inputFile = document.getElementById('inputFile1');
     inputFile.addEventListener('change', mostrarImagen, false);
@@ -52,3 +43,25 @@ function cuentacrear(){
 // //     document.location.href = "inicio.html"
 // //   }
 // //   }
+
+
+
+
+pass1 = document.getElementById('password');
+pass2 = document.getElementById('password2');
+usuario = document.getElementById('usuario').value;
+let valor=true
+
+
+function cuentacrear(){
+  if(usuario == "") {
+    alert("Error: Debe escribir Usuario!");
+    valor=false
+  }
+  console.log(valor)
+  if(valor==true){
+    document.location.href = "pagina_principal.html"
+  }
+  }
+
+
