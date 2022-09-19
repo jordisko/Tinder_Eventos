@@ -1,7 +1,57 @@
 .bodyevent{
-    margin-top: 70px;
-    width: autopx;
+    margin-top: 90px;
+    position: absolute;
+    width: 680px;
+    
     height: max-content;
 
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    backdrop-filter: blur(0px) saturate(110%);
+    -webkit-backdrop-filter: blur(0px) saturate(150%);
+    left: auto;
+    right: auto;
+    left: 25%;
+
 }
+img {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 105%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+  }
+  .evento{
+    position: relative;
+    right:15% ;
+    }
+    .evento2{
+    position: absolute;
+    left: 53%;
+    top:6.6%;
+    }
+    .evento3{
+        position: absolute;
+        left: 53%;
+        top:14.5%;  
+    }
+    
+
+    .evento4{
+        position: absolute;
+        left: 53%;
+        top:21.9%;  
+    }
+    .evento5{
+        position: absolute;
+        left: 53%;
+        top:29.9%;  
+    }
+    .evento6{
+        position: absolute;
+        left: 53%;
+        top:37.9%;  
+    }

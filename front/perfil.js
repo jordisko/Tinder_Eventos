@@ -4,6 +4,9 @@ function mostrar(){
     $("#nombre").prop("disabled", false); 
     $("#apellido").prop("disabled", false); 
     $("#Gmail").prop("disabled", false); 
+    $("#Contraseña").prop("disabled", false); 
+    $("#codigo_postal").prop("disabled", false); 
+    $("#descripcion").prop("disabled", false); 
 
 }
 
@@ -12,5 +15,8 @@ function guardar(){
     $("#nombre").prop("disabled", true); 
     $("#apellido").prop("disabled", true); 
     $("#Gmail").prop("disabled", true); 
+    $("#Contraseña").prop("disabled", true); 
+    $("#codigo_postal").prop("disabled", true); 
+    $("#descripcion").prop("disabled", true); 
 
 }

@@ -6,28 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="inicio_de_sessio.css">
+    <link rel="sccript" href="inicio_de_sessio.js">
 </head>
 <body>
-  <div class="formulario">
-    <label for="usuario">Usuario</label>
-    <input id="usuario" name="usuario">
-    <br/>
-    <br/>
+  <div>
+    <video onloadeddata="this.muted=true" autoplay loop>
+<source src="./recursos/1.mp4">
+    </video>
+    <div>
+    <div class="formulario">
+<h1>Iniciar session:</h1>
+      <label for="usuario">Usuario:</label>
+      <br>
+      <input id="usuario" name="usuario">
+      <br/>
+      <br/>
+  
+      <label for="password">Contraseña:</label>
+      <br>
 
-    <label for="password">Contraseña</label>
-    <input id="password" name="password" type="password" autocomplete="current-password" required>
-    <br/>
-    <br/>
-    
-    
-    <button id="buttonsend">Iniciar session</button>
-    <br/>
-    <br/>
+      <input id="password" name="password" type="password" autocomplete="current-password" required>
+      <br/>
+      <br/>
+      
+      
+      <button id="buttonsend">Iniciar session</button>
+      <br/>
+      <br/>
+      <br/>
+  
+      <a href="./crear_cuenta.html">Crear cuenta</a>
+      <br>
+      <br>
+      <br>
 
-    <a href="../front/crear_cuenta.html">Crear cuenta</a>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" ></script>
-    <script src="./inicio_de_sessio.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" ></script>
+      <script src="./inicio_de_sessio.js"></script>
+      </div>
+    </div>
 
-  </div>
 </body>
 </html>
