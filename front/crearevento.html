@@ -32,15 +32,15 @@
 </div>
 
 <div class="evento2">
-  <input type="nombre_evento" class="nombrevento" maxlength="40" type="nombre_evento" id="nombre_evento" class="form-control" width="200%">
+  <input id="nombreEvento" class="nombrevento" maxlength="40" type="nombre_evento" class="form-control" width="200%">
   
 </div>
 <div class="evento3">
-  <input type="number" class="maximo" id="maximopersona" name="maximopersona" min="2" max="100">
+  <input type="number" class="maximo" id="personasMaxEvento" name="maximopersona" min="2" max="100">
  
 </div>
 <div class="evento4">
-  <input type="text" class="fecha" id="campofecha" onclick="fecha()">
+  <input type="text" class="fecha" id="fechaEvento" onclick="fecha()">
 
 </div>
 <div class="evento5" >
@@ -48,7 +48,7 @@
 
 </div>
  <div class="evento6">
-  <input type="lugar" class="lugar"  id="lugar" class="form-control">
+  <input type="lugar" class="lugar"  id="direccionLocalizacionEvento" class="form-control">
 
  </div>
 
@@ -66,7 +66,7 @@
     <script>
     $( function() {
       $( "#campofecha" ).datepicker({
-        format:"yyy/mm/dd",
+        format:"yyyy/mm/dd",
         startDate: '-3d',
         language:"es",
         numberOfMonths: 1,
@@ -79,13 +79,13 @@
     <br>
 
     <label for="lugar">Codigo postal:</label>
-    <input aria-describedby="postal"  style="width:46px" type="postal" id="postal" class="form-control">
+    <input aria-describedby="postal"  style="width:46px" type="postal" id="codigoPostalLocalizacionEvento" class="form-control">
     <label for="numero">Numero:</label> 
-    <input aria-describedby="numero"  style="width:46px" type="numero" id="numero" class="form-control">
+    <input aria-describedby="numero"  style="width:46px" type="numero" id="numeroLocalizacionEvento" class="form-control">
     <br>
     <br/>
   <label for="tipo">Tipo de evento:
-    <select name="evento">
+    <select name="evento" id = "tipoDeEvento">
 
       <option value="1" >1</option>
       
@@ -99,14 +99,14 @@
 
     <br>
     
-    <label for="descripción">Descripción evento:</label></p>
-  <textarea id="des" name="des" rows="4" cols="35"> </textarea>
+    <label for="descripción" >Descripción evento:</label></p>
+  <textarea id="descripcionEvento" name="des" rows="4" cols="35"> </textarea>
   <br>
 
   
 
     <br>
-    <button id="eventocrear" onclick="crear()">Crear evento</button>
+    <button id="eventocrear" onclick="crearEvento()">Crear evento</button>
     <button id="cancelar" onclick="cancelar()" >Cancelar</a></button>
     <br>
     <br>

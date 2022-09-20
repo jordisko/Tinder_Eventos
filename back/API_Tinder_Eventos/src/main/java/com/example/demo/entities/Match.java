@@ -17,18 +17,18 @@ public class Match {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
 	@Column(name = "Idmatch")
-	Long idMatch;
+	int idMatch;
 	
 	@Column(name = "Usuarios_idusuario")
-	Long usuarios_idUsuario;
+	String usuarios_idUsuario;
 	
 	@Column(name = "Eventos_idevento")
-	Long eventos_idEvento;
+	String eventos_idEvento;
 	
 	@Column(name = "estadomatch")
-	Long estadoMatch;
+	int estadoMatch;
 	
 	@Column(name = "estadoevento")
-	Long estadoEvento;
+	String estadoEvento;
 
 }
