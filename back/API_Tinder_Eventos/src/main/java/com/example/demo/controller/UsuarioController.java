@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,7 +15,10 @@ import com.example.demo.services.UsuarioService;
 import lombok.extern.java.Log;
 
 @Log
+@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
+@RequestMapping(
+produces="application/json")
 public class UsuarioController {
 	@Autowired(required= false)
 	UsuarioService usuarioService;
@@ -25,10 +29,10 @@ public class UsuarioController {
 		return usuarioService.findAllUsuarios();
 	}
 	@RequestMapping(path = "/crearusuarios",method = RequestMethod.PUT)
-	public String putUsuarios(@RequestBody(required=false) Usuario usuario){
+	public void putUsuarios(@RequestBody(required=false) Usuario usuario){
 		System.err.println(usuario.toString());
 		log.info("Request a http://localhost:PORT/api/crearusuarios(PUT)");
-		return usuario.toString();
+		usuarioService.saveUsuario(usuario);
 
 	}
 	
