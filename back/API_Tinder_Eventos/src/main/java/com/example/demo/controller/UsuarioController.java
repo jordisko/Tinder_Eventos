@@ -15,6 +15,7 @@ import com.example.demo.services.UsuarioService;
 import lombok.extern.java.Log;
 
 @Log
+@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping(
 produces="application/json")

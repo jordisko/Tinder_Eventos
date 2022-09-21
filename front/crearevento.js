@@ -1,5 +1,17 @@
 async function crearEvento() {
   // const url = 'http://localhost:8080/creareventos';
+function comprobarLogin() {
+  let usuarioLogged = localStorage.getItem("usuario");
+  if(usuarioLogged == '' || usuarioLogged == null)
+  {
+      alert('¡Tienes que iniciar sesión!');
+      window.location.href="inicio_de_session.html";
+  }
+}
+
+function cancelar(){
+  document.location.href = "evento.html"
+}
 
   const nombreEvento = document.getElementById("nombreEvento").value;
   const descripcionEvento = document.getElementById("descripcionEvento").value;
