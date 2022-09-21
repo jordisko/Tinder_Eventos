@@ -21,6 +21,9 @@ public class Evento {
 	@Column(name = "idevento")
 	Long idEvento;
 	
+	@Column(name = "nombreevento")
+	String nombreEvento;
+	
 	@Column(name = "descripcionevento")
 	String descripcionEvento;
 	

@@ -17,7 +17,7 @@ public class Match {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
 	@Column(name = "Idmatch")
-	int idMatch;
+	Long idMatch;
 	
 	@Column(name = "Usuarios_idusuario")
 	String usuarios_idUsuario;

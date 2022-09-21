@@ -1,54 +1,51 @@
 async function crearEvento() {
+  // const url = 'http://localhost:8080/creareventos';
 
-  const nombreEvento = document.getElementById("nombreEvento").valor;
-  const descripcionEvento = document.getElementById("nombreEvento").valor;
-  const codigoPostalLocalizacionEvento = document.getElementById("nombreEvento").valor;
-  const personasMaxEvento = document.getElementById("nombreEvento").valor;
-  const fechaEvento = document.getElementById("nombreEvento").valor;
-  const direccionLocalizacionEvento = document.getElementById("nombreEvento").valor;
-  const numeroLocalizacionEvento = document.getElementById("nombreEvento").valor;
-  const tipoDeEvento=document.getElementById("").valor;
-  const fotoEvento =document.getElementById("").valor;
-  const putData = {
+  const nombreEvento = document.getElementById("nombreEvento").value;
+  const descripcionEvento = document.getElementById("descripcionEvento").value;
+  const codigoPostalLocalizacionEvento = document.getElementById("codigoPostalLocalizacionEvento").value;
+  const personasMaxEvento = document.getElementById("personasMaxEvento").value;
+  const diaEvento = document.getElementById("fechaEvento").value;
+  const direccionLocalizacionEvento = document.getElementById("direccionLocalizacionEvento").value;
+  const numeroLocalizacionEvento = document.getElementById("numeroLocalizacionEvento").value;
+  const tipoDeEvento=document.getElementById("tipoDeEvento").value;
+  const horaEvento=document.getElementById("horaEvento").value;
+  //const fotoEvento =document.getElementById("").value;
+  const postData = {
     "nombreEvento": nombreEvento,
     "descripcionEvento": descripcionEvento,
     "codigoPostalLocalizacionEvento": codigoPostalLocalizacionEvento,
     "personasMaxEvento": personasMaxEvento,
-    "fechaEvento": fechaEvento,
+    "fechaEvento": diaEvento+" "+horaEvento+":00" ,
     "direccionLocalizacionEvento": direccionLocalizacionEvento,
     "numeroLocalizacionEvento": numeroLocalizacionEvento,
-    "tipoDeEvento":tipoDeEvento,
-    "fotoEvento": fotoEvento,
+    "tipoDeEvento":tipoDeEvento
+    //"fotoEvento": fotoEvento,
   };
-
-  try {
-    const res = await fetch(url, {
-      method: "put",
-      headers: {
-        "Content-Type": "application/json",
-        "x-access-token": "token-value",
-      },
-      body: JSON.stringify(putData),
-    });
-
-    if (!res.ok) {
-      const message = `An error has occured: ${res.status} - ${res.statusText}`;
-      throw new Error(message);
+  console.log(postData);
+  
+    
+    try {
+      const response = await fetch('http://localhost:8080/creareventos', {
+        method: "put",
+        headers: {
+          "Content-Type": "application/json",
+          "Connection": "keep-alive"
+        },
+        body: JSON.stringify(postData)
+      });
+    
+      if (!response.ok) {
+        const message = 'Error with Status Code: ' + response.status;
+        throw new Error(message);
+      }
+    
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.log('Error: ' + error);
     }
-
-    const data = await res.json();
-
-    const result = {
-      status: res.status + "-" + res.statusText,
-      headers: { "Content-Type": res.headers.get("Content-Type") },
-      data: data,
-    };
-
-  } catch (err) {
-    console.error('Error:', error);
-  }
-}
-
+ }
 
 // async function crearEvento() {
 //   const url = 'http://localhost:8080/creareventos';

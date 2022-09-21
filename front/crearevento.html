@@ -13,6 +13,9 @@
  <div class="bodyevent">
     <br/>
     <br>
+
+
+  
 <div class="evento">
   <label for="nombre_evento">  Nombre evento:</label>
   <br/>
@@ -40,11 +43,11 @@
  
 </div>
 <div class="evento4">
-  <input type="text" class="fecha" id="fechaEvento" onclick="fecha()">
+  <input type="text" class="fecha" id="fechaEvento">
 
 </div>
 <div class="evento5" >
-  <input type="hora" class="hora" id="hora" class="form-control" placeholder="16:00">
+  <input type="hora" class="hora" id="horaEvento" class="form-control" placeholder="16:00">
 
 </div>
  <div class="evento6">
@@ -65,11 +68,11 @@
     <script src="./crearevento.js"></script>
     <script>
     $( function() {
-      $( "#campofecha" ).datepicker({
-        format:"yyyy/mm/dd",
+      $( "#fechaEvento" ).datepicker({
+        format:'YYYY-MM-DD',
         startDate: '-3d',
         language:"es",
-        numberOfMonths: 1,
+        numberOfMonths: 2,
         showButtonPanel: true
       });
     } );
@@ -99,18 +102,18 @@
 
     <br>
     
-    <label for="descripción" >Descripción evento:</label></p>
+    <label for="descripción" >Descripción evento:</label>
   <textarea id="descripcionEvento" name="des" rows="4" cols="35"> </textarea>
   <br>
 
-  
+ 
 
     <br>
     <button id="eventocrear" onclick="crearEvento()">Crear evento</button>
     <button id="cancelar" onclick="cancelar()" >Cancelar</a></button>
     <br>
     <br>
-    
+ 
  </div>
 
 

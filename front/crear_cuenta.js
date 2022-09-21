@@ -10,6 +10,7 @@ const password2 = document.getElementById("password2").value;
 const fotousuario = document.getElementById("img1").value;
 const descripcion = document.getElementById("descripcion").value;
 const codigoPostal = document.getElementById("codigopostal").value;
+
 const data = {"nombreUsuario": nombreusuario,
               "correoElectronico": email,
               "contraseniaUsuario":password,
@@ -18,6 +19,7 @@ const data = {"nombreUsuario": nombreusuario,
               "nombrePersona": nombre,
               "apellidoPersona": apellido,
               "codigoPostal": codigoPostal}
+              console.log(data);
   fetch(url, {
   method: 'PUT',
   body: JSON.stringify(data),
