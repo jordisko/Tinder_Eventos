@@ -22,13 +22,17 @@ DROP TABLE IF EXISTS `baseDatosMeetOut`.`Eventos` ;
 
 CREATE TABLE IF NOT EXISTS `baseDatosMeetOut`.`Eventos` (
   `idEvento` INT NOT NULL AUTO_INCREMENT,
+  `nombreEvento` VARCHAR(30) NOT NULL,
   `descripcionEvento` VARCHAR(155) NOT NULL,
   `codigoPostalLocalizacionEvento` INT(5) NOT NULL,
   `personasMaxEvento` INT(5) NOT NULL,
   `fechaEvento` DATETIME NULL,
   `direccionLocalizacionEvento` VARCHAR(45) NULL,
   `numeroLocalizacionEvento` VARCHAR(15) NULL,
+  `tipoDeEvento` VARCHAR(55) NULL,
+  `fotoEvento` VARCHAR(155) NULL,
   PRIMARY KEY (`idEvento`));
+  
 
 
 DROP TABLE IF EXISTS `baseDatosMeetOut`.`Match` ;
@@ -37,7 +41,7 @@ CREATE TABLE IF NOT EXISTS `baseDatosMeetOut`.`Match` (
   `idMatch` INT NOT NULL AUTO_INCREMENT,
   `Usuarios_idUsuario` INT NOT NULL,
   `Eventos_idEvento` INT NOT NULL,
-  `estadoMatch` VARCHAR(12) NOT NULL DEFAULT 'pendiente',
+  `estadoMatch` tinyint NOT NULL DEFAULT 0,
   `estadoEvento` VARCHAR(12) NULL,
   PRIMARY KEY (`idMatch`),
   CONSTRAINT `fk_Match_Usuarios`
@@ -51,9 +55,9 @@ CREATE TABLE IF NOT EXISTS `baseDatosMeetOut`.`Match` (
     ON DELETE NO ACTION
     ON UPDATE cascade);
 
-INSERT iNTO basedatosmeetout.usuarios(nombreUsuario, correoElectronico, contraseniaUsuario, fotoUsuario, descripcionUsuario, nombrePersona, apellidoPersona, codigoPostal)
-VALUES
-('jordisko','jfosdk@gmail.com','122312','djlfajosjpg','hola muy buenas', 'jordi', 'campos', '08031');
+#INSERT iNTO basedatosmeetout.usuarios(nombreUsuario, correoElectronico, contraseniaUsuario, fotoUsuario, descripcionUsuario, nombrePersona, apellidoPersona, codigoPostal)
+#VALUES
+
 
 SELECT * from basedatosmeetout.usuarios;
     

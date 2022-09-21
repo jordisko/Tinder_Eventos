@@ -21,11 +21,14 @@ public class Evento {
 	@Column(name = "idevento")
 	Long idEvento;
 	
+	@Column(name = "nombreevento")
+	String nombreEvento;
+	
 	@Column(name = "descripcionevento")
 	String descripcionEvento;
 	
 	@Column(name = "codigopostallocalizacionevento")
-	int codigoPostalLocalizacionEvento;
+	String codigoPostalLocalizacionEvento;
 	
 	@Column(name = "personasmaxevento")
 	int personasMaxEvento;
@@ -37,5 +40,5 @@ public class Evento {
 	String direccionLocalizacionEvento;
 	
 	@Column(name = "numerolocalizacionevento")
-	int numeroLocalizacionEvento;
+	String numeroLocalizacionEvento;
 }

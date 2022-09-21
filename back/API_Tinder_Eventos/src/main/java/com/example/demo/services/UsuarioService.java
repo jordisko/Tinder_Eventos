@@ -22,9 +22,9 @@ public class UsuarioService {
 		return usuarioRepository.findById(id);
 	}
 
-	public Usuario saveUsuario(Usuario usuario) {
+	public void saveUsuario(Usuario usuario) {
 		usuarioRepository.save(usuario);
-		return usuario;
+//		return usuario;
 	}
 
 	public String deleteUsuario(Long id) {
