@@ -30,30 +30,30 @@
     }
     .evento2{
     position: absolute;
-    left: 53%;
-    top:5.6%;
+    left: 60%;
+    top:6.2%;
     }
     .evento3{
         position: absolute;
-        left: 53%;
-        top:10.4%;  
+        left: 60%;
+        top:12.4%;  
     }
     
 
     .evento4{
         position: absolute;
-        left: 53%;
-        top:16.1%;  
+        left: 60%;
+        top:19.1%;  
     }
     .evento5{
         position: absolute;
-        left: 53%;
-        top:21.5%;  
+        left: 60%;
+        top:25.5%;  
     }
     .evento6{
         position: absolute;
-        left: 53%;
-        top:27.1%;  
+        left: 60%;
+        top:32.1%;  
     }
    
     .imgsubir{
@@ -63,6 +63,36 @@
       border: 0px;
       right: 10%;
       }
+      ul {
+        list-style-type: none;
+        margin: -13px;
+        padding: 0;
+        overflow: hidden;
+        background-color: green;
+        z-index: -10;
+      
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover {
+        background-color: #111;
+      }
+      .cerrar{
+        position: relative;
+        left: 1125px;
+      }
+
     @media (max-width:492px){
   
         .bodyevent{
@@ -99,24 +129,24 @@
             .evento3{
                 position: absolute;
                 left: 60%;
-                top:12.1%;  
+                top:12.5%;  
             }
             
         
             .evento4{
                 position: absolute;
                 left: 60%;
-                top:17.7%;  
+                top:18.9%;  
             }
             .evento5{
                 position: absolute;
                 left: 60%;
-                top:23.9%;  
+                top:25.5%;  
             }
             .evento6{
                 position: absolute;
                 left: 60%;
-                top:29.9%;  
+                top:31.9%;  
             }
 
         
@@ -126,6 +156,34 @@
                 right: 33px;
               
                 
+              }
+              ul {
+                list-style-type: none;
+                margin: -13px;
+                padding: 0;
+                overflow: hidden;
+                background-color: green;
+                width: 120%;
+              }
+              
+              li {
+                float: left;
+              }
+              
+              li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+              }
+              
+              li a:hover {
+                background-color: #111;
+              }
+              .cerrar{
+                position: relative;
+                left: 160px;
               }
       }
       

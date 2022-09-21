@@ -15,7 +15,7 @@
     left: 25%;
 
 }
-img {
+.fondo {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -55,6 +55,35 @@ img {
         left: 53%;
         top:41.2%;  
     }
+    ul {
+        list-style-type: none;
+        margin: -13px;
+        padding: 0;
+        overflow: hidden;
+        background-color: green;
+        z-index: -10;
+      
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover {
+        background-color: #111;
+      }
+      .cerrar{
+        position: relative;
+        left: 1125px;
+      }
 
     @media (max-width:492px){
   
@@ -111,6 +140,34 @@ img {
                 left: 60%;
                 top:41.2%;  
             }
+            ul {
+                list-style-type: none;
+                margin: -13px;
+                padding: 0;
+                overflow: hidden;
+                background-color: green;
+                width: 120%;
+              }
+              
+              li {
+                float: left;
+              }
+              
+              li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+              }
+              
+              li a:hover {
+                background-color: #111;
+              }
+              .cerrar{
+                position: relative;
+                left: 160px;
+              }
 
         
        
