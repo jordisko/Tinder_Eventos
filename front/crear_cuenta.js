@@ -1,4 +1,3 @@
-
 function crearCuenta(){
   const url = 'http://localhost:8080/crearusuarios';
 const nombre = document.getElementById("nombre").value;
