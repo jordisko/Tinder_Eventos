@@ -15,7 +15,7 @@
     left: 25%;
 
 }
-.fondo {
+img {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -31,38 +31,31 @@
     .evento2{
     position: absolute;
     left: 53%;
-    top:5.6%;
+    top:8.1%;
     }
     .evento3{
         position: absolute;
         left: 53%;
-        top:10.4%;  
+        top:16.5%;  
     }
     
 
     .evento4{
         position: absolute;
-        left: 53%;
-        top:16.1%;  
+        left:53%;
+        top:24.8%;  
     }
     .evento5{
         position: absolute;
         left: 53%;
-        top:21.5%;  
+        top:32.9%;  
     }
     .evento6{
         position: absolute;
         left: 53%;
-        top:27.1%;  
+        top:41.2%;  
     }
-   
-    .imgsubir{
-        width: 25%;
-        height: 25%;
-        text-align: center;
-      border: 0px;
-      right: 10%;
-      }
+
     @media (max-width:492px){
   
         .bodyevent{
@@ -94,39 +87,33 @@
             .evento2{
             position: absolute;
             left: 60%;
-            top:6.1%;
+            top:7.9%;
             }
             .evento3{
                 position: absolute;
                 left: 60%;
-                top:12.1%;  
+                top:16.5%;  
             }
             
         
             .evento4{
                 position: absolute;
                 left: 60%;
-                top:17.7%;  
+                top:24.9%;  
             }
             .evento5{
                 position: absolute;
                 left: 60%;
-                top:23.9%;  
+                top:32.9%;  
             }
             .evento6{
                 position: absolute;
                 left: 60%;
-                top:29.9%;  
+                top:41.2%;  
             }
 
         
-            .subirimagen{
-                left: auto;
-                position: relative;
-                right: 33px;
-              
-                
-              }
+       
       }
       
       
