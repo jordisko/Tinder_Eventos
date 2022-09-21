@@ -1,3 +1,11 @@
+function comprobarLogin() {
+    let usuarioLogged = localStorage.getItem("usuario");
+    if(usuarioLogged == '' || usuarioLogged == null)
+    {
+        alert('¡Tienes que iniciar sesión!');
+        window.location.href="inicio_de_session.html";
+    }
+}
 
 function mostrar(){
     $("#Nombre_usuario").prop("disabled", false);
@@ -22,4 +30,5 @@ function guardar(){
 }
 function cerrar(){
     document.location.href = "inicio_de_session.html"
+    localStorage.removeItem("usuario");
 }
