@@ -44,17 +44,12 @@ position: absolute;
 left: 49%;
 top: 6.3%;
 }
-.imagen{
-  position: relative;
-left:10% ;
-
-}
 .imgsubir{
-  width: 125px;
-  height: 125px;
+  width: 25%;
+  height: 25%;
   text-align: center;
 border: 0px;
-  right: 50%;
+right: 10%;
 }
 
 
