@@ -62,7 +62,7 @@ label{
     left: 1150px;
   }
 
-  @media (max-width:492px){
+  @media (max-width:479px){
 
 
     ul {
@@ -71,7 +71,7 @@ label{
       padding: 0;
       overflow: hidden;
       background-color: green;
-      width: 120%;
+      width: 105.8%;
     }
     
     li {
@@ -96,13 +96,13 @@ label{
       backdrop-filter: blur(0px) saturate(110%);
       -webkit-backdrop-filter: blur(0px) saturate(150%);
       position: absolute;
-      left: 4%;
+      left: 3.7%;
       top: 15%;
       width: 345px;
     }
     .cerrar{
       position: relative;
-      left: 160px;
+      left: 150px;
     }
   }
  

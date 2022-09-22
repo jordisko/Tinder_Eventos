@@ -58,7 +58,7 @@ border: 0px;
 }
 
 
-@media (max-width:492px){
+@media (max-width:479px){
   .formulario{
     margin-top: 5%;
      text-align: center;
@@ -68,14 +68,17 @@ border: 0px;
      -webkit-backdrop-filter: blur(0px) saturate(150%);
  position: absolute;
  width: 350px;
- left: 4%;
+ left: 3%;
  }
 .subirimagen{
-  left: auto;
   position: relative;
-  right: 33px;
+  right: 60px;
+  left: auto;
+}
+.imagen{
+  position: relative;
+left:0% ;
 
-  
 }
  .datos{
   position: relative;
