@@ -34,10 +34,11 @@
         top: 15%;
         width: 680px;
       }
-     button{
-      margin-left: 80%;
+     .crearevent{
+      margin-left: 90%;
       border: 0;
       margin-top: 36%;
+      text-align: center;
      }
      .fondo {
       position: fixed;
@@ -52,6 +53,11 @@
       position: relative;
       left: 1150px;
     }
+   
+    .info{
+border: 5px black;
+    }
+   
     @media (max-width:492px){
       button{
         margin-left: 70%;
