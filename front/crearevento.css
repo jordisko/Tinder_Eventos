@@ -93,7 +93,7 @@
         left: 1125px;
       }
 
-    @media (max-width:492px){
+    @media (max-width:479px){
   
         .bodyevent{
             margin-top: 80px;
@@ -109,7 +109,7 @@
             -webkit-backdrop-filter: blur(0px) saturate(150%);
             left: auto;
             right: auto;
-            left: 5%;
+            left: 3.5%;
         
         }
         input{
@@ -183,7 +183,7 @@
               }
               .cerrar{
                 position: relative;
-                left: 160px;
+                left: 150px;
               }
       }
       
