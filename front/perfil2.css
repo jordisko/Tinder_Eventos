@@ -8,7 +8,15 @@ label{
     font-size: 19px;
  
 }
-
+input{
+  border-bottom: solid medium black ;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+}
+textarea{
+  border: solid black;
+}
 
  
   
