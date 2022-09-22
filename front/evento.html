@@ -22,10 +22,23 @@
 
     <div class="evento">
     <p> Búsqueda: <input type="search" name="busquedaevento" placeholder="evento"> <input type="submit" value="Buscar"></p>
+    <div id="tarjeta">
+        <img src="fotos/fondo.jpeg" id="foto" >
+        <div id="info">
+            <div id="nombre">nombre</div>
+            <div id="sitio">sitio</div>
+            <div id="hora">hora</div>
+            <div class="direccion"><button onclick="perfilevento()" class="botonperfil" >Mas informacion</button></div>
+            </div>
+    </div>
+    <br>
+    <br>
+
+
 </div>
 
-<button id="crearevento" name="crearevento" onclick="crear()"><img src="https://th.bing.com/th/id/OIP.nvDtdpExjbab0Empd7gtLAHaHa?pid=ImgDet&rs=1"
-width="70" height="70"></button>
+<button id="crearevento" name="crearevento" onclick="crear()" class="crearevent"><img src="https://th.bing.com/th/id/OIP.nvDtdpExjbab0Empd7gtLAHaHa?pid=ImgDet&rs=1"
+width="20" height="20" ></button>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" ></script>
 <script src="./evento.js"></script>
