@@ -27,35 +27,14 @@
   .evento{
     position: relative;
     right:15% ;
+    margin-top: 10px;
     }
     .evento2{
     position: absolute;
-    left: 60%;
-    top:6.2%;
-    }
-    .evento3{
-        position: absolute;
-        left: 60%;
-        top:12.4%;  
+    left: 52%;
+    top:4.2%;
     }
     
-
-    .evento4{
-        position: absolute;
-        left: 60%;
-        top:19.1%;  
-    }
-    .evento5{
-        position: absolute;
-        left: 60%;
-        top:25.5%;  
-    }
-    .evento6{
-        position: absolute;
-        left: 60%;
-        top:32.1%;  
-    }
-   
     .imgsubir{
         width: 25%;
         height: 25%;
@@ -92,6 +71,14 @@
         position: relative;
         left: 1125px;
       }
+      input{
+        width: 150px;
+        height: 12px;
+    }
+    
+  
+
+    
 
     @media (max-width:479px){
   
@@ -115,7 +102,7 @@
         input{
             width: 120px;
         }
-
+       
 
         .evento{
             position: relative;
