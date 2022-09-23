@@ -1,8 +1,13 @@
 //variables
 
 //variable foto
-let cFotos = ["front\fotos\fotos_random"];
-let imagenes = [];
+
+
+
+
+
+// let cFotos = ["front\fotos\fotos_random"];
+// let imagenes = [];
 //variable info
 
 var binfo = document.getElementById("info");
@@ -45,11 +50,15 @@ function info(){
     
 }
 
-for (let i = 0; i < cFotos.length; i++) {
-     imagenes[i] = new Image();
-     imagenes[i].src= cFotos[i]; 
-        console.log(i);
+function aleatorio(){
+    var random = Math.floor(Math.random() * 6);
+    document.getElementById("foto").src = "fotos/fotos_random/"+random+".jpeg";
 }
+// for (let i = 1; i < cFotos.length; i++) {
+//      imagenes[i] = new Image();
+//      imagenes[i].src= "front\fotos\fotos_random/"+i+".jpeg"; 
+//         console.log(imagenes[i]);
+// }
 
 
 
