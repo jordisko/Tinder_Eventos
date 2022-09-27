@@ -1,5 +1,5 @@
 let id =1
-const yourUrl ='http://localhost:8080/usuarios/1'
+const yourUrl =('http://localhost:8080/usuarios/'+id)
 async function fetchByIdJSON() {
     const response = await fetch(yourUrl,{
     method: 'GET',
@@ -12,8 +12,8 @@ async function fetchByIdJSON() {
 }
 function mostrarPerfil(){
   fetchByIdJSON().then(json =>{
-    image.src = json.fotoUsuario;
     var image= document.getElementById('imagenperfil').innerHTML 
+    image.src = json.fotoUsuario;
     document.getElementById('Nombre').innerHTML = json.nombrePersona
     document.getElementById('Apellido').innerHTML = json.apellidoPersona
     document.getElementById('Descripcion').innerHTML = json.descripcionUsuario
@@ -23,9 +23,5 @@ function mostrarPerfil(){
     console.log(json.descripcionUsuario)
 })}
 
-function jsonToMap(jsonStr) 
-{
-    return new Map(Object.entries(JSON.parse(jsonStr)));
-}
 mostrarPerfil()
 
