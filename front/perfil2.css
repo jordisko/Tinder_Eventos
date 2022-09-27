@@ -80,8 +80,8 @@ li a:hover {
   }
   .perfil2{
   position: absolute;
-  left: 51%;
-  top: 31.5%;
+  left: 43%;
+  top: 40.1%;
   }
   #foto{
     border: 0px solid black;
@@ -89,7 +89,7 @@ li a:hover {
   }
   .cerrar{
     position: relative;
-    left: 1125px;
+    left: 1150px;
   }
 
   @media (max-width:492px){
@@ -137,8 +137,8 @@ li a:hover {
       }
       .perfil2{
       position: absolute;
-      left: 44%;
-      top: 31.5%;
+      left: 37%;
+      top: 40.1%;
       }
       .cerrar{
         position: relative;

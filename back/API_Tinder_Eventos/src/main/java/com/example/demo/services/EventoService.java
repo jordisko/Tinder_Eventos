@@ -40,12 +40,17 @@ public class EventoService {
 		if (eventoRepository.findById(num).isPresent()) {
 			Evento eventoToUpdate = new Evento();
 			eventoToUpdate.setIdEvento(eventoUpdated.getIdEvento());
+			eventoToUpdate.setNombreEvento(eventoUpdated.getNombreEvento()); 
 			eventoToUpdate.setDescripcionEvento(eventoUpdated.getDescripcionEvento());
 			eventoToUpdate.setCodigoPostalLocalizacionEvento(eventoUpdated.getCodigoPostalLocalizacionEvento());
 			eventoToUpdate.setPersonasMaxEvento(eventoUpdated.getPersonasMaxEvento());
 			eventoToUpdate.setFechaEvento(eventoUpdated.getFechaEvento());
 			eventoToUpdate.setDireccionLocalizacionEvento(eventoUpdated.getDireccionLocalizacionEvento());
 			eventoToUpdate.setNumeroLocalizacionEvento(eventoUpdated.getNumeroLocalizacionEvento());
+			eventoToUpdate.setTipoDeEvento(eventoUpdated.getTipoDeEvento());
+			eventoToUpdate.setFotoEvento(eventoUpdated.getFotoEvento());
+			eventoToUpdate.setEstadoEvento(eventoUpdated.getEstadoEvento());
+			
 			eventoRepository.save(eventoToUpdate);
 			return "Evento modificado";
 		}

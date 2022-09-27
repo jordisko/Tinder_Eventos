@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="perfil.css">
+    <link rel="stylesheet" href="perfil2.css">
+    <link rel="script" href="perfil2.js">
 </head>
-<body onload="comprobarLogin()">
+<body>
     <ul>
         <li><a href="./evento.html"><img src="https://static.thenounproject.com/png/49638-200.png" height="25px" width="25px"></a></li>
         <li><a href="../pagina_principal.html"><img src="https://images.assetsdelivery.com/compings_v2/hardqor4ik/hardqor4ik1911/hardqor4ik191100012.jpg" height="25px" width="25px"></a></li>
@@ -18,63 +19,42 @@
 
     <div class="formulario">
 
-    <div class="centrar">
-      <button id="modificar" onclick="mostrar()">Modificar perfil</button>
-      <button id="guardar" onclick="guardar()">Guardar perfil</button>
-    </div>
+   
     
     <br/>
-   <img src="" width="90px" height="90px" id="imagenperfil">
-  </button>
+    <!-- <div class="popup">
+      <img id="image" /> -->
+    
+  <!-- </div> -->
+    <img width="90px" height="90px" id="imagenperfil">
     <br/>
     <br/>
+    <br>
    <div class="perfil">
-    <label for="Nombre_usuario">Nombre usuario:</label>
+    <label for="Nombre">Nombre:</label>
     <br>
     <br>
-    <label for="Contraseña">Contraseña:</label>
+    <label for="Apellido">Apellido:</label>
+
     <br>
     <br>
-    <label for="nombre">Nombre:</label>
-    <br>
-    <br>
-    <label for="apellido">Apellido:</label>
-    <br>
-    <br>
-    <label for="codigo_postal">Codigo postal:</label>
-    <br>
-    <br>
-    <label for="gmail">Gmail:</label>
+   
 
    </div>
     <div  class="perfil2">
   
-    <input " maxlength="40" disabled="" type="Contraseña" id="Contraseña" class="form-control">
+   
+    <p  maxlength="40" id="Nombre" ><p>
     <br>
     <br>
-    <input  maxlength="40" disabled="" type="Nombre_usuario" id="Nombre_usuario" class="form-control">
-    <br>
-    <br>
-    <input maxlength="40" disabled="" type="nombre" id="nombre" class="form-control">
-    <br>
-    <br>
-    <input  maxlength="40" disabled="" type="apellido" id="apellido" class="form-control">
-    <br>
-    <br>
-    <input  maxlength="40" disabled="" type="codigo_postal" id="codigo_postal" class="form-control">
-    <br>
-    <br>
-    <input  maxlength="40" disabled="" type="gmail" id="gmail" class="form-control">
-
+    <p  maxlength="40"  id="Apellido" ><p>
 
     </div>
-    <br>
-
-    <br>
+    
 
     
     <label for="descripcion">Descripción:</label></p>
-  <textarea id="descripcion" name="descripcion" disabled="" rows="4" cols="40"> </textarea>
+  <textarea id="Descripcion" name="descripcion" disabled="" rows="4" cols="40"> </textarea>
 
   <br/>
   
@@ -83,13 +63,11 @@
     <br>
     <br>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"  ></script>
-    <script src="./perfil.js"></script>
 
     
 </div>
 
-
+        <script src="./perfil2.js"></script>
 
 
 </body>

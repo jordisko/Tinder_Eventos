@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="crearevento.css">
-</head>
-<body onload="comprobarLogin()">
+    <link rel="stylesheet" href="perfilevento.css">
+    <script type="text/javascript" src="perfilevento.js"></script>
+  </head>
+<body>
   <img src="https://images.pexels.com/photos/382297/pexels-photo-382297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="fondo">
   <div class="menu">
     <ul>
@@ -22,10 +23,11 @@
  <div class="bodyevent">
     <br/>
     <br>
+    <img src="https://d500.epimg.net/cincodias/imagenes/2016/03/16/lifestyle/1458143779_942162_1458143814_noticia_normal.jpg" width="90px" height="90px" >
 
-
-  
 <div class="evento">
+<br>
+<br>
   <label for="nombre_evento">  Nombre evento:</label>
   <br/>
   <br>
@@ -39,101 +41,66 @@
   <br>
   <br>
   <label for="lugar">Dirrecion evento:</label>
+  <br>
+  <br>
+  <label for="tipo">Tipo de evento:</label>
 
 
 </div>
 
 <div class="evento2">
-  <input id="nombreEvento" class="nombrevento" maxlength="40" type="nombre_evento" class="form-control" width="200%">
+  <input type="nombre_evento" class="nombrevento" disabled="" maxlength="40" type="nombre_evento" id="nombreevento" class="form-control" width="200%">
   
 </div>
 <div class="evento3">
-  <input type="number" class="maximo" id="personasMaxEvento" name="maximopersona" min="2" max="100">
+  <input type="number" class="maximo" id="maximopersona"  disabled="" name="maximopersona" min="2" max="100">
  
 </div>
 <div class="evento4">
-  <input type="text" class="fecha" id="fechaEvento">
+  <input type="text" class="fecha" id="campofecha" disabled="" >
 
 </div>
 <div class="evento5" >
-  <input type="hora" class="hora" id="horaEvento" class="form-control" placeholder="16:00">
+  <input type="hora" class="hora" id="hora" disabled="" class="form-control" >
 
 </div>
  <div class="evento6">
-  <input type="lugar" class="lugar"  id="direccionLocalizacionEvento" class="form-control">
+  <input type="lugar" class="direccion" disabled=""  id="direccion" class="form-control">
+  <br>
+  <br>
+  <input aria-describedby="tipo" disabled=""  type="tipo" id="tipoevento" class="form-control">
+
 
  </div>
 
   
 
-
-    
-
-   
-
-    <meta name="description" content="Escribe la descripción uno.">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./crearevento.js"></script>
-    <script>
-    $( function() {
-      $( "#fechaEvento" ).datepicker({
-        format:'YYYY-MM-DD',
-        startDate: '-3d',
-        language:"es",
-        numberOfMonths: 2,
-        showButtonPanel: true
-      });
-    } );
-    </script>
-    
-    <br/>
+  
+    <br>
     <br>
 
     <label for="lugar">Codigo postal:</label>
-    <input aria-describedby="postal"  style="width:46px" type="postal" id="codigoPostalLocalizacionEvento" class="form-control">
+    <input aria-describedby="postal" disabled=""  style="width:46px" type="postal" id="postal" class="form-control">
     <label for="numero">Numero:</label> 
-    <input aria-describedby="numero"  style="width:46px" type="numero" id="numeroLocalizacionEvento" class="form-control">
+    <input aria-describedby="numero" disabled=""  style="width:46px" type="numero" id="numero" class="form-control">
     <br>
     <br/>
-  <label for="tipo">Tipo de evento:
-    <select name="evento" id = "tipoDeEvento">
+  
 
-      <option value="1" >1</option>
-      
-      <option value="2">2</option>
-      
-      <option value="3">3</option>
-      
-      </select>
-  </label>
-  <br>
-
-    <br>
+ 
     
-    <label for="descripción" >Descripción evento:</label>
-  <textarea id="descripcionEvento" name="des" rows="4" cols="35"> </textarea>
+    <label for="descripcion">Descripción evento:</label></p>
+  <textarea id="descripcion" disabled=""  name="des" rows="4" cols="35"> </textarea>
   <br>
-  <br>
-  <div class="imagen">
-    <label for="Subir_imagen" >Subir Imagen:</label>
 
-    <input id="inputFile1" type="file">
-    <br>
-    <br>
-    <img id="img1" class="imgsubir">
-
-    <br>
-    <br>
- </div> 
   
 
     <br>
-    <button id="eventocrear" onclick="crearEvento()">Crear evento</button>
-    <button id="cancelar" onclick="cancelar()" >Cancelar</a></button>
-    <br>
-    <br>
- 
+   
+    
  </div>
 
 

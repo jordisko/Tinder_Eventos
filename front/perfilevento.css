@@ -30,40 +30,32 @@
     }
     .evento2{
     position: absolute;
-    left: 60%;
-    top:6.2%;
+    left: 53%;
+    top:29.8%;
     }
     .evento3{
         position: absolute;
-        left: 60%;
-        top:12.4%;  
+        left: 53%;
+        top:35.5%;  
     }
     
 
     .evento4{
         position: absolute;
-        left: 60%;
-        top:19.1%;  
+        left:53%;
+        top:42.4%;  
     }
     .evento5{
         position: absolute;
-        left: 60%;
-        top:25.5%;  
+        left: 53%;
+        top:48.9%;  
     }
     .evento6{
         position: absolute;
-        left: 60%;
-        top:32.1%;  
+        left: 53%;
+        top:54.9%;  
     }
-   
-    .imgsubir{
-        width: 25%;
-        height: 25%;
-        text-align: center;
-      border: 0px;
-      right: 10%;
-      }
-      ul {
+    ul {
         list-style-type: none;
         margin: -13px;
         padding: 0;
@@ -113,7 +105,7 @@
         
         }
         input{
-            width: 120px;
+            width: 90px;
         }
 
 
@@ -124,40 +116,31 @@
             .evento2{
             position: absolute;
             left: 60%;
-            top:6.1%;
+            top:29.5%;
             }
             .evento3{
                 position: absolute;
                 left: 60%;
-                top:12.5%;  
+                top:35.8%;  
             }
             
         
             .evento4{
                 position: absolute;
                 left: 60%;
-                top:18.9%;  
+                top:42.5%;  
             }
             .evento5{
                 position: absolute;
                 left: 60%;
-                top:25.5%;  
+                top:48.9%;  
             }
             .evento6{
                 position: absolute;
                 left: 60%;
-                top:31.9%;  
+                top:55.2%;  
             }
-
-        
-            .subirimagen{
-                left: auto;
-                position: relative;
-                right: 33px;
-              
-                
-              }
-              ul {
+            ul {
                 list-style-type: none;
                 margin: -13px;
                 padding: 0;
@@ -185,6 +168,9 @@
                 position: relative;
                 left: 160px;
               }
+
+        
+       
       }
       
       
