@@ -50,6 +50,19 @@ ul{
         }
         
     }
+    @keyframes moveL {
+        from{
+           top: 0;
+           right: 0;
+           opacity: 100;
+        }
+        to{
+           top: 0;
+           right: 100px;
+           opacity: 0;
+        }
+        
+    }
     #botones{
         
         position: absolute;
@@ -76,7 +89,7 @@ ul{
         font-size: 3vh;
         width: 20%;
         height: 90%;
-        margin: 0 40% 0 40%;
+        margin: 0% 40% 0% 40%;
         }
         div #like{
             text-align: center;
@@ -84,7 +97,7 @@ ul{
             font-size: 3vh;
             width: 20%;
             height: 90%;
-            margin: 0 40% 0 40%;
+            margin: 0% 40% 0% 40%;
             }
   
     #tarjeta{

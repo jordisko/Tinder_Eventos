@@ -54,7 +54,7 @@ function info(){
     
 }
 
-function aleatorio(){
+function aleatorioR(){
     
     tarjeta.style.animationName = "moveR";
     var random = Math.floor(Math.random() * 6);
@@ -63,6 +63,15 @@ function aleatorio(){
         document.getElementById("foto").src = "fotos/fotos_random/"+random+".jpeg";
     },1000)
     }
+    function aleatorioL(){
+    
+        tarjeta.style.animationName = "moveL";
+        var random = Math.floor(Math.random() * 6);
+        setTimeout(function(){
+            tarjeta.style.animationName = "";
+            document.getElementById("foto").src = "fotos/fotos_random/"+random+".jpeg";
+        },1000)
+        }
 // for (let i = 1; i < cFotos.length; i++) {
 //      imagenes[i] = new Image();
 //      imagenes[i].src= "front\fotos\fotos_random/"+i+".jpeg"; 
