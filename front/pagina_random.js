@@ -55,13 +55,13 @@ function info(){
 }
 
 function aleatorio(){
-    var random = Math.floor(Math.random() * 6);
-    document.getElementById("foto").src = "fotos/fotos_random/"+random+".jpeg";
+    var random = Math.floor(Math.random() * 6); 
     tarjeta.style.animationName = "moveR";
-   
+    setTimeout(function(){
+        document.getElementById("foto").src = "fotos/fotos_random/"+random+".jpeg";
         tarjeta.style.animationName = "";
         
-    
+    },2000)
     }
 // for (let i = 1; i < cFotos.length; i++) {
 //      imagenes[i] = new Image();
