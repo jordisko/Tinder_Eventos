@@ -47,6 +47,10 @@ public class EventoService {
 			eventoToUpdate.setFechaEvento(eventoUpdated.getFechaEvento());
 			eventoToUpdate.setDireccionLocalizacionEvento(eventoUpdated.getDireccionLocalizacionEvento());
 			eventoToUpdate.setNumeroLocalizacionEvento(eventoUpdated.getNumeroLocalizacionEvento());
+			eventoToUpdate.setTipoDeEvento(eventoUpdated.getTipoDeEvento());
+			eventoToUpdate.setFotoEvento(eventoUpdated.getFotoEvento());
+			eventoToUpdate.setEstadoEvento(eventoUpdated.getEstadoEvento());
+			
 			eventoRepository.save(eventoToUpdate);
 			return "Evento modificado";
 		}

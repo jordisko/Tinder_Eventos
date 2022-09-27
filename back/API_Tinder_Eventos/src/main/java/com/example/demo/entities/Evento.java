@@ -8,8 +8,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
 import lombok.Data;
+
+
+
 
 @Data
 @Entity
@@ -34,11 +36,21 @@ public class Evento {
 	int personasMaxEvento;
 	
 	@Column(name = "fechaevento")
-	Date fechaEvento;
-	
+	java.sql.Timestamp fechaEvento;
+
 	@Column(name = "direccionlocalizacionevento")
 	String direccionLocalizacionEvento;
 	
 	@Column(name = "numerolocalizacionevento")
 	String numeroLocalizacionEvento;
+	
+	@Column(name = "tipodeevento")
+	String tipoDeEvento;
+	
+	@Column(name = "fotoevento")
+	String fotoEvento;
+	
+	@Column(name = "estadoevento")
+	String estadoEvento;
+
 }
