@@ -1,4 +1,5 @@
-function crearCuenta(){
+
+async function crearCuenta(){
   const url = 'http://localhost:8080/crearusuarios';
 const nombre = document.getElementById("nombre").value;
 const apellido = document.getElementById("apellido").value;
@@ -9,16 +10,18 @@ const password2 = document.getElementById("password2").value;
 const fotousuario = document.getElementById("img1").value;
 const descripcion = document.getElementById("descripcion").value;
 const codigoPostal = document.getElementById("codigopostal").value;
-const data = {nombreUsuario: nombreusuario,
-              correoElectronico: email,
-              contraseniaUsuario:password,
-              fotoUsuario:fotousuario , 
-              descripcionUsuario:descripcion,
-              nombrePersona: nombre,
-              apellidoPersona: apellido,
-              codigoPostal: codigoPostal}
+
+const data = {"nombreUsuario": nombreusuario,
+              "correoElectronico": email,
+              "contraseniaUsuario":password,
+              "fotoUsuario":fotousuario , 
+              "descripcionUsuario":descripcion,
+              "nombrePersona": nombre,
+              "apellidoPersona": apellido,
+              "codigoPostal": codigoPostal}
+              console.log(data);
   fetch(url, {
-  method: 'POST',
+  method: 'PUT',
   body: JSON.stringify(data),
   headers:{
     'Content-Type': 'application/json'
@@ -27,6 +30,7 @@ const data = {nombreUsuario: nombreusuario,
 .catch(error => console.error('Error:', error))
 .then(response => console.log('Success:', response))
 console.log(JSON.stringify(data));
+
 }
 // function mostrar(){
 //   var archivo = document.getElementById("file").files[0];

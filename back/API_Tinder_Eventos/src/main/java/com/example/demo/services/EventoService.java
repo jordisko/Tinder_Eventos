@@ -40,6 +40,7 @@ public class EventoService {
 		if (eventoRepository.findById(num).isPresent()) {
 			Evento eventoToUpdate = new Evento();
 			eventoToUpdate.setIdEvento(eventoUpdated.getIdEvento());
+			eventoToUpdate.setNombreEvento(eventoUpdated.getNombreEvento()); 
 			eventoToUpdate.setDescripcionEvento(eventoUpdated.getDescripcionEvento());
 			eventoToUpdate.setCodigoPostalLocalizacionEvento(eventoUpdated.getCodigoPostalLocalizacionEvento());
 			eventoToUpdate.setPersonasMaxEvento(eventoUpdated.getPersonasMaxEvento());

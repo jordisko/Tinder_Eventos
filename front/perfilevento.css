@@ -31,29 +31,29 @@
     .evento2{
     position: absolute;
     left: 53%;
-    top:8.1%;
+    top:29.8%;
     }
     .evento3{
         position: absolute;
         left: 53%;
-        top:16.5%;  
+        top:35.5%;  
     }
     
 
     .evento4{
         position: absolute;
         left:53%;
-        top:24.8%;  
+        top:42.4%;  
     }
     .evento5{
         position: absolute;
         left: 53%;
-        top:32.9%;  
+        top:48.9%;  
     }
     .evento6{
         position: absolute;
         left: 53%;
-        top:41.2%;  
+        top:54.9%;  
     }
     ul {
         list-style-type: none;
@@ -105,7 +105,7 @@
         
         }
         input{
-            width: 120px;
+            width: 90px;
         }
 
 
@@ -116,29 +116,29 @@
             .evento2{
             position: absolute;
             left: 60%;
-            top:7.9%;
+            top:29.5%;
             }
             .evento3{
                 position: absolute;
                 left: 60%;
-                top:16.5%;  
+                top:35.8%;  
             }
             
         
             .evento4{
                 position: absolute;
                 left: 60%;
-                top:24.9%;  
+                top:42.5%;  
             }
             .evento5{
                 position: absolute;
                 left: 60%;
-                top:32.9%;  
+                top:48.9%;  
             }
             .evento6{
                 position: absolute;
                 left: 60%;
-                top:41.2%;  
+                top:55.2%;  
             }
             ul {
                 list-style-type: none;

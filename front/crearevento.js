@@ -1,3 +1,14 @@
+async function crearEvento() {
+  // const url = 'http://localhost:8080/creareventos';
+function comprobarLogin() {
+  let usuarioLogged = localStorage.getItem("usuario");
+  if(usuarioLogged == '' || usuarioLogged == null)
+  {
+      alert('¡Tienes que iniciar sesión!');
+      window.location.href="inicio_de_session.html";
+  }
+}
+
 function cancelar(){
   document.location.href = "evento.html"
 }
@@ -31,4 +42,47 @@ function crear(){
 //   reader.readAsDataURL(file);
 // }
 
-// window.addEventListener('load', init, false);
+window.addEventListener('load', init, false);
+
+// async function crearEvento() {
+//   const url = 'http://localhost:8080/creareventos';
+//   const nombreEvento = document.getElementById("nombreEvento").valor;
+//   const descripcionEvento = document.getElementById("nombreEvento").valor;
+//   const codigoPostalLocalizacionEvento = document.getElementById("nombreEvento").valor;
+//   const personasMaxEvento = document.getElementById("nombreEvento").valor;
+//   const fechaEvento = document.getElementById("nombreEvento").valor;
+//   const direccionLocalizacionEvento = document.getElementById("nombreEvento").valor;
+//   const numeroLocalizacionEvento = document.getElementById("nombreEvento").valor;
+//   const tipoDeEvento=document.getElementById("").valor;
+//   const fotoEvento =document.getElementById("").valor;
+//   const data = {
+//     "nombreEvento": nombreEvento,
+//     "descripcionEvento": descripcionEvento,
+//     "codigoPostalLocalizacionEvento": codigoPostalLocalizacionEvento,
+//     "personasMaxEvento": personasMaxEvento,
+//     "fechaEvento": fechaEvento,
+//     "direccionLocalizacionEvento": direccionLocalizacionEvento,
+//     "numeroLocalizacionEvento": numeroLocalizacionEvento,
+//     "tipoDeEvento":tipoDeEvento,
+//     "fotoEvento": fotoEvento,
+//   }
+//   const element = document.querySelector('#put-request-set-headers .date-updated');
+//   const requestOptions = {
+//     method: 'PUT',
+//     headers: {
+//       'Content-Type': 'application/json',
+//       'Authorization': 'Bearer my-token',
+//       'My-Custom-Header': 'foobar'
+//     },
+//     body: JSON.stringify({ title: 'Fetch PUT Request Example' })
+//   };
+//   fetch(url, requestOptions)
+//     .then(response => response.json())
+//     .then(data => element.innerHTML = data.updatedAt);
+// }
+// function cancelar(){
+//   document.location.href = "evento.html"
+// }
+
+// function crear(){
+//   document.location.href = "evento.html"
