@@ -9,18 +9,11 @@
   </head>
   <body>
     <header>
-      <div id="logo" onclick="aleatorio()">Meetout</div>
+      <div id="logo">Meetout</div>
       
     </header>
-    <main>
-      <div id="botones">
-        <div>
-          <div id="dislike">No me apunto</div>
-        </div>
-        <div>
-          <div id="like">Me apunto</div>
-        </div>
-      </div>
+    <main id="mainTarjeta">
+      
       <div id="tarjeta">
         <img src="fotos/fotos_random/2.jpeg" id="foto" />
         <div id="info">
@@ -39,6 +32,15 @@
       </div>
     </main>
     <aside>
+      <div id="botones">
+        <div>
+          <div id="dislike"  onclick="aleatorio()">❌</div>
+        </div>
+        <div>
+          <div id="like"  onclick="aleatorio()">✔️</div>
+        </div>
+      </div>
+
       <div class="botones">
         <a href="pagina_random.html"><img src="fotos/random.png" /></a>
       </div>

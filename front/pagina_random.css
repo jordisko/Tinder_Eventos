@@ -3,7 +3,9 @@
     src: url(fuentes/Logo.ttf);
 }
 body{
+    background-color: black;
     margin: 0;
+    
 }
 ul{
     margin: 0;
@@ -28,29 +30,63 @@ ul{
     }
     
     main{
-        background-color: black;
+        position: relative;
         width: 100%;
         height: 80vh;
-    }
-    #botones{
-      
-        position: absolute;
-        height: 80vh;
-        width: 100%;
+        animation-name: ;
+        animation-duration: 1s;
         
     }
+    @keyframes moveR {
+        from{
+           top: 0;
+           left: 0;
+           opacity: 100;
+        }
+        to{
+           top: 0;
+           left: 100px;
+           opacity: 0;
+        }
+        
+    }
+    #botones{
+        
+        position: absolute;
+        height: 5vh;
+        width: 100%;
+        top: -55%;
+    }
     #botones div{
+        background-color: #937DC2;
+        text-align: center;
         height: 100%;
         width: 45%;
         margin: 0 2.5% 0 2.5%;
         float: left;
-    }
-    #dislike{
-        background-color: ;
-    }
-    #botones div:hover{
-        background-color: blue;
-    }
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
+    div #dislike{
+        text-align: center;
+        
+        font-size: 3vh;
+        width: 20%;
+        height: 90%;
+        margin: 0 40% 0 40%;
+        }
+        div #like{
+            text-align: center;
+          
+            font-size: 3vh;
+            width: 20%;
+            height: 90%;
+            margin: 0 40% 0 40%;
+            }
+  
     #tarjeta{
        
         width: 95%;
