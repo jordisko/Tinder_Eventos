@@ -13,34 +13,75 @@ function cancelar(){
   document.location.href = "evento.html"
 }
 
-function crear(){
-  document.location.href = "evento.html"
+  const nombreEvento = document.getElementById("nombreEvento").value;
+  const descripcionEvento = document.getElementById("descripcionEvento").value;
+  const codigoPostalLocalizacionEvento = document.getElementById("codigoPostalLocalizacionEvento").value;
+  const personasMaxEvento = document.getElementById("personasMaxEvento").value;
+  const diaEvento = document.getElementById("fechaEvento").value;
+  const direccionLocalizacionEvento = document.getElementById("direccionLocalizacionEvento").value;
+  const numeroLocalizacionEvento = document.getElementById("numeroLocalizacionEvento").value;
+  const tipoDeEvento=document.getElementById("tipoDeEvento").value;
+  const horaEvento=document.getElementById("horaEvento").value;
+  //const fotoEvento =document.getElementById("").value;
+  const postData = {
+    "nombreEvento": nombreEvento,
+    "descripcionEvento": descripcionEvento,
+    "codigoPostalLocalizacionEvento": codigoPostalLocalizacionEvento,
+    "personasMaxEvento": personasMaxEvento,
+    "fechaEvento": diaEvento+" "+horaEvento+":00" ,
+    "direccionLocalizacionEvento": direccionLocalizacionEvento,
+    "numeroLocalizacionEvento": numeroLocalizacionEvento,
+    "tipoDeEvento":tipoDeEvento
+    //"fotoEvento": fotoEvento,
+  };
+  console.log(postData);
+  
+    
+    try {
+      const response = await fetch('http://localhost:8080/creareventos', {
+        method: "put",
+        headers: {
+          "Content-Type": "application/json",
+          "Connection": "keep-alive"
+        },
+        body: JSON.stringify(postData)
+      });
+    
+      if (!response.ok) {
+        const message = 'Error with Status Code: ' + response.status;
+        throw new Error(message);
+      }
+    
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.log('Error: ' + error);
+    }
+ }
+ function mostrar(){
+  var archivo = document.getElementById("file").files[0];
+  var reader = new FileReader();
+  if (file) {
+    reader.readAsDataURL(archivo );
+    reader.onloadend = function () {
+      document.getElementById("img").src = reader.result;
+    }
+  }
+}
+function init() {
+  var inputFile = document.getElementById('inputFile1');
+  inputFile.addEventListener('change', mostrarImagen, false);
 }
 
-// function mostrar(){
-//   var archivo = document.getElementById("file").files[0];
-//   var reader = new FileReader();
-//   if (file) {
-//     reader.readAsDataURL(archivo );
-//     reader.onloadend = function () {
-//       document.getElementById("img").src = reader.result;
-//     }
-//   }
-// }
-// function init() {
-//   var inputFile = document.getElementById('inputFile1');
-//   inputFile.addEventListener('change', mostrarImagen, false);
-// }
-
-// function mostrarImagen(event) {
-//   var file = event.target.files[0];
-//   var reader = new FileReader();
-//   reader.onload = function(event) {
-//     var img = document.getElementById('img1');
-//     img.src= event.target.result;
-//   }
-//   reader.readAsDataURL(file);
-// }
+function mostrarImagen(event) {
+  var file = event.target.files[0];
+  var reader = new FileReader();
+  reader.onload = function(event) {
+    var img = document.getElementById('img1');
+    img.src= event.target.result;
+  }
+  reader.readAsDataURL(file);
+}
 
 window.addEventListener('load', init, false);
 
@@ -86,3 +127,4 @@ window.addEventListener('load', init, false);
 
 // function crear(){
 //   document.location.href = "evento.html"
+// }

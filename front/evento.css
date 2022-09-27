@@ -54,11 +54,45 @@
       left: 1150px;
     }
    
-    .info{
-border: 5px black;
-    }
-   
+    #nombre{
+position:relative;
+bottom:105px;
+
+}
+   #tarjeta{
+    border: 5px solid rebeccapurple;
+    background-color: lightgray;
+    padding: 40px;
+    margin: 40px;
+    width: 600px;
+    height: 150px;
+    box-sizing: border-box;
+
+   }
+   .imagen{
+      position: relative;
+      right:45% ;
+      
+   }
+   .direccion{
+    position: relative;
+    bottom:90px;
+
+   }
+   input{
+    border: transparent;
+   }
     @media (max-width:492px){
+      #tarjeta{
+        border: 5px solid rebeccapurple;
+        background-color: lightgray;
+        padding: 40px;
+        margin: 40px;
+        width: 280px;
+        height: 150px;
+        box-sizing: border-box;
+    
+       }
       .crearevent{
         margin-left: 50%;
         border: 0;

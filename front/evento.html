@@ -23,13 +23,23 @@
     <div class="evento">
     <p> Búsqueda: <input type="search" name="busquedaevento" placeholder="evento"> <input type="submit" value="Buscar"></p>
     <div id="tarjeta">
-        <img src="fotos/fondo.jpeg" id="foto" >
+        <div class="imagen" >
+            <img src="fotos/fondo.jpeg" id="foto" width="80px"  height="80px">
+        </div>
         <div id="info">
-            <div id="nombre">nombre</div>
-            <div id="sitio">sitio</div>
-            <div id="hora">hora</div>
-            <div class="direccion"><button onclick="perfilevento()" class="botonperfil" >Mas informacion</button></div>
+            <div id="nombre">
+                <label for="nombre">Nombre evento:</label>
+                <input  maxlength="40" disabled="" type="text" id="nombrevento">
+           <br>
+                <label for="sitio">Lugar:</label>
+                <input  maxlength="40" disabled="" type="text" id="sitio">
+           <br>
+                 <label for="hora">Fecha:</label>
+                <input  maxlength="40" disabled="" type="date" id="hora">
             </div>
+            <div class="direccion"><button onclick="perfilevento()" class="botonperfil" >Mas informacion</button></div>
+           
+        </div>
     </div>
     <br>
     <br>
