@@ -17,7 +17,7 @@ var tarjeta = document.getElementById("mainTarjeta");
 var binfo = document.getElementById("info");
 var activo = false;
 
-var texto = document.getElementById("texto");
+var texto = document.getElementById("descripcion");
 
 
 
@@ -32,7 +32,8 @@ if (activo == false) {
     console.log(binfo.style.animationName);
  }
 
- texto.style.display = "none";   
+ texto.style.display = "none"; 
+  
 function info(){
     if (activo == false) {
         activo = true;
