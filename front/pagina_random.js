@@ -58,10 +58,9 @@ function aleatorio(){
     
     tarjeta.style.animationName = "moveR";
     var random = Math.floor(Math.random() * 6);
-    document.getElementById("foto").src = "fotos/fotos_random/"+random+".jpeg";
-    
     setTimeout(function(){
         tarjeta.style.animationName = "";
+        document.getElementById("foto").src = "fotos/fotos_random/"+random+".jpeg";
     },1000)
     }
 // for (let i = 1; i < cFotos.length; i++) {
