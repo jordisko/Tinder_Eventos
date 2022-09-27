@@ -36,9 +36,9 @@ CREATE TABLE IF NOT EXISTS `baseDatosMeetOut`.`Eventos` (
   
 
 
-DROP TABLE IF EXISTS `baseDatosMeetOut`.`Match` ;
+DROP TABLE IF EXISTS `baseDatosMeetOut`.`Matches` ;
 
-CREATE TABLE IF NOT EXISTS `baseDatosMeetOut`.`Match` (
+CREATE TABLE IF NOT EXISTS `baseDatosMeetOut`.`Matches` (
   `idMatch` INT NOT NULL AUTO_INCREMENT,
   `Usuarios_idUsuario` INT NOT NULL,
   `Eventos_idEvento` INT NOT NULL,
@@ -65,7 +65,9 @@ SELECT * from basedatosmeetout.eventos;
 INSERT INTO `basedatosmeetout`.`usuarios` ( `nombreUsuario`, `correoElectronico`, `contraseniaUsuario`, `fotoUsuario`, `descripcionUsuario`, `nombrePersona`, `apellidoPersona`, `codigoPostal`) VALUES ('jordisko', 'jordicampos.97@gmail.com', '1234', 'https://i.imgur.com/58xTTQM.png', 'No se que poner', 'Jordi', 'Campos', '08031');
 SELECT * from basedatosmeetout.usuarios;
 
-
+select Usuarios_idUsuario from matches WHERE Eventos_idEvento = 1;
+SELECT IdEvento  from eventos where IdEvento not in (select Eventos_idEvento from Matches where usuarios_idUsuario = 1) AND codigoPostalLocalizacionEvento =(SELECT codigoPostal from usuarios where idUsuario =1);
+INSERT INTO `basedatosmeetout`.`matches` (`idMatch`, `Usuarios_idUsuario`, `Eventos_idEvento`, `estadoMatch`) VALUES ('1', '1', '1', '1');
 
 
 
