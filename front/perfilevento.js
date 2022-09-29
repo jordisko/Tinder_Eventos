@@ -13,17 +13,15 @@ async function fetchByIdJSON() {
 function mostrarPerfilEvento(){
   fetchByIdJSON().then(json =>{
     console.log(json)
-    // var image= document.getElementById('imagenperfil').value 
-    // image.src = json.fotoUsuario;
+    document.getElementById('fotoperfil').src = json.fotoUsuario
     document.getElementById('nombreevento').value = json.nombreEvento
-    document.getElementById('descripcion').value = json.descripcionEvento
-    document.getElementById('postal').value = json.codigoPostalLocalizacionEvento
+    // document.getElementById('postal').value = json.codigoPostalLocalizacionEvento
     document.getElementById('maximopersona').value = json.personasMaxEvento
     document.getElementById('campofecha').value = json.fechaEvento
-    // document.getElementById('hora').value = json.descripcionUsuario
+    document.getElementById('hora').value=json.horaEvento
     document.getElementById('direccion').value = json.direccionLocalizacionEvento
     document.getElementById('tipoevento').value = json.descripcionUsuario
-    document.getElementById('numero').value = json.numeroLocalizacionEvento
+    document.getElementById('descripcion').innerHTML = json.descripcionEvento
    
 
 })}

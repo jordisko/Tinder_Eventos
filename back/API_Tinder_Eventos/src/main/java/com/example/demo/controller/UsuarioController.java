@@ -34,9 +34,7 @@ public class UsuarioController {
 		System.err.println(usuario.toString());
 		log.info("Request a http://localhost:PORT/api/crearusuarios(PUT)");
 		usuarioService.saveUsuario(usuario);
-
 	}
-
 	@RequestMapping(path = "/usuarios/{id}",method = RequestMethod.GET)
 	public Optional<Usuario> getUsuarioById(@PathVariable long id) {
 		log.info("Request a http://localhost:PORT/api/usuarios(GET)");
