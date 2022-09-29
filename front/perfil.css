@@ -89,7 +89,7 @@ li a:hover {
   }
   .cerrar{
     position: relative;
-    left: 1125px;
+    left: 1025px;
   }
 
   @media (max-width:479px){
@@ -142,7 +142,7 @@ li a:hover {
       }
       .cerrar{
         position: relative;
-        left: 150px;
+        left: 90px;
       }
    
   }

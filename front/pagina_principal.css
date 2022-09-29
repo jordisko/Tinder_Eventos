@@ -59,7 +59,7 @@ label{
   }
   .cerrar{
     position: relative;
-    left: 1150px;
+    left: 1020px;
   }
 
   @media (max-width:479px){
@@ -102,7 +102,7 @@ label{
     }
     .cerrar{
       position: relative;
-      left: 150px;
+      left: 90px;
     }
   }
  
