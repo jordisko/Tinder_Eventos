@@ -51,7 +51,7 @@
     }
     .cerrar{
       position: relative;
-      left: 1150px;
+      left: 1050px;
     }
    
     #nombre{
@@ -147,6 +147,6 @@ left: 35px;
       }
       .cerrar{
         position: relative;
-        left: 150px;
+        left: 90px;
       }
     }
