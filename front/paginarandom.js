@@ -15,15 +15,17 @@ function mostrarPerfilEvento(){
     console.log(json)
     // var image= document.getElementById('imagenperfil').value 
     // image.src = json.fotoUsuario;
-    document.getElementById('nombreevento').value = json.nombreEvento
-    document.getElementById('descripcion').value = json.descripcionEvento
-    document.getElementById('postal').value = json.codigoPostalLocalizacionEvento
-    document.getElementById('maximopersona').value = json.personasMaxEvento
-    document.getElementById('campofecha').value = json.fechaEvento
+    console.log(json.descripcionEvento)
+    console.log(json.personasMaxEvento)
+    document.getElementById('nombreevento').innerHTML = json.nombreEvento
+    document.getElementById('descripcion').innerHTML = json.descripcionEvento
+    document.getElementById('foto').src = json.fotoEvento
+    document.getElementById('maximopersona').innerHTML = json.personasMaxEvento
+    // document.getElementById('campofecha').value = json.fechaEvento
     // document.getElementById('hora').value = json.descripcionUsuario
-    document.getElementById('direccion').value = json.direccionLocalizacionEvento
-    document.getElementById('tipoevento').value = json.descripcionUsuario
-    document.getElementById('numero').value = json.numeroLocalizacionEvento
+    // document.getElementById('direccion').value = json.direccionLocalizacionEvento
+    // document.getElementById('tipoevento').value = json.descripcionUsuario
+    // document.getElementById('numero').value = json.numeroLocalizacionEvento
    
 
 })}
