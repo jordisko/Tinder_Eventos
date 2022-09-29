@@ -28,33 +28,7 @@
     position: relative;
     right:15% ;
     }
-    .evento2{
-    position: absolute;
-    left: 53%;
-    top:29.8%;
-    }
-    .evento3{
-        position: absolute;
-        left: 53%;
-        top:35.5%;  
-    }
-    
-
-    .evento4{
-        position: absolute;
-        left:53%;
-        top:42.4%;  
-    }
-    .evento5{
-        position: absolute;
-        left: 53%;
-        top:48.9%;  
-    }
-    .evento6{
-        position: absolute;
-        left: 53%;
-        top:54.9%;  
-    }
+   
     ul {
         list-style-type: none;
         margin: -13px;
@@ -95,7 +69,7 @@
       }
       
 
-    @media (max-width:479px){
+    @media (max-width:492px){
   
         .bodyevent{
             margin-top: 80px;
