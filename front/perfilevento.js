@@ -13,9 +13,9 @@ async function fetchByIdJSON() {
 function mostrarPerfilEvento(){
   fetchByIdJSON().then(json =>{
     console.log(json)
-    document.getElementById('fotoperfil').src = json.fotoUsuario
+ document.getElementById('fotoperfil').src = json.fotoUsuario
     document.getElementById('nombreevento').value = json.nombreEvento
-    // document.getElementById('postal').value = json.codigoPostalLocalizacionEvento
+    document.getElementById('postal').value = json.codigoPostalLocalizacionEvento
     document.getElementById('maximopersona').value = json.personasMaxEvento
     document.getElementById('campofecha').value = json.fechaEvento
     document.getElementById('hora').value=json.horaEvento
