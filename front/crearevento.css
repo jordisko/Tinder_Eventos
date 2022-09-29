@@ -33,7 +33,7 @@
     .evento2{
     position: absolute;
     left: 52%;
-    top:4.2%;
+    top:8.2%;
     }
     
     .imgsubir{
@@ -112,31 +112,9 @@
             .evento2{
             position: absolute;
             left: 60%;
-            top:6.1%;
+            top:8.5%;
             }
-            .evento3{
-                position: absolute;
-                left: 60%;
-                top:12.5%;  
-            }
-            
-        
-            .evento4{
-                position: absolute;
-                left: 60%;
-                top:18.9%;  
-            }
-            .evento5{
-                position: absolute;
-                left: 60%;
-                top:25.5%;  
-            }
-            .evento6{
-                position: absolute;
-                left: 60%;
-                top:31.9%;  
-            }
-
+           
         
             .subirimagen{
                 left: auto;
