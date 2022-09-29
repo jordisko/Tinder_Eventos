@@ -23,7 +23,9 @@
  <div class="bodyevent">
     <br/>
     <br>
-    <img src="https://d500.epimg.net/cincodias/imagenes/2016/03/16/lifestyle/1458143779_942162_1458143814_noticia_normal.jpg" width="90px" height="90px" >
+<div>
+    <img src="" id = "fotoperfil" width="90px" height="90px" />
+  </div>
 
 <div class="evento">
 <br>
@@ -49,7 +51,7 @@
 </div>
 
 <div class="evento2">
-  <input type="nombre_evento" class="nombrevento" disabled="" maxlength="40" type="nombre_evento" id="nombreevento" class="form-control" width="200%">
+  <input type="nombre_evento" disabled="" maxlength="40" id="nombreevento" class="form-control" width="200%">
   
 </div>
 <div class="evento3">
@@ -61,11 +63,11 @@
 
 </div>
 <div class="evento5" >
-  <input type="hora" class="hora" id="hora" disabled="" class="form-control" >
+  <input type="hora" id="hora" disabled="" class="form-control" >
 
 </div>
  <div class="evento6">
-  <input type="lugar" class="direccion" disabled=""  id="direccion" class="form-control">
+  <input type="lugar" disabled=""  id="direccion" class="form-control">
   <br>
   <br>
   <input aria-describedby="tipo" disabled=""  type="tipo" id="tipoevento" class="form-control">
@@ -81,19 +83,21 @@
   
     <br>
     <br>
-
     <label for="lugar">Codigo postal:</label>
-    <input aria-describedby="postal" disabled=""  style="width:46px" type="postal" id="postal" class="form-control">
-    <label for="numero">Numero:</label> 
-    <input aria-describedby="numero" disabled=""  style="width:46px" type="numero" id="numero" class="form-control">
+  <div class="evento7">
+    <input  disabled=""  style="width:46px" id="postal" class="form-control">
+  </div>
+
     <br>
     <br/>
   
 
  
     
-    <label for="descripcion">Descripción evento:</label></p>
+    <label for="descripcion">Descripción evento:</label>
+    <div class="evento8">
   <textarea id="descripcion" disabled=""  name="des" rows="4" cols="35"> </textarea>
+   </div>
   <br>
 
   
