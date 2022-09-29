@@ -83,13 +83,23 @@ bottom:105px;
     border: transparent;
    }
     @media (max-width:492px){
+      #nombre{
+        position:relative;
+        bottom:105px;
+        left: 60px;
+        }
+      .direccion{
+        position: relative;
+        bottom:90px;
+left: 35px;    
+       }
       #tarjeta{
         border: 5px solid rebeccapurple;
         background-color: lightgray;
         padding: 40px;
         margin: 40px;
         width: 280px;
-        height: 150px;
+        height: 170px;
         box-sizing: border-box;
     
        }
