@@ -28,7 +28,9 @@ ul{
         padding-top: 10px;
         font-family: logo;
     }
-    
+    #logos{
+        display: none;
+    }
     main{
         position: relative;
         width: 100%;
@@ -227,4 +229,220 @@ ul{
         margin: 10%;
     
     }
+}
+@media screen and (min-width: 991px){
+    header{
+        width: 100%;
+        height: 10vh;
+        background-color: #937DC2;
+    }
+    #logo{
+        color: #FFABE1;
+        height: auto;
+        width:30%;
+        font-size: 7vh;
+         float: left; 
+        text-align: center;
+        padding-top: 6px;
+        font-family: logo;
+    }
+    #logos{
+        background-color: #937DC2;
+        height: auto;
+        width: auto;
+        
+    }
+    #logos img{
+        float: right;
+        width: 7vh;
+        padding-top: 10px;
+        height: 7vh;
+    }
+    main{
+        position: relative;
+        width: 100%;
+        height: 80vh;
+        animation-name: ;
+        animation-duration: 1s;
+        
+    }
+    @keyframes moveR {
+        from{
+           top: 0;
+           left: 0;
+           opacity: 100;
+        }
+        to{
+           top: 0;
+           left: 100px;
+           opacity: 0;
+        }
+        
+    }
+    @keyframes moveL {
+        from{
+           top: 0;
+           right: 0;
+           opacity: 100;
+        }
+        to{
+           top: 0;
+           right: 100px;
+           opacity: 0;
+        }
+        
+    }
+    #botones{
+        position: absolute;
+        height: 5vh;
+        width: 100%;
+        top: -55%;
+    }
+    #botones div{
+        background-color: #937DC2;
+        text-align: center;
+        height: 100%;
+        width: 25%;
+        margin: 0 10% 0 15%;
+        float: left;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
+    div #dislike{
+        text-align: center;
+        
+        font-size: 3vh;
+        width: 20%;
+        height: 90%;
+        margin: 0% 40% 0% 40%;
+        }
+        div #like{
+            text-align: center;
+          
+            font-size: 3vh;
+            width: 20%;
+            height: 90%;
+            margin: 0% 40% 0% 40%;
+            }
+  
+    #tarjeta{
+       
+        width: 30%;
+        height: 92.5%;
+        margin: 3% 35% 0 35%;
+        border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        -o-border-radius: 7px;
+    }
+    #foto{
+        margin: 0;
+        width: 100%;
+        height: 100%; 
+        border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        -o-border-radius: 7px;
+    }
+
+    #info{
+        color: white;
+        position: relative;
+        width: 100%;
+        height: 20%;
+        top: -110px;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.429);
+        animation-name:;
+        animation-duration: 1s;
+        
+    }
+    @keyframes subir{
+        from{
+            top: -110px;
+            height: 20%;
+        }
+        to{
+            top: -300px;
+            height: 60%;
+        }
+    }
+    #nombreevento{
+        position: relative;
+        left: 20px;
+        top: 10px;
+        width: auto;
+        height: auto;
+        float: left;
+        font-size: 4vh;
+    }
+    #maximopersona{
+        position: relative;
+        left: -20px;
+        top: 10px;
+        width: auto;
+        height: auto;
+        float: right;
+        font-size: 4vh;
+    }
+    #binfo{
+       height: 5vh;
+       width: 5vh;
+       position: relative;
+       top: -40px;
+       background-color: blue;
+       margin: 0 45% 0 45%;
+    }
+    #binfo img{
+        position: relative;
+        top: -30px;
+        width: 100%;
+        height: 100%;
+    }
+    #descripcion{
+        color: white;
+        width: 80%;
+        height: auto;
+        margin: 0 10% 0 10%;
+        position: relative;
+        top: -260px;
+        display: ;
+        animation-name: opacity;
+        animation-duration: 3s;
+        
+    }
+    @keyframes opacity{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 100;
+        }
+    }
+    
+    aside{
+        clear: both;
+      
+        width: 100%;
+        height: 5vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        position: relative;
+        bottom:0;
+        
+    }
+    .botones{
+        display:none ;
+    }
+    .botones1{
+        display:none ;
+    }
+    
+  
 }
