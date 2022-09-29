@@ -5,7 +5,7 @@
 body{
     background-color: black;
     margin: 0;
-    
+    overflow: hidden;
 }
 ul{
     margin: 0;
@@ -169,7 +169,7 @@ ul{
        width: 5vh;
        position: relative;
        top: -40px;
-       background-color: blue;
+      
        margin: 0 45% 0 45%;
     }
     #binfo img{
@@ -391,16 +391,16 @@ ul{
         font-size: 4vh;
     }
     #binfo{
-       height: 5vh;
-       width: 5vh;
+       height: 7%;
+       width: 3%;
        position: relative;
-       top: -40px;
-       background-color: blue;
-       margin: 0 45% 0 45%;
+       top: -60px;
+       
+       margin: 0 0 0 62%;
     }
     #binfo img{
         position: relative;
-        top: -30px;
+       
         width: 100%;
         height: 100%;
     }
