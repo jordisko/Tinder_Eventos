@@ -84,6 +84,16 @@
         position: relative;
         left: 1125px;
       }
+      .evento2{
+        position: absolute;
+        left: 52%;
+        top:28.2%;
+        }
+        input{
+          width: 150px;
+          height: 11px;
+      }
+      
 
     @media (max-width:479px){
   
@@ -116,30 +126,9 @@
             .evento2{
             position: absolute;
             left: 60%;
-            top:29.5%;
-            }
-            .evento3{
-                position: absolute;
-                left: 60%;
-                top:35.8%;  
+            top:28.8%;
             }
             
-        
-            .evento4{
-                position: absolute;
-                left: 60%;
-                top:42.5%;  
-            }
-            .evento5{
-                position: absolute;
-                left: 60%;
-                top:48.9%;  
-            }
-            .evento6{
-                position: absolute;
-                left: 60%;
-                top:55.2%;  
-            }
             ul {
                 list-style-type: none;
                 margin: -13px;
