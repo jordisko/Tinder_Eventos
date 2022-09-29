@@ -85,8 +85,8 @@ bottom:105px;
     @media (max-width:492px){
       #nombre{
         position:relative;
-        bottom:105px;
-        left: 60px;
+        bottom:100px;
+        left: 45px;
         }
       .direccion{
         position: relative;
