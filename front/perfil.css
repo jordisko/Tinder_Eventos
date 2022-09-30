@@ -1,5 +1,8 @@
 
-
+@font-face {
+  font-family:logo;
+  src: url(fuentes/Logo.ttf);
+}
 label{
     text-align: center;
     margin-top: 50px;
@@ -41,16 +44,25 @@ image {
 }
 ul {
   list-style-type: none;
-  margin: -13px;
-  padding: 0;
-  overflow: hidden;
-  background-color: green;
-  z-index: -10;
-
+    margin: -13px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #937DC2;
+    z-index: -10;
 }
 
 li {
-  float: left;
+  float: right;
+}
+#logo{
+  color: #FFABE1;
+  height: auto;
+  width:30%;
+  font-size: 5vh;
+   float: left; 
+  text-align: center;
+  padding-top: 6px;
+  font-family: logo;
 }
 
 li a {
