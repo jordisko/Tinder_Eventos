@@ -15,6 +15,3 @@ function cerrar(){
     document.location.href = "inicio_de_session.html"
     localStorage.removeItem("usuario");
 }
-function perfilevento(){
-        document.location.href = "perfilevento.html"
-    }
