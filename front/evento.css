@@ -35,10 +35,11 @@
         top: 15%;
         width: 680px;
       }
-     button{
-      margin-left: 80%;
+     .crearevent{
+      margin-left: 90%;
       border: 0;
       margin-top: 36%;
+      text-align: center;
      }
      .fondo {
       position: fixed;
@@ -51,13 +52,63 @@
     }
     .cerrar{
       position: relative;
-      left: 1150px;
+      left: 1050px;
     }
+   
+    #nombre{
+position:relative;
+bottom:105px;
+
+}
+   #tarjeta{
+    border: 5px solid rebeccapurple;
+    background-color: lightgray;
+    padding: 40px;
+    margin: 40px;
+    width: 600px;
+    height: 150px;
+    box-sizing: border-box;
+
+   }
+   .imagen{
+      position: relative;
+      right:45% ;
+      
+   }
+   .direccion{
+    position: relative;
+    bottom:90px;
+
+   }
+   input{
+    border: transparent;
+   }
     @media (max-width:492px){
-      button{
-        margin-left: 70%;
+      #nombre{
+        position:relative;
+        bottom:100px;
+        left: 45px;
+        }
+      .direccion{
+        position: relative;
+        bottom:90px;
+left: 35px;    
+       }
+      #tarjeta{
+        border: 5px solid rebeccapurple;
+        background-color: lightgray;
+        padding: 40px;
+        margin: 40px;
+        width: 280px;
+        height: 170px;
+        box-sizing: border-box;
+    
+       }
+      .crearevent{
+        margin-left: 50%;
         border: 0;
-        margin-top: 130%;
+        margin-top: 7%;
+        text-align: center;
        }
        .evento{
         text-align: center;
@@ -66,7 +117,7 @@
         backdrop-filter: blur(0px) saturate(110%);
         -webkit-backdrop-filter: blur(0px) saturate(150%);
         position: absolute;
-        left: 3%;
+        left: 3.3%;
         top: 15%;
         width: 350px;
       }
@@ -77,7 +128,7 @@
         padding: 0;
         overflow: hidden;
         background-color: green;
-        width: 120%;
+        width: 105.8%;
       }
       
       li {
@@ -97,6 +148,6 @@
       }
       .cerrar{
         position: relative;
-        left: 160px;
+        left: 90px;
       }
     }

@@ -1,6 +1,7 @@
 //variables
 
 //variable foto
+<<<<<<< HEAD
 function comprobarLogin() {
     let usuarioLogged = localStorage.getItem("usuario");
     if(usuarioLogged == '' || usuarioLogged == null)
@@ -9,6 +10,9 @@ function comprobarLogin() {
         window.location.href="inicio_de_session.html";
     }
 }
+=======
+
+>>>>>>> origin/marc
 
 
 
@@ -85,6 +89,9 @@ function aleatorioR(){
 //      imagenes[i].src= "front\fotos\fotos_random/"+i+".jpeg"; 
 //         console.log(imagenes[i]);
 // }
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> origin/marc
