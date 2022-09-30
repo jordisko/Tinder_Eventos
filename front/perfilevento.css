@@ -57,6 +57,7 @@
       .cerrar{
         position: relative;
         left: 1025px;
+        top:15px;
       }
       .evento2{
         position: absolute;
