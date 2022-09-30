@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="crearevento.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="crearevento.css">
 </head>
-
 <body onload="comprobarLogin()">
-  <img
-    src="https://images.pexels.com/photos/382297/pexels-photo-382297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    class="fondo">
+  <img src="https://images.pexels.com/photos/382297/pexels-photo-382297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="fondo">
   <div class="menu">
     <ul>
       <li><a href="pagina_random.html"><img src="fotos/random.png" height="25px"
@@ -32,31 +28,42 @@
             height="25px" width="25px"></a></li>
 
     </ul>
-
-  </div>
-  <div class="bodyevent">
-    <br />
+    </div>
+ <div class="bodyevent">
+    <br/>
     <br>
 
 
+  
+<div class="evento">
+  <label for="nombre_evento">  Nombre evento:</label>
+  <br/>
+  <br/>
 
-    <div class="evento">
-      <label for="nombre_evento"> Nombre evento:</label>
-      <br />
-      <br>
-      <label for="maxim">Numero maximo de personas:</label>
-      <br>
-      <br>
-      <label for="fecha">Fecha evento:</label>
-      <br>
-      <br>
-      <label for="hora">Hora evento:</label>
-      <br>
-      <br>
-      <label for="lugar">Dirrecion evento:</label>
+  <label for="maxim">Numero maximo de personas:</label>
+  <br>
+  <br/>
+
+  <label for="fecha">Fecha evento:</label>
+  <br>
+  <br/>
+
+  <label for="hora">Hora  evento:</label>
+  <br>
+  <br/>
+
+  <label for="lugar">Dirrecion evento:</label>
+<br>
+<br/>
+
+<label >Imagen:</label>
+<br>
+<br>
+<label for="lugar">Codigo postal:</label>
 
 
-    </div>
+
+</div>
 
 <div class="evento2">
   <input id="nombreEvento" class="nombrevento" maxlength="40" type="nombre_evento" class="form-control" width="200%">
@@ -92,25 +99,29 @@
   <input aria-describedby="postal"   type="postal" id="codigoPostalLocalizacionEvento" class="form-control">
 
 
+ </div>
+
+  
 
 
+    
 
-
+   
 
     <meta name="description" content="Escribe la descripción uno.">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./crearevento.js"></script>
     <script>
-      $(function () {
-        $("#fechaEvento").datepicker({
-          format: 'YYYY-MM-DD',
-          startDate: '-3d',
-          language: "es",
-          numberOfMonths: 2,
-          showButtonPanel: true
-        });
+    $( function() {
+      $( "#fechaEvento" ).datepicker({
+        format:'YYYY-MM-DD',
+        startDate: '-3d',
+        language:"es",
+        numberOfMonths: 2,
+        showButtonPanel: true
       });
+    } );
     </script>
     
     <br/>
@@ -120,9 +131,15 @@
   <label for="tipo">Tipo de evento:
     <select name="evento" id = "tipoDeEvento">
 
+      <option value="1" >1</option>
+      
+      <option value="2">2</option>
+      
+      <option value="3">3</option>
+      
       </select>
-    </label>
-    <br>
+  </label>
+  <br>
 
     <br>
     
@@ -133,26 +150,18 @@
   <br>
   <!-- <div class="imagen">
     <label for="Subir_imagen" >Subir Imagen:</label>
-
     <input id="inputFile1" type="file" height="30px" width="150px">
     <br>
     <br>
-    <div class="imagen">
-      <label for="Subir_imagen">Subir Imagen:</label>
-
-      <input id="inputFile1" type="file">
-      <br>
-      <br>
-      <img id="img1" class="imgsubir">
-
-      <br>
-      <br>
-    </div>
-
+    <img id="img1" class="imgsubir">
+    <br>
+    <br>
+ </div>  -->
+  
 
     <br>
     <button id="eventocrear" onclick="crearEvento()">Crear evento</button>
-    <button id="cancelar" onclick="cancelar()">Cancelar</a></button>
+    <button id="cancelar" onclick="cancelar()" >Cancelar</a></button>
     <br>
     <br>
  
@@ -161,5 +170,4 @@
 
 
 </body>
-
 </html>
