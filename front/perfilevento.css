@@ -29,7 +29,7 @@
     right:15% ;
     }
    
-    ul {
+    .menu2 {
         list-style-type: none;
         margin: -13px;
         padding: 0;
@@ -39,11 +39,11 @@
       
       }
       
-      li {
+      .menu3 {
         float: left;
       }
       
-      li a {
+      .menu3 a {
         display: block;
         color: white;
         text-align: center;
@@ -51,7 +51,7 @@
         text-decoration: none;
       }
       
-      li a:hover {
+      .menu3 a:hover {
         background-color: #111;
       }
       .cerrar{
@@ -61,14 +61,17 @@
       .evento2{
         position: absolute;
         left: 52%;
-        top:28.2%;
+        top:24.2%;
         }
         input{
-          width: 150px;
-          height: 11px;
+          position: absolute;
+
       }
       
-
+.divapun{
+  left: auto;
+  right: auto;
+}
     @media (max-width:492px){
   
         .bodyevent{
@@ -100,7 +103,7 @@
             .evento2{
             position: absolute;
             left: 60%;
-            top:28.8%;
+            top:27.8%;
             }
             
             ul {
