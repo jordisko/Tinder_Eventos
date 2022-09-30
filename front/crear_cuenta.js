@@ -5,16 +5,16 @@ const nombre = document.getElementById("nombre").value;
 const apellido = document.getElementById("apellido").value;
 const nombreusuario = document.getElementById("nombreusuario").value;
 const password = document.getElementById("password").value;
-const email = document.getElementById("email").value;
+const email = document.getElementById("gmail").value;
 const password2 = document.getElementById("password2").value;
-const fotousuario = document.getElementById("img1").value;
+//const fotousuario = document.getElementById("img1").value;
 const descripcion = document.getElementById("descripcion").value;
 const codigoPostal = document.getElementById("codigopostal").value;
 
 const data = {"nombreUsuario": nombreusuario,
               "correoElectronico": email,
               "contraseniaUsuario":password,
-              "fotoUsuario":fotousuario , 
+              //"fotoUsuario":fotousuario , 
               "descripcionUsuario":descripcion,
               "nombrePersona": nombre,
               "apellidoPersona": apellido,

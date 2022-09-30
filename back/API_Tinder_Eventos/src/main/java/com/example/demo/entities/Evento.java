@@ -1,6 +1,7 @@
 package com.example.demo.entities;
 
 import java.sql.Date;
+import java.sql.Time;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,8 +9,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
 import lombok.Data;
+
 
 @Data
 @Entity
@@ -36,9 +37,19 @@ public class Evento {
 	@Column(name = "fechaevento")
 	Date fechaEvento;
 	
+	@Column(name = "horaevento")
+	Time horaEvento;
+	
 	@Column(name = "direccionlocalizacionevento")
 	String direccionLocalizacionEvento;
 	
-	@Column(name = "numerolocalizacionevento")
-	String numeroLocalizacionEvento;
+	@Column(name = "tipodeevento")
+	String tipoDeEvento;
+	
+	@Column(name = "fotoevento")
+	String fotoEvento;
+	
+	@Column(name = "estadoevento")
+	String estadoEvento;
+
 }
