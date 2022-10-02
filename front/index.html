@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meetout</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div id="logo"><b>Meetout</b></div>
-      <nav onclick="clickMenu()">
-        <div class="stick"></div>
-        <div class="stick"></div>
-        <div class="stick"></div>
-      </nav>
-      <button id="iniciar3">
-        <a href="./Inicio_de_session.html"><b>Iniciar sesion</b></a>
-      </button>
-    </header>
-    <main>
-      <menu id="menu">
-        <ul id="ulMenu">
-          <li class="liMenu">Información</li>
-          <li class="liMenu">Ayuda</li>
-          <li class="liMenu">Descargar(Proximamente)</li>
-        </ul>
-        <button id="iniciar2"><a href="./Inicio_de_session.html"><b>Iniciar sesion</b></a></button>
-      </menu>
-      <section> 
-        <div id="texto1">Conoce gente nueva</div>
-        <button id="crear"><a href="./crear_cuenta.html"><b>Crear cuenta</b></a></button>
-        <button id="iniciar"><a href="./Inicio_de_session.html"><b>Iniciar sesion</b></a></buttonykk>
-      </section>
-     
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meetout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div id="logo"><b>Meetout</b></div>
+    <nav onclick="clickMenu()">
+      <div class="stick"></div>
+      <div class="stick"></div>
+      <div class="stick"></div>
+    </nav>
+    <button id="iniciar3">
+      <a href="./Inicio_de_session.html"><b>Iniciar sesion</b></a>
+    </button>
+  </header>
+  <main>
+    <div id="menu">
+      <ul id="ulMenu">
+        <li class="liMenu">Información</li>
+        <li class="liMenu">Ayuda</li>
+        <li class="liMenu">Descargar(Proximamente)</li>
+      </ul>
+      <button id="iniciar2"><a href="./Inicio_de_session.html"><b>Iniciar sesion</b></a></button>
+    </div>
+    <section>
+      <div id="texto1">Conoce gente nueva</div>
+      <button id="crear"><a href="./crear_cuenta.html"><b>Crear cuenta</b></a></button>
+      <button id="iniciar"><a href="./Inicio_de_session.html"><b>Iniciar sesion</b></a></buttonykk>
+    </section>
+    <div id="apartados">
+      <ul>
+        <li onclick="opinion()">Opiniones</li>
+        <li onclick="idea()">Idea</li>
+        <li onclick="equipo()">Equipo</li>
+        <li onclick="tyh()">Teconologías y Herramientas</li>
+      </ul>
+    </div>
+    <div id="apartadoDiv">
       <div id="opiniones">
         <div id="opinion">
           <div id="titulo">Manoli Aguirre</div>
@@ -44,27 +54,55 @@
             natus reprehenderit nemo tempore.
           </div>
         </div>
+
+        <div id="idea">
+          <h1>Idea</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus amet at quia, ipsa aliquid sint
+            inventore cupiditate veniam ad commodi laudantium, nostrum, ipsam neque veritatis ex quas eligendi numquam!
+            Ullam expedita deleniti reprehenderit itaque rem nulla laborum temporibus? Facilis, expedita reiciendis. At
+            tempora nesciunt, incidunt iste sequi magnam? Aperiam cum excepturi minima ullam mollitia perferendis
+            quaerat obcaecati voluptas nisi.</p>
+        </div>
+        <div id="equipo">
+          <h1>Equipo</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus amet at quia, ipsa aliquid sint
+            inventore cupiditate veniam ad commodi laudantium, nostrum, ipsam neque veritatis ex quas eligendi numquam!
+            Ullam expedita deleniti reprehenderit itaque rem nulla laborum temporibus? Facilis, expedita reiciendis. At
+            tempora nesciunt, incidunt iste sequi magnam? Aperiam cum excepturi minima ullam mollitia perferendis
+            quaerat obcaecati voluptas nisi.</p>
+        </div>
+        <div id="tyh">
+          <h1>Teconologías y Herramientas</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus amet at quia, ipsa aliquid sint
+            inventore cupiditate veniam ad commodi laudantium, nostrum, ipsam neque veritatis ex quas eligendi numquam!
+            Ullam expedita deleniti reprehenderit itaque rem nulla laborum temporibus? Facilis, expedita reiciendis. At
+            tempora nesciunt, incidunt iste sequi magnam? Aperiam cum excepturi minima ullam mollitia perferendis
+            quaerat obcaecati voluptas nisi.</p>
+        </div>
       </div>
 
-      <div>
-        <ul id="seccion">
-          <li class="secciones">Información</li>
-          <li class="secciones">Ayuda</li>
-          <li class="secciones">Descargar(Proximamente)</li>
-        </ul>
-      </div>
-    </main>
+    </div>
 
-    <aside>
-      <div id="logo2"><b>Meetout</b></div>
-      <div id="redes">REDES SOCIALES</div>
-      <ul id="ulAside">
-        <li class="icono"><img src="fotos/logo_ins.png" /></li>
-        <li class="icono"><img src="fotos/logo_twitter.png" /></li>
-        <li class="icono"><img src="fotos/logo_facebook.png" /></li>
+    <div>
+      <ul id="seccion">
+        <li class="secciones">Información</li>
+        <li class="secciones">Ayuda</li>
+        <li class="secciones">Descargar(Proximamente)</li>
       </ul>
-    </aside>
+    </div>
+  </main>
 
-    <script src="./main.js"></script>
-  </body>
+  <aside>
+    <div id="logo2"><b>Meetout</b></div>
+    <div id="redes">REDES SOCIALES</div>
+    <ul id="ulAside">
+      <li class="icono"><img src="fotos/logo_ins.png" /></li>
+      <li class="icono"><img src="fotos/logo_twitter.png" /></li>
+      <li class="icono"><img src="fotos/logo_facebook.png" /></li>
+    </ul>
+  </aside>
+
+  <script src="./main.js"></script>
+</body>
+
 </html>
