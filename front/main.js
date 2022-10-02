@@ -2,6 +2,10 @@
 
 // variables 
 
+var opiniones = document.getElementById("opiniones");
+var ideas = document.getElementById("idea");
+var equipos = document.getElementById("equipo");
+var tyhs = document.getElementById("tyh");
 
 // variables opiniones
 let nombres = ["Rocio Mejia", "Basilio Roca", "Mercedes Vela", "Isaias Wu", "Alexander Cobo","Elsa Ripoll","Adelina Maldonado","Alessandro Macia"];
@@ -64,7 +68,32 @@ function clickMenu(){
     
  }
  
- console.log(estadoMenu);   
+ console.log(estadoMenu);
+ 
+ function opinion(){
+    opiniones.style.display = "";
+    ideas.style.display = "none";
+    equipos.style.display = "none";
+    tyhs.style.display = "none";
+ }
+ function idea(){
+    opiniones.style.display = "";
+    ideas.style.display = "";
+    equipos.style.display = "none";
+    tyhs.style.display = "none";
+ }
+ function equipo(){
+    opiniones.style.display = "";
+    ideas.style.display = "none";
+    equipos.style.display = "";
+    tyhs.style.display = "none";
+ }
+ function tyh(){
+    opiniones.style.display = "";
+    ideas.style.display = "none";
+    equipos.style.display = "none";
+    tyhs.style.display = "";
+ }
 
 
 

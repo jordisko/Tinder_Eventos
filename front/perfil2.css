@@ -8,7 +8,15 @@ label{
     font-size: 19px;
  
 }
-
+input{
+  border-bottom: solid medium black ;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+}
+textarea{
+  border: solid black;
+}
 
  
   
@@ -89,10 +97,10 @@ li a:hover {
   }
   .cerrar{
     position: relative;
-    left: 1150px;
+    left: 1025px;
   }
 
-  @media (max-width:492px){
+  @media (max-width:479px){
   
      
 
@@ -102,7 +110,7 @@ li a:hover {
       padding: 0;
       overflow: hidden;
       background-color: green;
-      width: 120%;
+      width: 105.8%;
     }
     
     li {
@@ -127,9 +135,9 @@ li a:hover {
         backdrop-filter: blur(0px) saturate(110%);
         -webkit-backdrop-filter: blur(0px) saturate(150%);
         position: absolute;
-        left: 4%;
+        left: 11%;
         top: 15%;
-        width: 345px;
+        width: 295px;
     }
     .perfil{
       position: relative;
@@ -142,7 +150,7 @@ li a:hover {
       }
       .cerrar{
         position: relative;
-        left: 160px;
+        left: 80px;
       }
    
   }

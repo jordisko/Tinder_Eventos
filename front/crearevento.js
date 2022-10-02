@@ -128,4 +128,3 @@ function cancelar(){
 // function crear(){
 //   document.location.href = "evento.html"
 // }
-

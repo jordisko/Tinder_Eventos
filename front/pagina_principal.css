@@ -37,7 +37,7 @@ label{
     margin: -13px;
     padding: 0;
     overflow: hidden;
-    background-color: green;
+    background-color: #937DC2;
     z-index: -10;
   
   }
@@ -59,10 +59,10 @@ label{
   }
   .cerrar{
     position: relative;
-    left: 1150px;
+    left: 1020px;
   }
 
-  @media (max-width:492px){
+  @media (max-width:479px){
 
 
     ul {
@@ -71,7 +71,7 @@ label{
       padding: 0;
       overflow: hidden;
       background-color: green;
-      width: 120%;
+      width: 105.8%;
     }
     
     li {
@@ -96,13 +96,13 @@ label{
       backdrop-filter: blur(0px) saturate(110%);
       -webkit-backdrop-filter: blur(0px) saturate(150%);
       position: absolute;
-      left: 4%;
+      left: 3.7%;
       top: 15%;
       width: 345px;
     }
     .cerrar{
       position: relative;
-      left: 160px;
+      left: 90px;
     }
   }
  
