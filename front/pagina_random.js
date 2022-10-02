@@ -1,10 +1,14 @@
 //variables
 
 //variable foto
-
-
-
-
+function comprobarLogin() {
+    let usuarioLogged = localStorage.getItem("usuario");
+    if(usuarioLogged == '' || usuarioLogged == null)
+    {
+        alert('¡Tienes que iniciar sesión!');
+        window.location.href="inicio_de_session.html";
+    }
+}
 
 // let cFotos = ["front\fotos\fotos_random"];
 // let imagenes = [];
@@ -78,6 +82,3 @@ function aleatorioR(){
 //      imagenes[i].src= "front\fotos\fotos_random/"+i+".jpeg"; 
 //         console.log(imagenes[i]);
 // }
-
-
-
