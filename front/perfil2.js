@@ -12,8 +12,7 @@ async function fetchByIdJSON() {
 }
 function mostrarPerfil(){
   fetchByIdJSON().then(json =>{
-    var image= document.getElementById('imagenperfil').innerHTML 
-    image.src = json.fotoUsuario;
+    document.getElementById('imagenperfil').src = json.fotoUsuario
     document.getElementById('Nombre').innerHTML = json.nombrePersona
     document.getElementById('Apellido').innerHTML = json.apellidoPersona
     document.getElementById('Descripcion').innerHTML = json.descripcionUsuario
