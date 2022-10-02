@@ -36,7 +36,7 @@ header{
     position: fixed;
     width: 100%;
     height: 70px;
-    z-index: 11;
+    z-index: 7;
 }
 #logo{
    
@@ -283,7 +283,7 @@ aside{
         position: fixed;
         width: 100%;
         height: 120px;
-        z-index: 11;
+        z-index: 8;
         
     }
     #logo{
@@ -582,7 +582,7 @@ aside{
         position: fixed;
         width: 100%;
         height: 120px;
-        z-index: 11;
+        z-index: 3;
         
     }
     #logo{
@@ -789,6 +789,9 @@ aside{
         
         margin: 0;
     }
+    #apartadoDiv{
+        z-index: 10;
+    }
     #apartados ul{
         width: 95%;
         height: 10vh;
@@ -796,6 +799,7 @@ aside{
         margin: 0;
         padding-top: 2%;
         padding-left: 30%;
+        z-index: 11;
     }
     #apartados ul li{
         width: auto;
@@ -808,9 +812,9 @@ aside{
     }
 
     #idea{
-        
-        z-index: 1;
-        background-color: red;
+        background-color: white;
+        z-index: 10;
+       
         position: absolute;
         width: 100%;
         height: 800px;
@@ -821,48 +825,48 @@ aside{
         font-size: 50px;
         border-bottom: 3px solid;
         border-color: #850E35;
-        background-color: blue;
+      
         margin: 10% 0 0 20%;
     }
     #idea p{
-        background-color: blue;
+        font-size: 2vh;
         margin: 5% 0 0 20%;
         width: 60%;
         height: auto;
     }
     #equipo h1{
-        width: 10%;
+        width: 20%;
         height: auto;
         font-size: 50px;
         border-bottom: 3px solid;
         border-color: #850E35;
-        background-color: blue;
+        
         margin: 10% 0 0 20%;
     }
     #equipo p{
-        background-color: blue;
+       font-size: 2vh;
         margin: 5% 0 0 20%;
         width: 60%;
         height: auto;
     }
     #tyh h1{
-        width: 10%;
+        width: 20%;
         height: auto;
         font-size: 50px;
         border-bottom: 3px solid;
         border-color: #850E35;
-        background-color: blue;
+        
         margin: 10% 0 0 20%;
     }
     #tyh p{
-        background-color: blue;
+        font-size: 2vh;
         margin: 5% 0 0 20%;
         width: 60%;
         height: auto;
     }
     #equipo{
         
-        z-index: 1;
+        z-index: 10;
         background-color: white;
         position: absolute;
         width: 100%;
@@ -870,7 +874,7 @@ aside{
     }
     #tyh{
         display: ;
-        z-index: 1;
+        z-index: 10;
         background-color: white;
         position: absolute;
         width: 100%;
