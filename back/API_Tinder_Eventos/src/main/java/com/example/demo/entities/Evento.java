@@ -1,6 +1,7 @@
 package com.example.demo.entities;
 
 import java.sql.Date;
+import java.sql.Time;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,8 +10,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import lombok.Data;
-
-
 
 
 @Data
@@ -36,13 +35,13 @@ public class Evento {
 	int personasMaxEvento;
 	
 	@Column(name = "fechaevento")
-	java.sql.Timestamp fechaEvento;
-
+	Date fechaEvento;
+	
+	@Column(name = "horaevento")
+	Time horaEvento;
+	
 	@Column(name = "direccionlocalizacionevento")
 	String direccionLocalizacionEvento;
-	
-	@Column(name = "numerolocalizacionevento")
-	String numeroLocalizacionEvento;
 	
 	@Column(name = "tipodeevento")
 	String tipoDeEvento;
