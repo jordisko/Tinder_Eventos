@@ -32,18 +32,31 @@ label{
     top: 15%;
     width: 680px;
   }
+  @font-face {
+    font-family:logo;
+    src: url(fuentes/Logo.ttf);
+  }
   ul {
     list-style-type: none;
-    margin: -13px;
-    padding: 0;
-    overflow: hidden;
-    background-color: #937DC2;
-    z-index: -10;
-  
+      margin: -13px;
+      padding: 0;
+      overflow: hidden;
+      background-color: #937DC2;
+      z-index: -10;
   }
   
   li {
-    float: left;
+    float: right;
+  }
+  #logo{
+    color: #FFABE1;
+    height: auto;
+    width:30%;
+    font-size: 5vh;
+     float: left; 
+    text-align: center;
+    padding-top: 6px;
+    font-family: logo;
   }
   
   li a {
@@ -59,7 +72,7 @@ label{
   }
   .cerrar{
     position: relative;
-    left: 1020px;
+    left: 0px;
   }
 
   @media (max-width:479px){
@@ -67,27 +80,41 @@ label{
 
     ul {
       list-style-type: none;
-      margin: -13px;
-      padding: 0;
-      overflow: hidden;
-      background-color: green;
-      width: 105.8%;
+        margin: -9px;
+        padding: 0;
+        overflow: hidden;
+        background-color: #937DC2;
+        z-index: -10;
     }
     
     li {
-      float: left;
+      float: right;
+    }
+    #logo{
+      color: #FFABE1;
+      height: auto;
+      width:20%;
+      font-size: 5vh;
+       float: left; 
+      text-align: center;
+      padding-top: 8px;
+      font-family: logo;
     }
     
     li a {
       display: block;
       color: white;
       text-align: center;
-      padding: 14px 16px;
+      padding: 5px 11px;
       text-decoration: none;
     }
     
     li a:hover {
       background-color: #111;
+    }
+    .cerrar{
+      position: relative;
+      left: 0px;
     }
     .inicio{
       text-align: center;
@@ -100,9 +127,6 @@ label{
       top: 15%;
       width: 345px;
     }
-    .cerrar{
-      position: relative;
-      left: 90px;
-    }
+    
   }
  
