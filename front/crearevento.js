@@ -1,5 +1,3 @@
-async function crearEvento() {
-  // const url = 'http://localhost:8080/creareventos';
 function comprobarLogin() {
   let usuarioLogged = localStorage.getItem("usuario");
   if(usuarioLogged == '' || usuarioLogged == null)
@@ -8,6 +6,10 @@ function comprobarLogin() {
       window.location.href="inicio_de_session.html";
   }
 }
+
+
+async function crearEvento() {
+  // const url = 'http://localhost:8080/creareventos';
 
 function cancelar(){
   document.location.href = "evento.html"

@@ -49,5 +49,9 @@ public class MatchService {
 		}
 		return "Error al modificar el Match";
 	}
+	
+	public List<Match> usuariosEnEvento(long idUsuario) {
+			return matchRepository.usuariosEnEvento(idUsuario);
+	}
 
 }

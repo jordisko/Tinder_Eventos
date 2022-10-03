@@ -739,7 +739,7 @@ aside{
         clear: both;
         margin: 0;
         position: relative;
-        top: 720px;
+        top: 900px;
         
     }
     #logo2{
@@ -845,10 +845,16 @@ aside{
     }
     #equipo p{
        font-size: 2vh;
-        margin: 5% 0 0 20%;
+        margin: 2% 0 0 20%;
         width: 60%;
         height: auto;
     }
+    #equipo h2{
+        font-size: 2vh;
+         margin: 5% 0 0 20%;
+         width: 60%;
+         height: auto;
+     }
     #tyh h1{
         width: 20%;
         height: auto;
@@ -870,8 +876,14 @@ aside{
         background-color: white;
         position: absolute;
         width: 100%;
-        height: 800px;
+        height: 100vh;
     }
+    #equipo img {
+        margin: -3% 0 0 38%;
+        
+        width: 2%;
+    }
+    
     #tyh{
         display: ;
         z-index: 10;
