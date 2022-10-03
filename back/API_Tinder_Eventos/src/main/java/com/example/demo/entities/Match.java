@@ -11,7 +11,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "Match")
+@Table(name = "Matches")
 public class Match {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,10 +20,10 @@ public class Match {
 	Long idMatch;
 	
 	@Column(name = "Usuarios_idusuario")
-	String usuarios_idUsuario;
+	Long usuarios_idUsuario;
 	
 	@Column(name = "Eventos_idevento")
-	String eventos_idEvento;
+	Long eventos_idEvento;
 	
 	@Column(name = "estadomatch")
 	int estadoMatch;

@@ -10,4 +10,5 @@ function comprobarLogin() {
 function cerrar(){
     document.location.href = "inicio_de_session.html"
     localStorage.removeItem("usuario");
+    localStorage.removeItem("id");
 }

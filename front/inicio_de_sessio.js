@@ -17,8 +17,12 @@ async function fetchLoginJSON() {
         console.log(usuario);
         if (usuario==jsonElement.nombreUsuario){
             if (password==jsonElement.contraseniaUsuario){
+
+                let id = jsonElement.idUsuario;
+
                 //Los guardamos en el LocalStorage
                 localStorage.setItem('usuario', usuario.value);
+                localStorage.setItem('id', id);
 
                 //Redireccionamos a la pagina principal
                 document.location.href = "pagina_principal.html"

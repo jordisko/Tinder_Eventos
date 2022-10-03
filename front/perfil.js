@@ -31,4 +31,28 @@ function guardar(){
 function cerrar(){
     document.location.href = "inicio_de_session.html"
     localStorage.removeItem("usuario");
+    localStorage.removeItem("id");
+}
+
+async function mostrarDatos(){
+    try {
+        const response = await fetch('http://localhost:8080/creareventos', {
+          method: "put",
+          headers: {
+            "Content-Type": "application/json",
+            "Connection": "keep-alive"
+          },
+          body: JSON.stringify(postData)
+        });
+      
+        if (!response.ok) {
+          const message = 'Error with Status Code: ' + response.status;
+          throw new Error(message);
+        }
+      
+        const data = await response.json();
+        console.log(data);
+      } catch (error) {
+        console.log('Error: ' + error);
+      }
 }
