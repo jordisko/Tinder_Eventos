@@ -72,34 +72,34 @@
    
    <br>
    <br/>
- 
+ <div>
    <input type="number" class="maximo" id="maximopersona" name="maximopersona" min="2" max="100">
-  
+  </div>
    <br>
-   <br/>
+  
  
- 
+   <div>
    <input type="text" class="fecha" id="campofecha" onclick="fecha()">
-  
+  </div>
    <br>
-   <br/>
  
  
+   <div>
    <input type="hora" class="hora" id="hora" placeholder="16:00">
-   <br/>
+  </div>
   
    <br>
- 
+   <div>
    <input type="lugar" class="lugar"  id="lugar" >
-   <br/>
+  </div>
  
-   <br>
+   <br><div>
    <input type="text" class="imagen"  id="imagen">
-   <br/>
+  </div><br/>
  
-   <br>
+   <div>
    <input aria-describedby="postal"   type="postal" id="codigoPostalLocalizacionEvento" class="form-control">
- 
+  </div>
  
   </div>
  
@@ -115,7 +115,7 @@
      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
      <script src="./crearevento.js"></script>
      <script>
-     $( function() {
+     $( function fecha() {
        $( "#fechaEvento" ).datepicker({
          format:'YYYY-MM-DD',
          startDate: '-3d',

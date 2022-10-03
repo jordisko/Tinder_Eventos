@@ -1,4 +1,4 @@
-let id =1
+let id =6
 const yourUrl =('http://localhost:8080/eventos/'+id)
 async function fetchByIdJSON() {
     const response = await fetch(yourUrl,{
@@ -22,6 +22,7 @@ function mostrarPerfilEvento(){
     document.getElementById('direccion').value = json.direccionLocalizacionEvento
     document.getElementById('tipoevento').value = json.descripcionUsuario
     document.getElementById('descripcion').innerHTML = json.descripcionEvento
+    
    
 
 })}

@@ -16,23 +16,24 @@ function cancelar(){
   const nombreEvento = document.getElementById("nombreEvento").value;
   const descripcionEvento = document.getElementById("descripcionEvento").value;
   const codigoPostalLocalizacionEvento = document.getElementById("codigoPostalLocalizacionEvento").value;
-  const personasMaxEvento = document.getElementById("personasMaxEvento").value;
-  const diaEvento = document.getElementById("fechaEvento").value;
-  const direccionLocalizacionEvento = document.getElementById("direccionLocalizacionEvento").value;
-  const numeroLocalizacionEvento = document.getElementById("numeroLocalizacionEvento").value;
-  const tipoDeEvento=document.getElementById("tipoDeEvento").value;
-  const horaEvento=document.getElementById("horaEvento").value;
-  //const fotoEvento =document.getElementById("").value;
+  const personasMaxEvento = document.getElementById("maximopersona").value;
+  const diaEvento = document.getElementById("campofecha").value;
+  const direccionLocalizacionEvento = document.getElementById("lugar").value;
+  // const numeroLocalizacionEvento = document.getElementById("numeroLocalizacionEvento").value;
+  // const tipoDeEvento=document.getElementById("tipoDeEvento").value;
+  const horaEvento=document.getElementById("hora").value;
+  const fotoEvento =document.getElementById("imagen").value;
   const postData = {
     "nombreEvento": nombreEvento,
     "descripcionEvento": descripcionEvento,
     "codigoPostalLocalizacionEvento": codigoPostalLocalizacionEvento,
     "personasMaxEvento": personasMaxEvento,
-    "fechaEvento": diaEvento+" "+horaEvento+":00" ,
+    "fechaEvento": diaEvento ,
+    "horaEvento": horaEvento,
     "direccionLocalizacionEvento": direccionLocalizacionEvento,
-    "numeroLocalizacionEvento": numeroLocalizacionEvento,
-    "tipoDeEvento":tipoDeEvento
-    //"fotoEvento": fotoEvento,
+    "tipoDeEvento": null,
+    "fotoEvento": fotoEvento,
+    "estadoEvento": "activo"
   };
   console.log(postData);
   

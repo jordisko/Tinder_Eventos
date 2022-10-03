@@ -42,7 +42,7 @@ public class UsuarioController {
 		return usuarioService.findUsuarioById(id);
 }
 	@RequestMapping(path = "/crearusuarios/{id}", method = RequestMethod.PUT)
-	public void modificaUsuario(@PathVariable long id, @RequestBody Usuario usuario){
+	public void modificaUsuario(@PathVariable long id, @RequestBody(required=false) Usuario usuario){
 		log.info("Request a http://localhost:PORT/api/crearusuarios(PUT)");
 		usuarioService.updateUsuario(usuario);
 	}

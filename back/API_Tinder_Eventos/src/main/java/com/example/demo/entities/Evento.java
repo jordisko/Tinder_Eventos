@@ -38,7 +38,7 @@ public class Evento {
 	Date fechaEvento;
 	
 	@Column(name = "horaevento")
-	Time horaEvento;
+	String horaEvento;
 	
 	@Column(name = "direccionlocalizacionevento")
 	String direccionLocalizacionEvento;
