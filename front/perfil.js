@@ -46,16 +46,17 @@ async function fetchByIdJSON() {
     return (jsonResponse);
 }
 function mostrarPerfil(){
-  fetchByIdJSON().then(json =>{
-    var image= document.getElementById('imagenperfil').innerHTML 
-    image.src = json.fotoUsuario;
-    document.getElementById('Nombre').innerHTML = json.nombrePersona
-    document.getElementById('Apellido').innerHTML = json.apellidoPersona
-    document.getElementById('Descripcion').innerHTML = json.descripcionUsuario
-    console.log(json.fotoUsuario)
-    console.log(json.nombrePersona)
-    console.log(json.apellidoPersona)
-    console.log(json.descripcionUsuario)
-})}
+    fetchByIdJSON().then(json =>{
+    document.getElementById('imagenperfil').src = json.fotoUsuario
+      document.getElementById('Nombre_usuario').value = json.nombreUsuario
+      document.getElementById('Contraseña').value = json.contraseniaUsuario
+      document.getElementById('nombre').value = json.nombrePersona
+      document.getElementById('apellido').value = json.apellidoPersona
+      document.getElementById('codigo_postal').value = json.codigoPostal
+      document.getElementById('gmail').value = json.correoElectronico
+      document.getElementById('descripcion').innerHTML = json.descripcionUsuario
 
-mostrarPerfil()
+  })}
+  
+  mostrarPerfil()
+  

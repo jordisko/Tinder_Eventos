@@ -13,8 +13,8 @@ async function fetchByIdJSON() {
 function mostrarPerfil(){
   fetchByIdJSON().then(json =>{
     document.getElementById('imagenperfil').src = json.fotoUsuario
-    document.getElementById('Nombre').innerHTML = json.nombrePersona
-    document.getElementById('Apellido').innerHTML = json.apellidoPersona
+    document.getElementById('Nombre').value = json.nombrePersona
+    document.getElementById('Apellido').value = json.apellidoPersona
     document.getElementById('Descripcion').innerHTML = json.descripcionUsuario
     console.log(json.fotoUsuario)
     console.log(json.nombrePersona)

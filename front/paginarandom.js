@@ -11,7 +11,7 @@ var activo = false;
 var texto = document.getElementById("descripcion");
 
 function comprobarLogin() {
-    let usuarioLogged = localStorage.getItem("usuario");
+    let usuarioLogged = localStorage.getItem("usuario")
     if(usuarioLogged == '' || usuarioLogged == null)
     {
         alert('¡Tienes que iniciar sesión!');
@@ -19,46 +19,63 @@ function comprobarLogin() {
     }
 }
 
-// conexion con la appi
+// conexion con la api
+//LO ANTIGUO, SOLO ENSEÑA 1 TARJETA
+// let id =1;
+// let yourUrl =('http://localhost:8080/eventos/'+id)
 
-let id =1;
-let yourUrl =('http://localhost:8080/eventos/'+id)
 
 
+// async function fetchByIdJSON() {
+//     const response = await fetch(yourUrl,{
+//     method: 'GET',
+//     headers: new Headers({
+//         'Content-Type': 'application/json',
+//         'Access-Control-Allow-Origin': '*'})})
+//     const jsonResponse = await response.json();
+//     console.log(jsonResponse);
+//     return (jsonResponse);
+// }
+// function mostrarPerfilEvento(){
+//   fetchByIdJSON().then(json =>{
 
-async function fetchByIdJSON() {
-    const response = await fetch(yourUrl,{
-    method: 'GET',
-    headers: new Headers({
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*'})})
-    const jsonResponse = await response.json();
-    console.log(jsonResponse);
-    return (jsonResponse);
-}
-function mostrarPerfilEvento(){
-  fetchByIdJSON().then(json =>{
-
-    // var image= document.getElementById('imagenperfil').value 
-    // image.src = json.fotoUsuario;
-    console.log(json.idEvento)
-    document.getElementById('nombreevento').innerHTML = json.nombreEvento
-    document.getElementById('descripcion').innerHTML = json.descripcionEvento
-    document.getElementById('foto').src = json.fotoEvento
-    document.getElementById('maximopersona').innerHTML = json.personasMaxEvento
-    // document.getElementById('campofecha').value = json.fechaEvento
-    // document.getElementById('hora').value = json.descripcionUsuario
-    // document.getElementById('direccion').value = json.direccionLocalizacionEvento
-    // document.getElementById('tipoevento').value = json.descripcionUsuario
-    // document.getElementById('numero').value = json.numeroLocalizacionEvento
+//     // var image= document.getElementById('imagenperfil').value 
+//     // image.src = json.fotoUsuario;
+//     console.log(json.idEvento)
+//     document.getElementById('nombreevento').innerHTML = json.nombreEvento
+//     document.getElementById('descripcion').innerHTML = json.descripcionEvento
+//     document.getElementById('foto').src = json.fotoEvento
+//     document.getElementById('maximopersona').innerHTML = json.personasMaxEvento
+//     // document.getElementById('campofecha').value = json.fechaEvento
+//     // document.getElementById('hora').value = json.descripcionUsuario
+//     // document.getElementById('direccion').value = json.direccionLocalizacionEvento
+//     // document.getElementById('tipoevento').value = json.descripcionUsuario
+//     // document.getElementById('numero').value = json.numeroLocalizacionEvento
    
     
-})}
+// })}
 
 
 texto.style.display = "none"; 
 
-mostrarPerfilEvento()
+// mostrarPerfilEvento()
+
+const url = "http://localhost:3001/api/futuroslikes/"+id;
+const personas = [];
+ 
+async function fetchJSON() {
+    const response = await fetch(url);
+    const jsonResponse = await response.json();
+    return jsonResponse;
+  }
+  fetchJSON().then(json => {
+    for (let i = 0; i < json.data.length; i++) {
+      personas.push(json.data[i]);
+    }
+     
+});
+ 
+
 
 // para ir actualizando la info
 

@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -40,4 +41,9 @@ public class UsuarioController {
 		log.info("Request a http://localhost:PORT/api/usuarios(GET)");
 		return usuarioService.findUsuarioById(id);
 }
+	@RequestMapping(path = "/crearusuarios/{id}", method = RequestMethod.PUT)
+	public void modificaUsuario(@PathVariable long id, @RequestBody Usuario usuario){
+		log.info("Request a http://localhost:PORT/api/crearusuarios(PUT)");
+		usuarioService.updateUsuario(usuario);
+	}
 }
