@@ -1,8 +1,34 @@
-
-    @font-face {
-      font-family:logo;
-      src: url(fuentes/Logo.ttf);
-    }
+body{
+  margin: 0;
+}
+header{
+  width: 100%;
+  height: 10vh;
+  background-color: #937DC2;
+}
+#logo{
+  color: #FFABE1;
+  height: auto;
+  width:30%;
+  font-size: 7vh;
+   float: left; 
+  text-align: center;
+  padding-top: 6px;
+  font-family: logo;
+}
+#logos{
+  background-color: #937DC2;
+  height: auto;
+  width: auto;
+  
+}
+#logos img{
+  float: right;
+  width: 7vh;
+  padding-top: 10px;
+  height: 7vh;
+  margin-right: 2%;
+}
     ul {
       list-style-type: none;
         margin: -13px;
