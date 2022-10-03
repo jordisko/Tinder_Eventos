@@ -9,7 +9,10 @@ label{
 }
 
   
-  
+body{
+  background-color: black;
+  margin: 0;
+}
   input:valid {
     border: 2px solid black;
   }
