@@ -1,4 +1,6 @@
-
+body {
+  background-color: black;
+}
 
 label{
     text-align: center;
@@ -17,13 +19,14 @@ label{
   min-height: 100%;
   transform: translateX(calc((100% - 100vw) / 2));
   z-index: -2;
+  opacity: 0.8;
 }
 
  
   
   .inicio{
     text-align: center;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.85);
     border-radius: 12px;
     backdrop-filter: blur(0px) saturate(110%);
     -webkit-backdrop-filter: blur(0px) saturate(150%);
@@ -164,7 +167,7 @@ left: 35px;
     }
     .inicio{
       text-align: center;
-      background-color: rgba(255, 255, 255, 1);
+      background-color: rgba(255, 255, 255, 0.85);
       border-radius: 12px;
       backdrop-filter: blur(0px) saturate(110%);
       -webkit-backdrop-filter: blur(0px) saturate(150%);

@@ -1,4 +1,6 @@
-
+body {
+  background-color: black;
+}
     @font-face {
       font-family:logo;
       src: url(fuentes/Logo.ttf);
@@ -42,7 +44,7 @@
       
       .evento{
         text-align: center;
-        background-color: rgba(255, 255, 255, 1);
+        background-color: rgba(255, 255, 255, 0.85);
         border-radius: 12px;
         backdrop-filter: blur(0px) saturate(110%);
         -webkit-backdrop-filter: blur(0px) saturate(150%);
@@ -65,6 +67,7 @@
       min-height: 100%;
       transform: translateX(calc((100% - 100vw) / 2));
       z-index: -2;
+      filter: brightness(85%);
     }
     .cerrar{
       position: relative;
@@ -128,7 +131,7 @@ left: 35px;
        }
        .evento{
         text-align: center;
-        background-color: rgba(255, 255, 255, 1);
+        background-color: rgba(255, 255, 255, 0.85);
         border-radius: 12px;
         backdrop-filter: blur(0px) saturate(110%);
         -webkit-backdrop-filter: blur(0px) saturate(150%);
