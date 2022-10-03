@@ -41,3 +41,8 @@ function mostrarMiniaturaEvento(){
 })}
 
 mostrarPerfilEvento()
+
+function perfilevento(){
+    document.location.href = "perfilevento.html"
+}
+

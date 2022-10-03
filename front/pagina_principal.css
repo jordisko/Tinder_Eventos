@@ -74,9 +74,55 @@ label{
     position: relative;
     left: 0px;
   }
+  
+  #nombre{
+    position:relative;
+    bottom:105px;
+    
+    }
+       .apuntados{
+        border: 5px solid rebeccapurple;
+        background-color: lightgray;
+        padding: 40px;
+        margin: 40px;
+        width: 600px;
+        height: 150px;
+        box-sizing: border-box;
+    
+       }
+       .imagen{
+          position: relative;
+          right:45% ;
+       
+          
+       }
+       .direccion{
+        position: relative;
+        bottom:90px;
+    
+       }
 
   @media (max-width:479px){
-
+    #nombre{
+      position:relative;
+      bottom:100px;
+      left: 45px;
+      }
+    .direccion{
+      position: relative;
+      bottom:90px;
+left: 35px;    
+     }
+     .apuntados{
+      border: 5px solid rebeccapurple;
+      background-color: lightgray;
+      padding: 40px;
+      margin: 40px;
+      width: 280px;
+      height: 210px;
+      box-sizing: border-box;
+  
+     }
 
     ul {
       list-style-type: none;
