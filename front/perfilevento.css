@@ -141,6 +141,13 @@ li a:hover {
   right: auto;
 }
     @media (max-width:492px){
+
+      header{
+        width: 104.9%;
+        height: 10vh;
+        background-color: #937DC2;
+        margin: -10px;
+      }
       #logos img{
         float: right;
         width: 6vh;
