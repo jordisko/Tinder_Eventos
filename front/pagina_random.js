@@ -18,7 +18,7 @@ function comprobarLogin() {
 // variable tarjeta
 
 var tarjeta = document.getElementById("mainTarjeta");
-
+var random = 0;
 //variable info
 
 var binfo = document.getElementById("info");
@@ -65,7 +65,7 @@ function info(){
 function aleatorioR(){
     
     tarjeta.style.animationName = "moveR";
-    var random = Math.floor(Math.random() * 6);
+    random++;
     setTimeout(function(){
         tarjeta.style.animationName = "";
         document.getElementById("foto").src = "fotos/fotos_random/"+random+".jpeg";
@@ -74,7 +74,7 @@ function aleatorioR(){
     function aleatorioL(){
     
         tarjeta.style.animationName = "moveL";
-        var random = Math.floor(Math.random() * 6);
+        random++;
         setTimeout(function(){
             tarjeta.style.animationName = "";
             document.getElementById("foto").src = "fotos/fotos_random/"+random+".jpeg";

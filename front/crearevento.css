@@ -1,17 +1,10 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> pedro
 @font-face {
   font-family:logo;
   src: url(fuentes/Logo.ttf);
 }
-<<<<<<< HEAD
-=======
 body{
   margin: 0;
 }
->>>>>>> pedro
 .bodyevent{
     margin-top: 90px;
     position: absolute;
