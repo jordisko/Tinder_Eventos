@@ -1,10 +1,13 @@
-body{
-  margin: 0;
+
+body {
+  background-color: black;
 }
+
 header{
-  width: 100%;
+  width: 101.3%;
   height: 10vh;
   background-color: #937DC2;
+  margin: -10px;
 }
 #logo{
   color: #FFABE1;
@@ -30,7 +33,7 @@ header{
   margin-right: 2%;
 }
 .bodyevent{
-    margin-top: 90px;
+    margin-top: 20px;
     position: absolute;
     width: 680px;
     
@@ -52,7 +55,7 @@ header{
 }
 ul {
   list-style-type: none;
-    margin: -13px;
+    margin: 0px;
     padding: 0;
     overflow: hidden;
     background-color: #937DC2;
@@ -62,16 +65,7 @@ ul {
 li {
   float: right;
 }
-#logo{
-  color: #FFABE1;
-  height: auto;
-  width:30%;
-  font-size: 5vh;
-   float: left; 
-  text-align: center;
-  padding-top: 6px;
-  font-family: logo;
-}
+
 
 li a {
   display: block;
@@ -135,7 +129,7 @@ li a:hover {
       .evento2{
         position: absolute;
         left: 52%;
-        top:27.3%;
+        top:30.9%;
         }
         input{
           position: absolute;
@@ -147,9 +141,16 @@ li a:hover {
   right: auto;
 }
     @media (max-width:492px){
+      #logos img{
+        float: right;
+        width: 6vh;
+        padding-top: 10px;
+        height: 7vh;
+        margin-right: 2%;
+      }
   
         .bodyevent{
-            margin-top: 80px;
+            margin-top: 40px;
             position: absolute;
             width: 350px;
             
@@ -177,7 +178,7 @@ li a:hover {
             .evento2{
             position: absolute;
             left: 60%;
-            top:27.8%;
+            top:30.8%;
             }
             
             ul {

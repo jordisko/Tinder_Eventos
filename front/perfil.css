@@ -74,7 +74,7 @@ image {
     -webkit-backdrop-filter: blur(0px) saturate(150%);
     position: absolute;
     left: 25%;
-    top: 15%;
+    top: 13%;
     width: 680px;
 }
 @font-face {
@@ -136,7 +136,13 @@ li a:hover {
   }
 
   @media (max-width:492px){
-  
+    #logos img{
+      float: right;
+      width: 6vh;
+      padding-top: 10px;
+      height: 7vh;
+      margin-right: 2%;
+    }
      
 
     ul {
@@ -197,15 +203,7 @@ li a:hover {
       left: 44%;
       top: 31.5%;
       }
-<<<<<<< HEAD
       
    
-=======
-      .cerrar{
-        position: relative;
-        left: 90px;
-      }
-      
->>>>>>> pedro
   }
   

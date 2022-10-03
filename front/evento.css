@@ -133,6 +133,13 @@ bottom:105px;
     border: transparent;
    }
     @media (max-width:492px){
+      #logos img{
+        float: right;
+        width: 6vh;
+        padding-top: 10px;
+        height: 7vh;
+        margin-right: 2%;
+      }
       #nombre{
         position:relative;
         bottom:100px;

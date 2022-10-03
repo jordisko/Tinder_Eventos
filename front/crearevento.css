@@ -6,11 +6,11 @@ body{
   margin: 0;
 }
 .bodyevent{
-    margin-top: 90px;
+    margin-top: 30px;
     position: absolute;
     width: 700px;
     
-    height: 60%;
+    height: max-content;
 
     text-align: center;
     background-color: rgba(255, 255, 255, 0.85);
@@ -66,11 +66,15 @@ header{
     right:15% ;
     margin-top: 10px;
     }
+    input{
+      width: 150px;
+      height: 18px;
+  }
     
     .evento2{
     position: absolute;
     left: 52%;
-    top:8.2%;
+    top:8.4%;
     }
     
     .imgsubir{
@@ -118,10 +122,7 @@ header{
         position: relative;
         left: 0px;
       }
-      input{
-        width: 150px;
-        height: 12px;
-    }
+      
     #logo{
       color: #FFABE1;
       height: auto;
@@ -138,9 +139,16 @@ header{
     
 
     @media (max-width:479px){
+      #logos img{
+        float: right;
+        width: 6vh;
+        padding-top: 10px;
+        height: 7vh;
+        margin-right: 2%;
+      }
   
         .bodyevent{
-            margin-top: 80px;
+            margin-top: 40px;
             position: absolute;
             width: 350px;
             
@@ -153,7 +161,7 @@ header{
             -webkit-backdrop-filter: blur(0px) saturate(150%);
             left: auto;
             right: auto;
-            left: 1.7%;
+            left: 3.2%;
         
         }
         input{
