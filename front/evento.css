@@ -11,7 +11,9 @@
         background-color: #937DC2;
         z-index: -10;
     }
-    
+    .eveapuntados{
+      margin-top: 20px;
+    }
     li {
       float: right;
     }
