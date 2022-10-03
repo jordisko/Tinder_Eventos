@@ -1,15 +1,31 @@
 
+    @font-face {
+      font-family:logo;
+      src: url(fuentes/Logo.ttf);
+    }
     ul {
       list-style-type: none;
-      margin: -13px;
-      padding: 0;
-      overflow: hidden;
-      background-color: #937DC2;
-      z-index: -10;
+        margin: -13px;
+        padding: 0;
+        overflow: hidden;
+        background-color: #937DC2;
+        z-index: -10;
     }
-    
+    .eveapuntados{
+      margin-top: 20px;
+    }
     li {
-      float: left;
+      float: right;
+    }
+    #logo{
+      color: #FFABE1;
+      height: auto;
+      width:30%;
+      font-size: 5vh;
+       float: left; 
+      text-align: center;
+      padding-top: 6px;
+      font-family: logo;
     }
     
     li a {
@@ -26,7 +42,7 @@
       
       .evento{
         text-align: center;
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 1);
         border-radius: 12px;
         backdrop-filter: blur(0px) saturate(110%);
         -webkit-backdrop-filter: blur(0px) saturate(150%);
@@ -52,7 +68,7 @@
     }
     .cerrar{
       position: relative;
-      left: 1050px;
+      left: 0px;
     }
    
     #nombre{
@@ -100,7 +116,7 @@ left: 35px;
         padding: 40px;
         margin: 40px;
         width: 280px;
-        height: 170px;
+        height: 190px;
         box-sizing: border-box;
     
        }
@@ -112,7 +128,7 @@ left: 35px;
        }
        .evento{
         text-align: center;
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 1);
         border-radius: 12px;
         backdrop-filter: blur(0px) saturate(110%);
         -webkit-backdrop-filter: blur(0px) saturate(150%);
@@ -124,22 +140,32 @@ left: 35px;
 
       ul {
         list-style-type: none;
-        margin: -13px;
-        padding: 0;
-        overflow: hidden;
-        background-color: green;
-        width: 105.8%;
+          margin: -9px;
+          padding: 0;
+          overflow: hidden;
+          background-color: #937DC2;
+          z-index: -10;
       }
       
       li {
-        float: left;
+        float: right;
+      }
+      #logo{
+        color: #FFABE1;
+        height: auto;
+        width:20%;
+        font-size: 5vh;
+         float: left; 
+        text-align: center;
+        padding-top: 8px;
+        font-family: logo;
       }
       
       li a {
         display: block;
         color: white;
         text-align: center;
-        padding: 14px 16px;
+        padding: 5px 11px;
         text-decoration: none;
       }
       
@@ -148,6 +174,6 @@ left: 35px;
       }
       .cerrar{
         position: relative;
-        left: 90px;
+        left: 0px;
       }
     }

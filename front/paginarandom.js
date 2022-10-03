@@ -11,7 +11,7 @@ var activo = false;
 var texto = document.getElementById("descripcion");
 
 function comprobarLogin() {
-    let usuarioLogged = localStorage.getItem("usuario");
+    let usuarioLogged = localStorage.getItem("usuario")
     if(usuarioLogged == '' || usuarioLogged == null)
     {
         alert('¡Tienes que iniciar sesión!');
@@ -19,8 +19,8 @@ function comprobarLogin() {
     }
 }
 
-// conexion con la appi
-
+// conexion con la api
+// LO ANTIGUO, SOLO ENSEÑA 1 TARJETA
 let id =1;
 let yourUrl =('http://localhost:8080/eventos/'+id)
 
@@ -59,6 +59,23 @@ function mostrarPerfilEvento(){
 texto.style.display = "none"; 
 
 mostrarPerfilEvento()
+// NUEVA FORMA DE HACERLO
+// const url = "http://localhost:3001/api/futuroslikes/"+id;
+// const personas = [];
+ 
+// async function fetchJSON() {
+//     const response = await fetch(url);
+//     const jsonResponse = await response.json();
+//     return jsonResponse;
+//   }
+//   fetchJSON().then(json => {
+//     for (let i = 0; i < json.data.length; i++) {
+//       personas.push(json.data[i]);
+//     }
+     
+// });
+ 
+
 
 // para ir actualizando la info
 

@@ -1,7 +1,8 @@
-//variables
+
 
 //variable foto
-<<<<<<< HEAD
+
+
 function comprobarLogin() {
     let usuarioLogged = localStorage.getItem("usuario");
     if(usuarioLogged == '' || usuarioLogged == null)
@@ -10,11 +11,6 @@ function comprobarLogin() {
         window.location.href="inicio_de_session.html";
     }
 }
-=======
-
->>>>>>> origin/marc
-
-
 
 
 // let cFotos = ["front\fotos\fotos_random"];
@@ -84,14 +80,9 @@ function aleatorioR(){
             document.getElementById("foto").src = "fotos/fotos_random/"+random+".jpeg";
         },1000)
         }
+    
 // for (let i = 1; i < cFotos.length; i++) {
 //      imagenes[i] = new Image();
 //      imagenes[i].src= "front\fotos\fotos_random/"+i+".jpeg"; 
 //         console.log(imagenes[i]);
 // }
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> origin/marc
