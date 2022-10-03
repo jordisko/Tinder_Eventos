@@ -412,14 +412,11 @@ ul{
         color: white;
         width: 80%;
         height: auto;
-        margin: 0 10% 0 10%;
-        
+        margin: 0 10% 0 10%;    
         padding: 0;
         top: 100px;
-      
         display: ;
         font-size: 2vh;
-        
         animation-name: opacity;
         animation-duration: 3s;
     }
