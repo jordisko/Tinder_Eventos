@@ -58,6 +58,7 @@ function cancelar(){
     } catch (error) {
       console.log('Error: ' + error);
     }
+    alert("Evento creado")
  }
  function mostrar(){
   var archivo = document.getElementById("file").files[0];
