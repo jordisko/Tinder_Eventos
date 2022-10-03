@@ -1,8 +1,5 @@
 
-@font-face {
-  font-family:logo;
-  src: url(fuentes/Logo.ttf);
-}
+
 label{
     text-align: center;
     margin-top: 50px;
@@ -41,6 +38,10 @@ image {
     left: 25%;
     top: 15%;
     width: 680px;
+}
+@font-face {
+  font-family:logo;
+  src: url(fuentes/Logo.ttf);
 }
 ul {
   list-style-type: none;
@@ -101,36 +102,50 @@ li a:hover {
   }
   .cerrar{
     position: relative;
-    left: 1025px;
+    left: 0px;
   }
 
-  @media (max-width:479px){
+  @media (max-width:492px){
   
      
 
     ul {
       list-style-type: none;
-      margin: -13px;
-      padding: 0;
-      overflow: hidden;
-      background-color: green;
-      width: 105.8%;
+        margin: -9px;
+        padding: 0;
+        overflow: hidden;
+        background-color: #937DC2;
+        z-index: -10;
     }
     
     li {
-      float: left;
+      float: right;
+    }
+    #logo{
+      color: #FFABE1;
+      height: auto;
+      width:20%;
+      font-size: 5vh;
+       float: left; 
+      text-align: center;
+      padding-top: 8px;
+      font-family: logo;
     }
     
     li a {
       display: block;
       color: white;
       text-align: center;
-      padding: 14px 16px;
+      padding: 5px 11px;
       text-decoration: none;
     }
     
     li a:hover {
       background-color: #111;
+    }
+    .cerrar{
+      position: relative;
+      left: 0px;
     }
     .formulario{
       text-align: center;
@@ -139,7 +154,7 @@ li a:hover {
         backdrop-filter: blur(0px) saturate(110%);
         -webkit-backdrop-filter: blur(0px) saturate(150%);
         position: absolute;
-        left: 4.2%;
+        left: 3.0%;
         top: 15%;
         width: 345px;
     }
@@ -152,10 +167,7 @@ li a:hover {
       left: 44%;
       top: 31.5%;
       }
-      .cerrar{
-        position: relative;
-        left: 90px;
-      }
+      
    
   }
   

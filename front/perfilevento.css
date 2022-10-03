@@ -15,6 +15,48 @@
     left: 25%;
 
 }
+@font-face {
+  font-family:logo;
+  src: url(fuentes/Logo.ttf);
+}
+ul {
+  list-style-type: none;
+    margin: -13px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #937DC2;
+    z-index: -10;
+}
+
+li {
+  float: right;
+}
+#logo{
+  color: #FFABE1;
+  height: auto;
+  width:30%;
+  font-size: 5vh;
+   float: left; 
+  text-align: center;
+  padding-top: 6px;
+  font-family: logo;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.cerrar{
+  position: relative;
+  left: 0px;
+}
 .fondo {
     position: fixed;
     right: 0;
@@ -29,7 +71,7 @@
     right:15% ;
     }
    
-    ul {
+    .menu2 {
         list-style-type: none;
         margin: -13px;
         padding: 0;
@@ -39,11 +81,11 @@
       
       }
       
-      li {
+      .menu3 {
         float: left;
       }
       
-      li a {
+      .menu3 a {
         display: block;
         color: white;
         text-align: center;
@@ -51,24 +93,28 @@
         text-decoration: none;
       }
       
-      li a:hover {
+      .menu3 a:hover {
         background-color: #111;
       }
       .cerrar{
         position: relative;
         left: 1025px;
+        top:15px;
       }
       .evento2{
         position: absolute;
         left: 52%;
-        top:28.2%;
+        top:27.3%;
         }
         input{
-          width: 150px;
-          height: 11px;
+          position: absolute;
+
       }
       
-
+.divapun{
+  left: auto;
+  right: auto;
+}
     @media (max-width:492px){
   
         .bodyevent{
@@ -100,37 +146,47 @@
             .evento2{
             position: absolute;
             left: 60%;
-            top:28.8%;
+            top:27.8%;
             }
             
             ul {
-                list-style-type: none;
-                margin: -13px;
+              list-style-type: none;
+                margin: -9px;
                 padding: 0;
                 overflow: hidden;
-                background-color: green;
-                width: 105.8%;
-              }
-              
-              li {
-                float: left;
-              }
-              
-              li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-              }
-              
-              li a:hover {
-                background-color: #111;
-              }
-              .cerrar{
-                position: relative;
-                left: 90px;
-              }
+                background-color: #937DC2;
+                z-index: -10;
+            }
+            
+            li {
+              float: right;
+            }
+            #logo{
+              color: #FFABE1;
+              height: auto;
+              width:20%;
+              font-size: 5vh;
+               float: left; 
+              text-align: center;
+              padding-top: 8px;
+              font-family: logo;
+            }
+            
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 5px 11px;
+              text-decoration: none;
+            }
+            
+            li a:hover {
+              background-color: #111;
+            }
+            .cerrar{
+              position: relative;
+              left: 0px;
+            }
 
         
        
