@@ -18,15 +18,19 @@ function comprobarLogin() {
 // variable tarjeta
 
 var tarjeta = document.getElementById("mainTarjeta");
-
+var random = 0;
 //variable info
 
 var binfo = document.getElementById("info");
 var activo = false;
 
+var nombreevento = document.getElementById("nombreevento");
+var maximoPersonas = document.getElementById("maximopersonas");
 var texto = document.getElementById("descripcion");
 
-
+var nombre = ["Fiesta en casa","Razz","Acampada de chill","Desmadre en casa","Paseito por mar","Playa de noche"];
+var numero = ["3/10","6/12","3/6","7/19","4/6","4/9"];
+var infoT = ["Pequeña fiesta en casa del chill con mis 3 panas, puedes invitar a los tuyos.","Quedada en Razz, a perrear hasta el suelo.","Acamapada por cualquier parte de la montaña que tengo al lado de casa. Lo que surja.","Mis padres no estan en casa, significa que desmadre.","Alquiler de un velerito por el mar, no se nadar asi que vigirlarme por favor.","Tengo un ukelele y mucha cerveza, cunde playa sin hoguera"];
 
 // info
 
@@ -65,21 +69,29 @@ function info(){
 function aleatorioR(){
     
     tarjeta.style.animationName = "moveR";
-    var random = Math.floor(Math.random() * 6);
+    random++;
     setTimeout(function(){
         tarjeta.style.animationName = "";
         document.getElementById("foto").src = "fotos/fotos_random/"+random+".jpeg";
+        document.getElementById('nombreevento').innerHTML = nombre[random];
+        document.getElementById('maximopersona').innerHTML = numero[random];
+        document.getElementById('descripcion').innerHTML = infoT[random];
     },1000)
     }
-    function aleatorioL(){
+
+function aleatorioL(){
     
-        tarjeta.style.animationName = "moveL";
-        var random = Math.floor(Math.random() * 6);
-        setTimeout(function(){
-            tarjeta.style.animationName = "";
+    tarjeta.style.animationName = "moveL";
+    random++;
+    setTimeout(function(){
+        tarjeta.style.animationName = "";
             document.getElementById("foto").src = "fotos/fotos_random/"+random+".jpeg";
-        },1000)
-        }
+            document.getElementById("foto").src = "fotos/fotos_random/"+random+".jpeg";
+        document.getElementById('nombreevento').innerHTML = nombre[random];
+        document.getElementById('maximopersona').innerHTML = numero[random];
+        document.getElementById('descripcion').innerHTML = infoT[random];
+    },1000)
+    }
     
 // for (let i = 1; i < cFotos.length; i++) {
 //      imagenes[i] = new Image();
