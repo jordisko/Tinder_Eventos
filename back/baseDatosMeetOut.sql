@@ -67,7 +67,7 @@ VALUES
 
 SELECT * from basedatosmeetout.eventos;
     
-INSERT INTO `basedatosmeetout`.`usuarios` ( `nombreUsuario`, `correoElectronico`, `contraseniaUsuario`, `fotoUsuario`, `descripcionUsuario`, `nombrePersona`, `apellidoPersona`, `codigoPostal`) VALUES ('jordisko', 'jordicampos.97@gmail.com', '1234', 'https://i.imgur.com/58xTTQM.png', 'No se que poner', 'Jordi', 'Campos', '08031');
+INSERT INTO `basedatosmeetout`.`usuarios` ( `nombreUsuario`, `correoElectronico`, `contraseniaUsuario`, `fotoUsuario`, `descripcionUsuario`, `nombrePersona`, `apellidoPersona`, `codigoPostal`) VALUES ('jordisko', 'jordicampos.97@gmail.com', '1234', 'https://i.imgur.com/58xTTQM.png', 'Hola, soy Jordi me apasiona la literatura austriaca del siglo XIX y la musica, con muchas ganas de conocer gente con gustos comunes :)', 'Jordi', 'Campos', '08031');
 SELECT * from basedatosmeetout.usuarios;
 
 select Usuarios_idUsuario from matches WHERE Eventos_idEvento = 1;
